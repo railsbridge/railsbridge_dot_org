@@ -1,6 +1,5 @@
 class StaticPagesController < ApplicationController
   def home
-    @header = false
   end
 
   def about
