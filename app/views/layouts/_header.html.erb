@@ -6,6 +6,7 @@
         <li class="dropdown">
           <%= link_to "About RailsBridge", about_path %>
           <ul class="dropdown-menu">
+            <li><%= link_to "Overview", about_path %>
             <li><%= link_to "Chapters", about_chapters_path %></li>
             <li><%= link_to "Past Events", about_past_path %></li>
             <li><%= link_to "Team", about_team_path %></li>
@@ -15,12 +16,14 @@
         <li class="dropdown">
           <%= link_to "Learning", learning_path %>
           <ul class="dropdown-menu">
+            <li><%= link_to "Attending a Workshop", learning_path %></li>
             <li><%= link_to "Further Resources", learning_resources_path %></li>
           </ul>
         </li>
         <li class="dropdown">
         <%= link_to "Helping", helping_path %>
         <ul class="dropdown-menu">
+            <li><%= link_to "Overview", helping_path %></li>
             <li><%= link_to "Teaching", teaching_path %></li>
             <li><%= link_to "Organizing", organizing_path %></li>
             <li><%= link_to "Hosting & Sponsoring", hosting_path %></li>
