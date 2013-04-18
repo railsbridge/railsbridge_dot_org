@@ -64,3 +64,17 @@ p {
   margin-top: 30px;
   padding-top: 20px;
 }
+
+/* nav bar */
+
+ul.nav li.dropdown:hover ul.dropdown-menu{
+    display: block;    
+}
+
+a.menu:after, .dropdown-toggle:after {
+  content: none;
+}
+
+.navbar .dropdown-menu {
+ margin-top: 0px;
+}
