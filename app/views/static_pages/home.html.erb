@@ -1,24 +1,19 @@
-<h1>WELCOME.</h1>
-<h2><em>This is an unstyled, Bootstrappy pre-ghost of a future RailsBridge website.</em></h2>
-<h4>RailsBridge is working to make tech more diverse and welcoming by teaching programming, connecting human beings, and listening.</h4>
-<div class="row">
-  <div class="span6">
-    <h2>Want to learn?</h2>
-    <p>We throw free workshops on Rails, Ruby, and HTML & CSS, among other things.</p>
-    <p><a href="http://bridgetroll.herokuapp.com">Browse and register for upcoming workshops and events on Bridge Troll.</a></p>
-    <p><%= link_to "Workshop Tips & FAQ", learning_path %></p>
-    <p><%= link_to "After Attending: Keep Learning!", learning_resources_path %></p>
-  </div>
-  <div class="span6">
-    <h2>Want to help out?</h2>
-    <p><%= link_to "Learn more & get in touch!", helping_path %></p>
-    <p><%= link_to "Teach or TA", teaching_path %></p>
-    <p><%= link_to "Organize a Workshop", organizing_path %></p>
-    <p><a href="https://github.com/railsbridge/docs">Contribute on GitHub</a></p>
-    <p><%= link_to "Sponsor or Host a Workshop", hosting_path %></p>
-    <p><%= link_to "Help another way?", projects_path %></p>
-  </div>
-</div>
+<h1>RailsBridge</h1>
+<h2><em>Making tech better since 2009</em></h2>
+<h4>RailsBridge is working to make tech more diverse and welcoming by teaching programming, connecting human beings, and listening to people's needs. We organize and teach free workshops on Rails, Ruby, and HTML & CSS, in cities all over the world, targeted at groups that are underrepresented in tech.</h4>
 
-<h2>Wondering what this whole thing is about?</h2>
-<p><%= link_to "The story of RailsBridge!", about_path %></p>
+<h2>Want to learn?</h2>
+
+<p>Our <%= link_to "Chapters Page", about_chapters_path %> shows all the cities we're in and where to find upcoming workshops listed online.</p>
+<p>We also have <%= link_to "general info for students", learning_path %>, too.
+<p> <%= link_to "Find a RailsBridge chapter", about_chapters_path, class: "btn btn-primary btn-large" %>
+</p>
+
+<h2>Want to help out?</h2>
+<p>There are so many ways to help, including <%= link_to "volunteering as a teacher or TA", teaching_path %>, <%= link_to "organizing a workshop", organizing_path %>, <%= link_to "hosting or sponsoring a workshop", hosting_path %> and more.</p>
+<p>Find out more about what we need help with, and get in touch!</p>
+
+<p><%= link_to "Contribute Your Awesomeness", helping_path, class: "btn btn-primary btn-large" %></p>
+
+<h2>What is RailsBridge?</h2>
+<p>Let us tell you! Here we have <%= link_to "the story of RailsBridge.", about_path %></p>
