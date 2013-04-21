@@ -1,29 +1,44 @@
+<script> 
+    $(document).ready(function() { 
+        $('#interest').ajaxForm({
+          beforeSubmit: function() {
+            return $(this).validate();
+          },
+          // iframe: true,
+          // iframeSrc: "javascript:false", 
+          complete: function() { 
+            $('.form-message').show(); 
+          }  
+        }); 
+    }); 
+</script> 
+
 <h3>Get Involved!</h3>
 <p><em>(This form is not done, but it is live.)</em></p>
 
 <p>Items with an asterisk * are required.</p>
 
-<form action="https://docs.google.com/forms/d/1sP40osNQOEB8W6AzsmobrhDyv_39VR4sgJPMTX8AYac/formResponse" method="POST" target="_self" onsubmit="">
+<form action="https://docs.google.com/forms/d/1sP40osNQOEB8W6AzsmobrhDyv_39VR4sgJPMTX8AYac/formResponse" method="POST" id="interest" target="_self" onsubmit="">
   
-<label for="entry_1947113433">
-Name *
-</label>
-<input type="text" name="entry.1947113433" value="" id="entry_1947113433" dir="auto" aria-required="true">
+  <label for="entry_1947113433">
+  Name *
+  </label>
+  <input type="text" name="entry.1947113433" value="" id="entry_1947113433" class="required">
 
 
-<label for="entry_1684448170">
-Email Address *
-</label>
-<input type="text" name="entry.1684448170" value="" id="entry_1684448170" dir="auto" aria-required="true">
+  <label for="entry_1684448170">
+  Email Address *
+  </label>
+  <input type="text" name="entry.1684448170" value="" id="entry_1684448170" class="required email">
 
-<label for="entry_1839455743">
-  Location *
- </label>
-<input type="text" name="entry.1839455743" value="" id="entry_1839455743" dir="auto" aria-required="true">
+  <label for="entry_1839455743">
+    Location *
+   </label>
+  <input type="text" name="entry.1839455743" value="" id="entry_1839455743" class="required">
 
-<label for="entry_1503874487">
-  How do you want to help? *
-</label>
+  <label for="entry_1503874487">
+    How do you want to help? *
+  </label>
 
     <label>
         <input type="checkbox" name="entry.920161679" value="Teaching or TAing at a workshop" id="group_920161679_1">
@@ -67,37 +82,42 @@ Email Address *
     <input type="text" name="entry.920161679.other_option_response" value="" id="entry_920161679_other_option_response" dir="auto" aria-label="Other">
 
 
-<label for="entry_1698722839">
-  If you&#39;re interested in organizing, what do you need help with?
-</label>
-  <label>
-    <input type="checkbox" name="entry.1608933211" value="Finding students" id="group_1608933211_1">
-    Finding students
+  <label for="entry_1698722839">
+    If you&#39;re interested in organizing, what do you need help with?
   </label>
+    <label>
+      <input type="checkbox" name="entry.1608933211" value="Finding students" id="group_1608933211_1">
+      Finding students
+    </label>
 
-  <label>
-    <input type="checkbox" name="entry.1608933211" value="Finding teachers" id="group_1608933211_2">
-    Finding teachers
-  </label>
+    <label>
+      <input type="checkbox" name="entry.1608933211" value="Finding teachers" id="group_1608933211_2">
+      Finding teachers
+    </label>
 
-  <label>
-    <input type="checkbox" name="entry.1608933211" value="Finding a space" id="group_1608933211_3">
-    Finding a space
-  </label>
+    <label>
+      <input type="checkbox" name="entry.1608933211" value="Finding a space" id="group_1608933211_3">
+      Finding a space
+    </label>
 
-  <label>
-    <input type="checkbox" name="entry.1608933211" value="Finding sponsors" id="group_1608933211_4">
-    Finding sponsors
-  </label>
+    <label>
+      <input type="checkbox" name="entry.1608933211" value="Finding sponsors" id="group_1608933211_4">
+      Finding sponsors
+    </label>
 
-  <label>
-    <input type="checkbox" name="entry.1608933211" value="__other_option__" id="group_1608933211_5">
-    Other:
-  </label>
-  <input type="text" name="entry.1608933211.other_option_response" value="" id="entry_1608933211_other_option_response" dir="auto" aria-label="Other">
+    <label>
+      <input type="checkbox" name="entry.1608933211" value="__other_option__" id="group_1608933211_5">
+      Other:
+    </label>
+    <input type="text" name="entry.1608933211.other_option_response" value="" id="entry_1608933211_other_option_response" dir="auto" aria-label="Other">
 
 
 <input type="hidden" name="draftResponse" value="[]">
 <input type="hidden" name="pageHistory" value="0">
 <div class="ss-item ss-navigate"><div class="ss-form-entry">
 <input type="submit" name="submit" value="Submit" id="ss-submit">
+</form>
+
+<div class="form-message">
+  <h3>Neat! We'll be in touch soon about helping out.</h3>
+<div>

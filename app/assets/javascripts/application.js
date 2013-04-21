@@ -14,6 +14,9 @@
 //= require jquery_ujs
 //= require_tree .
 //= require twitter/bootstrap
+//= require jquery.form
+//= require jquery.gcal_flow
+//= require jquery.validate
 
 $(document).ready(function(){
 });
