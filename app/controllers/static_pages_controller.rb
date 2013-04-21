@@ -41,4 +41,7 @@ class StaticPagesController < ApplicationController
   def helping
   end
 
+  def interest_form
+  end
+
 end

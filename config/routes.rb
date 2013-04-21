@@ -13,6 +13,7 @@ RailsbridgeSite2013::Application.routes.draw do
   match '/about_team', to: 'static_pages#about_team'
   match '/about_sponsors', to: 'static_pages#about_sponsors'
   match '/helping', to: 'static_pages#helping'
+  match '/interest_form', to: 'static_pages#interest_form'
 
 
 
