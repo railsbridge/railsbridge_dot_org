@@ -38,4 +38,10 @@ class StaticPagesController < ApplicationController
   def about_sponsors
   end
 
+  def helping
+  end
+
+  def interest_form
+  end
+
 end

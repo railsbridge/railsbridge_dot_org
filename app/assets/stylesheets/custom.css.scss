@@ -58,3 +58,42 @@ p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
+
+.footer {
+  border-top: 1px solid #e3e3e3;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+/* nav bar */
+
+ul.nav li.dropdown:hover ul.dropdown-menu{
+    display: block;    
+}
+
+a.menu:after, .dropdown-toggle:after {
+  content: none;
+}
+
+.navbar .dropdown-menu {
+ margin-top: 0px;
+}
+
+/* Sponsor images */
+
+.logos img {
+  padding: 20px;
+}
+
+.big-logos img {
+  height: 125px;
+}
+
+.smaller-logos img {
+  height: 60px;
+}
+
+.medium-logos img {
+  height: 80px;
+}
+
