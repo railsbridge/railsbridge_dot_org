@@ -2,6 +2,7 @@
 
 /* mixins, variables, etc. */
 $grayMediumLight: #eaeaea;
+$grayLight: #e3e3e3;
 @mixin box_sizing { -moz-box-sizing: border-box;  -webkit-box-sizing: border-box;  box-sizing: border-box; }
 
 /* universal */
@@ -38,7 +39,19 @@ a.menu:after, .dropdown-toggle:after      { content: none; }
 
 /* Version Two Styles */
 
-/* 1.5em provides good vertical spacing ( = 150% of the font-size) */
+a.logo { display: block; float: left; width: 170px; line-height: 50px; text-align: center;
+         margin: 10px 0px 10px 35px; background: white; border: 2px dotted $grayMediumLight; }
+
+.header ul.nav    { height: 70px; float: right; padding-right: 35px; }
+.header ul.nav li { line-height: 50px; font-weight: bold; }
+
+ul.breadcrumb   { background: none; }
+
+ul.sidenav           { background: $grayLight; }
+ul.sidenav li.active { background: white; }
+
+.left-border { border-left: 1px solid $grayMediumLight; }
+
 
 
 
