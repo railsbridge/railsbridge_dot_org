@@ -10,13 +10,19 @@ section   { overflow: auto; }
 textarea  { resize: vertical; }
 .center   { text-align: center; }
 
-/* typography */
-h1, h2, h3, 
-h4, h5, h6 { line-height: 1; }
-h1         { font-size: 3em; letter-spacing: -2px; margin-bottom: 30px; text-align: center; }
-h2         { font-size: 1.7em; letter-spacing: -1px; margin-bottom: 30px; text-align: center; font-weight: normal; color: $grayLight; }
-p          { font-size: 1.1em; line-height: 1.7em; }
-.footer    { border-top: 1px solid #e3e3e3; margin-top: 30px; padding-top: 20px; }
+/* typography * /
+p, ol, ul, blockquote, pre, code { font-size: 1em; line-height: 1.5em; margin-bottom: 1.5em; }
+p                                { font-size: 1.1em; line-height: 1.36em; }
+h1, h2, h3, h4, h5, h6           { font-weight: bold; }
+h1                               { font-size: 2em; line-height: 0.75em; margin-bottom: 0.75em; }
+h2                               { font-size: 1.75em; line-height: 0.86em; margin-bottom: 0.86em; }
+h3                               { font-size: 1.50em; line-height: 1.0em; margin-bottom: 1.0em; }
+h4                               { font-size: 1.25em; line-height: 1.2em; margin-bottom: 1.2em; }
+h5                               { font-size: 1.0em; line-height: 1.5em; margin-bottom: 1.5em; }
+h6                               { font-size: .75em; line-height: 2em; margin-bottom: 2em; }
+
+/* footer */
+.footer    { border-top: 1px solid #e3e3e3; margin-top: 30px; padding-top: 20px; } 
 
 /* nav bar */
 ul.nav li.dropdown:hover ul.dropdown-menu { display: block; }
@@ -28,4 +34,14 @@ a.menu:after, .dropdown-toggle:after      { content: none; }
 .big-logos img     { height: 125px; }
 .smaller-logos img { height: 60px; }
 .medium-logos img  { height: 80px; }
+
+
+/* Version Two Styles */
+
+/* 1.5em provides good vertical spacing ( = 150% of the font-size) */
+
+
+
+
+
 
