@@ -12,9 +12,9 @@ textarea  { resize: vertical; }
 .center   { text-align: center; }
 
 /* typography * /
-p, ol, ul, blockquote, pre, code { font-size: 1em; line-height: 1.5em; margin-bottom: 1.5em; }
+p, ol, ul, blockquote, pre, code { font-size: 1em; line-height: 1.5em; margin: 0; padding: 0; margin-bottom: 1.5em; }
 p                                { font-size: 1.1em; line-height: 1.36em; }
-h1, h2, h3, h4, h5, h6           { font-weight: bold; }
+h1, h2, h3, h4, h5, h6           { font-weight: bold; margin: 0; padding: 0; }
 h1                               { font-size: 2em; line-height: 0.75em; margin-bottom: 0.75em; }
 h2                               { font-size: 1.75em; line-height: 0.86em; margin-bottom: 0.86em; }
 h3                               { font-size: 1.50em; line-height: 1.0em; margin-bottom: 1.0em; }
@@ -22,8 +22,6 @@ h4                               { font-size: 1.25em; line-height: 1.2em; margin
 h5                               { font-size: 1.0em; line-height: 1.5em; margin-bottom: 1.5em; }
 h6                               { font-size: .75em; line-height: 2em; margin-bottom: 2em; }
 
-/* footer */
-.footer    { border-top: 1px solid #e3e3e3; margin-top: 30px; padding-top: 20px; } 
 
 /* nav bar */
 ul.nav li.dropdown:hover ul.dropdown-menu { display: block; }
@@ -52,7 +50,17 @@ ul.sidenav li.active { background: white; }
 
 .left-border { border-left: 1px solid $grayMediumLight; }
 
+.work-in-progress { font-style: italic; color: red; margin-top: 20px; }
 
+/* footer */
+.footer    { background: #767676; color: #fff; margin-top: 20px; padding-top: 30px; }
+.footer a { color: white; line-height: 40px; }
+.footer h3 { font-weight: normal; margin: 0px; }
+.footer p { margin-top: 0px; }
+.footer a.font-icon { font-size: 2.5em; }
+.footer ul.footer-links    { list-style: none; }
+.footer ul.footer-links li { float: left; padding-right: 10px; }
+.footer ul.footer-links li.left-border { padding-left: 20px; margin-left: 10px; }
 
 
 
