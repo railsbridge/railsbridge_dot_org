@@ -1,99 +1,31 @@
-
 @import "twitter/bootstrap";
 
 /* mixins, variables, etc. */
-
 $grayMediumLight: #eaeaea;
-
-@mixin box_sizing {
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
-  box-sizing: border-box;
-}
+@mixin box_sizing { -moz-box-sizing: border-box;  -webkit-box-sizing: border-box;  box-sizing: border-box; }
 
 /* universal */
-
-html {
-  overflow-y: scroll;
-}
-
-section {
-  overflow: auto;
-}
-
-textarea {
-  resize: vertical;
-}
-
-.center {
-  text-align: center;
-  h1 {
-    margin-bottom: 10px;
-  }  
-}
+html      { overflow-y: scroll; }
+section   { overflow: auto; }
+textarea  { resize: vertical; }
+.center   { text-align: center; }
 
 /* typography */
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
-
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 1.7em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: $grayLight;
-}
-
-p {
-  font-size: 1.1em;
-  line-height: 1.7em;
-}
-
-.footer {
-  border-top: 1px solid #e3e3e3;
-  margin-top: 30px;
-  padding-top: 20px;
-}
+h1, h2, h3, 
+h4, h5, h6 { line-height: 1; }
+h1         { font-size: 3em; letter-spacing: -2px; margin-bottom: 30px; text-align: center; }
+h2         { font-size: 1.7em; letter-spacing: -1px; margin-bottom: 30px; text-align: center; font-weight: normal; color: $grayLight; }
+p          { font-size: 1.1em; line-height: 1.7em; }
+.footer    { border-top: 1px solid #e3e3e3; margin-top: 30px; padding-top: 20px; }
 
 /* nav bar */
-
-ul.nav li.dropdown:hover ul.dropdown-menu{
-    display: block;    
-}
-
-a.menu:after, .dropdown-toggle:after {
-  content: none;
-}
-
-.navbar .dropdown-menu {
- margin-top: 0px;
-}
+ul.nav li.dropdown:hover ul.dropdown-menu { display: block; }
+a.menu:after, .dropdown-toggle:after      { content: none; }
+.navbar .dropdown-menu                    { margin-top: 0px; }
 
 /* Sponsor images */
-
-.logos img {
-  padding: 20px;
-}
-
-.big-logos img {
-  height: 125px;
-}
-
-.smaller-logos img {
-  height: 60px;
-}
-
-.medium-logos img {
-  height: 80px;
-}
+.logos img         { padding: 20px; }
+.big-logos img     { height: 125px; }
+.smaller-logos img { height: 60px; }
+.medium-logos img  { height: 80px; }
 
