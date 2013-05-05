@@ -1,7 +1,7 @@
 <div class="navbar header">
   <div class="navbar-static-top navbar-inner">
     <div class="container">
-      <%= link_to 'RailsBridge Logo', root_path, class: 'logo' %>
+      <%= link_to 'RailsBridge Logo', root_path, class: 'image_placeholder logo' %>
       <ul class="nav">
         <li><%= link_to "Learn", learning_path %></li>
         <li><%= link_to "Volunteer", helping_path %></li>
@@ -68,4 +68,21 @@ From the header...
       </ul>
     </div>
   </div>
-</div> -->
+</div> 
+
+From the home page content...
+
+<h2>Want to learn?</h2>
+
+<p>Our <%= link_to "Chapters Page", about_chapters_path %> shows all the cities we're in and where to find upcoming workshops listed online. We also have <%= link_to "general info for students", learning_path %>, too.</p>
+
+<p> <%= link_to "Find a RailsBridge chapter", about_chapters_path, class: "btn btn-primary btn-large" %>
+</p>
+
+<h2>Want to help out?</h2>
+<p>There are so many ways to help, including <%= link_to "volunteering as a teacher or TA", teaching_path %>, <%= link_to "organizing a workshop", organizing_path %>, <%= link_to "hosting or sponsoring a workshop", hosting_path %> and more.</p>
+<p>Find out more about what we need help with, and get in touch!</p>
+
+<p><%= link_to "Contribute Your Awesomeness", helping_path, class: "btn btn-primary btn-large" %></p>
+</div>
+-->
