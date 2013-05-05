@@ -11,7 +11,8 @@
 <%= render 'layouts/header' %>
 
 <div class="container">
-<%= yield %>
+  <%= render 'layouts/breadcrumbs' %>
+  <%= yield %>
 </div>
 
 <%= render 'layouts/footer' %>

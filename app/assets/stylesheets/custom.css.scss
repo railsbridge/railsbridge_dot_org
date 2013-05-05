@@ -45,7 +45,7 @@ a.logo { display: block; float: left; width: 170px; line-height: 50px; text-alig
 .header ul.nav    { height: 70px; float: right; padding-right: 35px; }
 .header ul.nav li { line-height: 50px; font-weight: bold; }
 
-ul.breadcrumb   { background: none; }
+ul.breadcrumb   { background: none; padding-left: 0px; }
 
 ul.sidenav           { background: $grayLight; }
 ul.sidenav li.active { background: white; }
