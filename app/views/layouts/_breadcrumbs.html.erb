@@ -1,4 +1,5 @@
-<ul class='breadcrumb'>
-  <li><%= link_to 'Home', root_path %> <span class="divider">/</span></li>
-  <li>Where the breadcrumbs will be...</li>
-</ul>
+<%- if display_breadcrumbs %>
+  <ul class='breadcrumb'>
+    <%= render_breadcrumbs :separator => '&nbsp;&nbsp;/&nbsp;&nbsp;' %>
+  </ul>
+<%- end %>
