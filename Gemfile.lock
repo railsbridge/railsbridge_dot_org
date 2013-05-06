@@ -1,3 +1,8 @@
+PATH
+  remote: vendor/gems/breadcrumbs_on_rails-2.3.0
+  specs:
+    breadcrumbs_on_rails (2.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -111,6 +116,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass-rails
+  breadcrumbs_on_rails (= 2.3.0)!
   coffee-rails (~> 3.2.1)
   font-awesome-rails
   jquery-rails
