@@ -46,21 +46,37 @@ a.logo { float: left; margin: 10px 0px 10px 35px;  }
 .header ul.nav    { height: 70px; float: right; padding-right: 35px; }
 .header ul.nav li { line-height: 50px; font-weight: bold; }
 
-ul.breadcrumb   { background: none; margin: 0px; padding: 0px; }
+/* breadcrumbs */
+ul.breadcrumb   { background: none; margin: 0 0 20px 0; padding: 0; }
 
-ul.sidenav           { background: $grayLight; }
-ul.sidenav li.active { background: white; }
+/* side nav */
+ul.sidenav            { background: $grayLight; }
+ul.sidenav li.active  { background: white; }
+ul.sidenav li a:hover { background: white; }
+
 
 .left-border { border-left: 1px solid $grayMediumLight; }
 
 /* homepage */
 .home { width:100%; min-height: 446px; background: transparent url('homepage-background.jpg') left top; color: #fff; padding-bottom: 30px; }
-.home { background: #66CD00; border: 1px solid pink; border: none; }
+.home { background: #66CD00; border: 1px solid pink; }
 .home-header { width: 515px; margin:30px 0px 60px 200px; padding-top: 30px; }
 .home h1, .home h2, .home h3 { font-weight: normal; }
 .home h3 { margin: 0 0 0 25px; font-style: italic; }
 .home h4 { margin: 0 0 0 25px; font-style: italic; }
 
+/* content */
+.content h1 { border-bottom: 1px solid $grayLight; padding-bottom: 15px; margin-bottom: 20px; }
+
+/* triptych situation */
+ul.triptych { position: relative; list-style-type: none; position: relative; margin-left: -10px; ;}
+ul.triptych li { float: left; width: 210px; margin-left: 20px; padding: 10px 0; text-align: center; }
+ul.triptych li:first-child { margin-left: 0; }
+ul.triptych li:last-child { width: 230px; }
+ul.triptych .icon-4x { margin-bottom: 10px; }
+ul.triptych li:last-child .icon-4x { color: red; }
+
+.clear { clear: both; }
 
 /* events listing */
 .events { margin: 0 15px; }
