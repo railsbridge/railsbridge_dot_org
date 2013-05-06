@@ -1,6 +1,7 @@
 class StaticPagesController < ApplicationController
 
   def home
+    @suppress_sidenav = true
     add_breadcrumb 'Home', root_path
   end
 
@@ -68,6 +69,16 @@ class StaticPagesController < ApplicationController
     add_breadcrumb 'Helping', helping_path
   end
 
+  def faq
+    add_breadcrumb 'Home', root_path
+    add_breadcrumb 'FAQ', faq_path
+  end
+
+  def faq
+    add_breadcrumb 'Home', root_path
+    add_breadcrumb 'Upcoming Events', events_path
+  end
+  
   def interest_form
     add_breadcrumb 'Home', root_path
     add_breadcrumb 'Interest Form', interest_form_path
