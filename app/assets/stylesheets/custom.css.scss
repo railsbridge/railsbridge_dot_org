@@ -58,8 +58,8 @@ ul.sidenav li a:hover { background: white; }
 .left-border { border-left: 1px solid $grayMediumLight; }
 
 /* homepage */
-.home { width:100%; min-height: 446px; background: transparent url('homepage-background.jpg') left top; color: #fff; padding-bottom: 30px; }
-.home { background: #66CD00; border: 1px solid pink; }
+.home { width:100%; min-height: 446px; background: transparent url('homepage-background.jpg') left top; color: #fff; padding-bottom: 20px; }
+.home { background: #66CD00; }
 .home-header { width: 515px; margin:30px 0px 60px 200px; padding-top: 30px; }
 .home h1, .home h2, .home h3 { font-weight: normal; }
 .home h3 { margin: 0 0 0 25px; font-style: italic; }
@@ -79,19 +79,23 @@ ul.triptych li:last-child .icon-4x { color: red; }
 .clear { clear: both; }
 
 /* events listing */
-.events { margin: 0 15px; }
-.events .event { position: relative; float: left; width: 250px; height: 150px; margin: 15px; padding: 10px; }
+.events {  }
+.events .event { position: relative; float: left; width: 240px; height: 150px; margin: 15px; padding: 10px; }
 .events .event { border: 1px solid $grayLight; background: white; color: #000; }
 .events .event a { display: block; }
 .events .event h4 { margin: 0px; }
 .events .event a span { padding-right: 5px; }
-.events .event a.event-cta { position: absolute; bottom: 20px; left: 34px; width: 200px; height: 30px; line-height: 30px; background: orange; color: white; text-align: center; }
+.events .event a.event-cta { position: absolute; bottom: 20px; left: 28px; width: 200px; height: 30px; line-height: 30px; background: orange; color: white; text-align: center; }
+.events .event a.event-cta { border: none; }
 
 .events .event-help { background: $grayDark; color: #fff; border: 1px solid $grayDark; }
 .events .event-help a.event-cta { background: $grayLight; color: #000; }
 
 /* homepage events listing customizations */
-
+.home_events { padding-left: 20px; }
+.home_events h3 { margin-left: 15px; }
+.home_twitter { padding-right: 20px; }
+.home_twitter h3 { margin-left: 0px; margin-bottom: 13px; }
 
 /* footer */
 .footer    { background: $grayDark; color: #fff; padding: 20px 0 30px 0; }

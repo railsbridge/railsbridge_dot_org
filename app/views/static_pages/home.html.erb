@@ -1,4 +1,4 @@
-<div class='home'>
+<div class="home">
   <div class='home-header'>
     <h1>First, Learn Ruby</h1>
     <h2>Next, Rule the World</h2>
@@ -7,22 +7,18 @@
       tincidunt est dol est viverra commodo cubilia sociosqu ante at, neque,.
     </p>
   </div>
-  <h3>Upcoming Events:</h3>
-  <%= render 'layouts/events' %>
-  <hr>
-  <h3>Recent Tweets @railsbridge</h3>
-  <h4>Suppressing this temporarily to continue with rest of site work,<br />a horizontal twitter feed will take some research</h4>
-</div>
-
-
-<!-- 
-<div class="row">
-  <div class="span6">
-    <%= render 'tweets' %>
-  </div>
-  <div class="span6">
-    <h3>Upcoming Workshops</h3>
-    <%= render 'calendar' %>
+  <div class="row">
+    <div class="span8">
+      <div class="home_events">
+        <h3>Upcoming Events:</h3>
+        <%= render 'layouts/events' %>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="home_twitter">
+        <h3>Recent Tweets</h3>
+        <%= render 'tweets' %>
+      </div>
+    </div>
   </div>
 </div>
--->

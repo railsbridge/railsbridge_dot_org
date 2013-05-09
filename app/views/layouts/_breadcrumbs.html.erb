@@ -1,4 +1,4 @@
-<%- if display_breadcrumbs %>
+<%- if display_breadcrumbs && params[:action] != 'home' %>
   <ul class='breadcrumb'>
     <%= render_breadcrumbs :separator => '&nbsp;&nbsp;/&nbsp;&nbsp;' %>
   </ul>

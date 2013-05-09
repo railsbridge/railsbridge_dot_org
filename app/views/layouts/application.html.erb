@@ -12,21 +12,19 @@
 
 <div class="container">
   <%= render 'layouts/breadcrumbs' %>
-  <div class="row">
-    <%- if @suppress_sidenav %>
-      <%= yield %>
-    <%- else %>
-      <div class="span3">
-        <%= render 'layouts/sidenav' %>
+  <%- if @suppress_sidenav %>
+    <%= yield %>
+  <%- else %>
+    <div class="span3">
+      <%= render 'layouts/sidenav' %>
+    </div>
+    <div class="span9">
+      <div class='content'>
+        <%= yield %>
       </div>
-      <div class="span9">
-        <div class='content'>
-          <%= yield %>
-        </div>
-      </div>
-    <%- end %>
-  </div>
-  <p class="row work-in-progress">
+    </div>
+  <%- end %>
+  <p class="work-in-progress">
     This site is a work in progress! Send UX feedback to lillie dot chilen at gmail dot com
   </p>
 </div>
