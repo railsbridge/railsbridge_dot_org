@@ -3,9 +3,35 @@
     <div class="container">
       <%= link_to 'RailsBridge Logo', root_path, class: 'image-placeholder logo' %>
       <ul class="nav">
-        <li><%= link_to "Learn", learning_path %></li>
-        <li><%= link_to "Volunteer", helping_path %></li>
-        <li><%= link_to "About", about_path %></li>
+        <li class="dropdown">
+          <%= link_to "Learning", learning_path %>
+          <ul class="dropdown-menu">
+              <li><%= link_to "Before Attending", learning_path %></li>
+              <li><%= link_to "FAQ", learning_faq_path %></li>
+              <li><%= link_to "Keep Learning", learning_resources_path %></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+        <%= link_to "Helping", helping_path %>
+        <ul class="dropdown-menu">
+            <li><%= link_to "Overview", helping_path %></li>
+            <li><%= link_to "Teach or TA", teaching_path %></li>
+            <li><%= link_to "Organizing", organizing_path %></li>
+            <li><%= link_to "Hosting & Sponsoring", hosting_path %></li>
+        </ul>
+        </li>
+        <li class="dropdown">
+          <%= link_to "About", about_path %>
+          <ul class="dropdown-menu">
+            <li><%= link_to "Overview", about_path %>
+            <li><%= link_to "Chapters", about_chapters_path %></li>
+            <li><%= link_to "Team", about_team_path %></li>
+            <li><%= link_to "Sponsors ", about_sponsors_path %></li>
+            <li><%= link_to "Past Events", about_past_path %></li>
+            <li><%= link_to "Projects", projects_path %></li>
+          </ul>
+        </li>
+
         <li><a href="http://workshops.railsbridge.org/blog">Blog</a></li>
         <li class='left-border'><a href="http://docs.railsbridge.org">Curriculum &amp; Installfest</a></li>
       </ul>

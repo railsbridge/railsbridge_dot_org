@@ -1,5 +1,10 @@
 RailsbridgeSite2013::Application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   root to: 'static_pages#home'
+
+  ActiveAdmin.routes(self)
+
 
   match '/about', to: 'static_pages#about'
   match '/learning', to: 'static_pages#learning'
@@ -14,7 +19,7 @@ RailsbridgeSite2013::Application.routes.draw do
   match '/about_sponsors', to: 'static_pages#about_sponsors'
   match '/helping', to: 'static_pages#helping'
   match '/interest_form', to: 'static_pages#interest_form'
-  match '/faq', to: 'static_pages#faq'
+  match '/learning_faq', to: 'static_pages#learning_faq'
   match '/events', to: 'static_pages#events'
 
 
@@ -67,7 +72,6 @@ RailsbridgeSite2013::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'static_pages#home'
 
   # See how all your routes lay out with "rake routes"
 
