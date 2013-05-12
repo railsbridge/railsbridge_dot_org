@@ -1,9 +1,9 @@
 RailsbridgeSite2013::Application.routes.draw do
-  devise_for :admin_users, ActiveAdmin::Devise.config
+  # devise_for :admin_users, ActiveAdmin::Devise.config
 
   root to: 'static_pages#home'
 
-  ActiveAdmin.routes(self)
+  # ActiveAdmin.routes(self)
 
 
   match '/about', to: 'static_pages#about'
