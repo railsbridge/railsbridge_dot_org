@@ -1,4 +1,5 @@
 class StaticPagesController < ApplicationController
+  @suppress_sidenav = false
 
   def home
     @suppress_sidenav = true
@@ -40,28 +41,28 @@ class StaticPagesController < ApplicationController
     add_breadcrumb 'Learning Resources', learning_resources_path
   end
 
-  def about_chapters
+  def chapters
     add_breadcrumb 'Home', root_path
     add_breadcrumb 'About', about_path
-    add_breadcrumb 'Chapters', about_chapters_path
+    add_breadcrumb 'Chapters', chapters_path
   end
 
-  def about_past
+  def past
     add_breadcrumb 'Home', root_path
     add_breadcrumb 'About', about_path
-    add_breadcrumb 'Past Workshops', about_past_path
+    add_breadcrumb 'Past Workshops', past_path
   end
 
-  def about_team
+  def team
     add_breadcrumb 'Home', root_path
     add_breadcrumb 'About', about_path
-    add_breadcrumb 'Team', about_team_path
+    add_breadcrumb 'Team', team_path
   end
 
-  def about_sponsors
+  def sponsors
     add_breadcrumb 'Home', root_path
     add_breadcrumb 'About', about_path
-    add_breadcrumb 'Sponsors', about_sponsors_path
+    add_breadcrumb 'Sponsors', sponsors_path
   end
 
   def helping
@@ -71,7 +72,7 @@ class StaticPagesController < ApplicationController
 
   def faq
     add_breadcrumb 'Home', root_path
-    add_breadcrumb 'FAQ', faq_path
+    add_breadcrumb 'FAQ', learning_faq_path
   end
 
   def faq

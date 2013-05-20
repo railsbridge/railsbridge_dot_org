@@ -1,81 +1,25 @@
 RailsbridgeSite2013::Application.routes.draw do
   # devise_for :admin_users, ActiveAdmin::Devise.config
+  # ActiveAdmin.routes(self)
 
   root to: 'static_pages#home'
 
-  # ActiveAdmin.routes(self)
+  match '/about',                       to: 'static_pages#about',              as: 'about'
+  match '/about/team',                  to: 'static_pages#team',               as: 'team'
+  match '/about/sponsors',              to: 'static_pages#sponsors',           as: 'sponsors'
+  match '/about/chapters',              to: 'static_pages#chapters',           as: 'chapters'
+  match '/about/past_events',           to: 'static_pages#past_events',        as: 'past_events'
+  match '/about/projects',              to: 'static_pages#projects',           as: 'projects'
 
+  match '/helping',                     to: 'static_pages#helping',            as: 'helping'
+  match '/helping/teaching',            to: 'static_pages#teaching',           as: 'teaching'
+  match '/helping/organizing',          to: 'static_pages#organizing',         as: 'organizing'
+  match '/helping/hosting',             to: 'static_pages#hosting',            as: 'hosting'
+  match '/helping/interest_form',       to: 'static_pages#interest_form',      as: 'interest_form'
 
-  match '/about', to: 'static_pages#about'
-  match '/learning', to: 'static_pages#learning'
-  match '/teaching', to: 'static_pages#teaching'
-  match '/organizing', to: 'static_pages#organizing'
-  match '/hosting', to: 'static_pages#hosting'
-  match '/projects', to: 'static_pages#projects'
-  match '/learning_resources', to: 'static_pages#learning_resources'
-  match '/about_chapters', to: 'static_pages#about_chapters'
-  match '/about_past', to: 'static_pages#about_past'
-  match '/about_team', to: 'static_pages#about_team'
-  match '/about_sponsors', to: 'static_pages#about_sponsors'
-  match '/helping', to: 'static_pages#helping'
-  match '/interest_form', to: 'static_pages#interest_form'
-  match '/learning_faq', to: 'static_pages#learning_faq'
-  match '/events', to: 'static_pages#events'
+  match '/learning',                    to: 'static_pages#learning',           as: 'learning'
+  match '/learning/learning_resources', to: 'static_pages#learning_resources', as: 'learning_resources'
+  match '/learning/learning_faq',       to: 'static_pages#learning_faq',       as: 'learning_faq'
+  match '/learning/events',             to: 'static_pages#events',             as: 'events'
 
-
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
-
-  # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
-  # Keep in mind you can assign values other than :controller and :action
-
-  # Sample of named route:
-  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
-  # This route can be invoked with purchase_url(:id => product.id)
-
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
-  # Sample resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
-
-  # Sample resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
-  # Sample resource route with more complex sub-resources
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', :on => :collection
-  #     end
-  #   end
-
-  # Sample resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
-
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-
-  # See how all your routes lay out with "rake routes"
-
-  # This is a legacy wild controller route that's not recommended for RESTful applications.
-  # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
 end
