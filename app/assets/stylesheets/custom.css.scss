@@ -74,7 +74,9 @@ ul.triptych li { float: left; width: 210px; margin-left: 20px; padding: 10px 0; 
 ul.triptych li:first-child { margin-left: 0; }
 ul.triptych li:last-child { width: 230px; }
 ul.triptych .icon-4x { margin-bottom: 10px; }
-ul.triptych li:last-child .icon-4x { color: red; }
+
+.icon-heart { color: red; }
+.icon-money { color: green; }
 
 .clear { clear: both; }
 
