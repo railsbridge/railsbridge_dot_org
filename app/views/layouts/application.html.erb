@@ -9,20 +9,10 @@
 <body>
 
 <%= render 'layouts/header' %>
+<%# render 'layouts/topnav' %>
 
 <div class="container">
-  <%- if @suppress_sidenav %>
-    <%= yield %>
-  <%- else %>
-    <div class="span3">
-      <%= render 'layouts/sidenav' %>
-    </div>
-    <div class="span9">
-      <div class='content'>
-        <%= yield %>
-      </div>
-    </div>
-  <%- end %>
+  <%= yield %>
 </div>
 
 <%= render 'layouts/footer' %>
