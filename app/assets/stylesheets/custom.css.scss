@@ -6,6 +6,17 @@ $grayLight: #e9e9e9;
 $grayDark: #767676;
 @mixin box_sizing { -moz-box-sizing: border-box;  -webkit-box-sizing: border-box;  box-sizing: border-box; }
 
+.navbar-static-top  {
+  border: none; box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -moz-transition: none; -webkit-transition: none; }
+
+.header { margin-bottom: 0px; }
+.sub_nav { background: rgb(249, 249, 249); border-bottom: 1px solid #e3e3e3; }
+.sub_nav ul { list-style: none; margin-left: 30px; }
+.sub_nav ul li { float: left; font-weight: bold; padding: 10px 20px; }
+.sub_nav ul li.active a { color: #000; cursor: default; }
+
+
+
 /* universal */
 html      { overflow-y: scroll; }
 section   { overflow: auto; }

@@ -1,19 +1,36 @@
-<ul class="nav nav-tabs nav-stacked sidenav">
-  <li><%= link_to 'Upcoming Workshops', events_path %></li>
-  <li><%= link_to 'Before Attending', learning_path %></li>
-  <li><%= link_to 'FAQ', learning_faq_path %></li>
-  <li><%= link_to 'Keep Learning', learning_resources_path %></li>
-</ul>
+<div class="sub_nav">
+  <div class="container">
+    <ul class="topnav">
+      <%= nav_link "Overview", learning_path %>
+      <%= nav_link 'Upcoming Workshops', events_path %>
+      <%= nav_link 'Before Attending', learning_path %>
+      <%= nav_link 'FAQ', learning_faq_path %>
+      <%= nav_link 'Keep Learning', learning_resources_path %>
+    </ul>
+  </div>
+</div>
 
-<ul class="nav nav-tabs nav-stacked sidenav">
-  <li class='active'><%= link_to 'Upcoming Workshops', root_path %></li>
-  <li><%= link_to 'Chapters', root_path %></li>
-  <li><%= link_to 'Before Attending', root_path %></li>
-</ul>
+<div class="sub_nav">
+  <div class="container">
+    <ul class="topnav">
+      <%= nav_link "Overview", about_path %>
+      <%= nav_link "Team", team_path %>
+      <%= nav_link "Sponsors ", sponsors_path %>
+      <%= nav_link "Chapters", chapters_path %>
+      <%= nav_link "Past Events", past_events_path %>
+      <%= nav_link "Projects", projects_path %>
+    </ul>
+  </div>
+</div>
 
-<ul class="nav nav-tabs nav-stacked sidenav">
-  <li class='active'><%= link_to 'Overview', root_path %></li>
-  <li><%= link_to 'Teach or TA', root_path %></li>
-  <li><%= link_to 'Sponsorship', root_path %></li>
-  <li><%= link_to 'Host an Event', root_path %></li>
-</ul>
+<div class="sub_nav">
+  <div class="container">
+    <ul class="topnav">
+      <%= nav_link 'Overview', helping_path %>
+      <%= nav_link 'Teach or TA', teaching_path %>
+      <%= nav_link 'Organize an Event', organizing_path %>
+      <%= nav_link 'Host an Event', hosting_path %>
+      <%= nav_link 'Interest Form', interest_form_path %>
+    </ul>
+  </div>
+</div>
