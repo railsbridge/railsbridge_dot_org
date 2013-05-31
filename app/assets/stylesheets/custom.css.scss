@@ -1,4 +1,8 @@
-@import "twitter/bootstrap";
+/* Flattening */
+.header, .navbar, .navbar-static-top  {
+  border: none; box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; 
+  -moz-transition: none; -webkit-transition: none;padding: 0; margin: 0;
+}
 
 /* mixins, variables, etc. */
 $grayMediumLight: #eaeaea;
@@ -6,14 +10,32 @@ $grayLight: #e9e9e9;
 $grayDark: #767676;
 @mixin box_sizing { -moz-box-sizing: border-box;  -webkit-box-sizing: border-box;  box-sizing: border-box; }
 
-.navbar-static-top  {
-  border: none; box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -moz-transition: none; -webkit-transition: none; }
+/* colors */
+$red: #DB2225;
+$orange: #EF731F;
+$purple: #6C266F;
+$blue: #2493B8;
+$green: #639239;
+$black: #333333;
 
-.header { margin-bottom: 0px; }
-.sub_nav { background: rgb(249, 249, 249); border-bottom: 1px solid #e3e3e3; }
-.sub_nav ul { list-style: none; margin-left: 30px; }
-.sub_nav ul li { float: left; font-weight: bold; padding: 10px 20px; }
-.sub_nav ul li.active a { color: #000; cursor: default; }
+$greenMint: #E0F8E0;
+
+
+
+/*
+Nav Bar | 60px tall | navbar_texture.gif / #6C266F Text | Aleo Regular | 14px tall | #FFFFFF
+Breadcrumbs | Aleo Light | 14px tall, 150% line-height | #333333 $red
+Home / Learn / Upcoming Workshops / Indianapolis Railsbridge Workshop H1 | Aleo Light | 42px tall, 150% line-height | #DB2225 or #6C266F
+This is a RailsBridge headline
+H2 | Aleo Regular | 26px tall, 120% line-height | #333333 Making tech better since 2009!
+Body Text | Aleo Regular | 15px tall, 150% line-height | #333333
+That was the story I got from him, bit by bit. He grew calmer telling me and trying to make me see the things he had seen. He had eaten no food since midday, he told me early in his narrative, and I found some mutton and bread in the pantry and brought it into the room. We lit no lamp for fear of attracting the Martians
+A | Italic | #6C266F
+This is an example of a text link
+This is large text
+on a colored background
+Gigantic Cliche Marketing Text
+| Aleo Light | 38px tall, 150% line-height | #FFFFFF */
 
 
 
@@ -23,52 +45,76 @@ section   { overflow: auto; }
 textarea  { resize: vertical; }
 .center   { text-align: center; }
 a:hover   { text-decoration: none; }
+
+/* typography */
+p, ol, ul, blockquote, pre, code { font-size: 1em; line-height: 1.5em; margin: 0; padding: 0; margin-bottom: 1.5em;
+                                   font-family: Gibson-Regular, Arial; }
+p                                { font-size: 1.1em; line-height: 1.36em; }
+h1, h2, h3, h4, h5, h6           { font-weight: normal; margin: 0; padding: 0; }
+h1                               { font-size: 2em; line-height: 0.75em; margin-bottom: 0.75em; }
+h1                               { font-size: 1.75em; line-height: 0.86em; margin-bottom: 0.86em; }
+h2                               { font-size: 1.50em; line-height: 1.0em; margin-bottom: 1.0em; }
+h3                               { font-size: 1.25em; line-height: 1.2em; margin-bottom: 1.2em; }
+h4                               { font-size: 1.0em; line-height: 1.5em; margin-bottom: 1.5em; }
+h5                               { font-size: .75em; line-height: 2em; margin-bottom: 2em; }
+
+/* Page Elements */
+/* Header -> Top Nav -> Content -> Footer */
+
+/* .header navbar navbar-static-top -> container -> a.image-placeholder logo - ul.nav -> li.main_nav selected -> a - span */
+.header ul.nav         { float: right; margin: 5px 0; }
+.header ul.nav li      { line-height: 50px; font-weight: bold; position: relative; }
+.header a.logo         { float: left; margin: 10px 0px;  }
+.header ul.nav a       { display: block; }
+.header ul.nav li.selected a  { font-weight: bold !important; color: $black !important; }
+
+/* header top nav arrow */
+.header_nav span { width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; 
+                 border-bottom: 10px solid $greenMint; position: absolute; bottom: -5px; left: 20px; display: none; }
+.header_nav .alive span    { display: block; }
+.header_nav .alive span    { border-bottom: 10px solid $greenMint; opacity: .6; }
+.header_nav .selected span { display: block; }
+.header_nav .selected span { border-bottom: 10px solid $greenMint; }
+.header_nav .selected.alive span { opacity: 1; }
+
+/* .top_nav -> .container -> ul.topnav #learning_sub_nav #about_sub_nav #helping_sub_nav -> li.selected a */
+
+.top_nav                   { background: $greenMint; height: 40px; text-align: right; }
+.top_nav .top_nav_links    { display: none; float: right; margin-right: 35px; }
+.top_nav .selected         { display: block; }
+.top_nav .alive            { display: block; }
+.top_nav ul                { list-style: none; margin-left: 30px;  }
+.top_nav ul li             { float:left; font-weight: bold; padding: 10px 20px; }
+.top_nav ul li.selected a  { color: $black; cursor: default; }
+.top_nav_links             { margin-top: -10px; padding-top: 10px; }
+
+/* various and sundry */
+.left-border       { border-left: 1px solid $grayMediumLight; margin-left: 10px; padding-left: 10px; }
 .image-placeholder { display: block; width: 170px; height: 50px; line-height: 50px; text-align: center; 
                      background: white; border: 2px dotted $grayMediumLight; }
+.icon-heart        { color: red; }
+.icon-money        { color: green; }
+.clear             { clear: both; }
 
-/* typography * /
-p, ol, ul, blockquote, pre, code { font-size: 1em; line-height: 1.5em; margin: 0; padding: 0; margin-bottom: 1.5em; }
-p                                { font-size: 1.1em; line-height: 1.36em; }
-h1, h2, h3, h4, h5, h6           { font-weight: bold; margin: 0; padding: 0; }
-h1                               { font-size: 2em; line-height: 0.75em; margin-bottom: 0.75em; }
-h2                               { font-size: 1.75em; line-height: 0.86em; margin-bottom: 0.86em; }
-h3                               { font-size: 1.50em; line-height: 1.0em; margin-bottom: 1.0em; }
-h4                               { font-size: 1.25em; line-height: 1.2em; margin-bottom: 1.2em; }
-h5                               { font-size: 1.0em; line-height: 1.5em; margin-bottom: 1.5em; }
-h6                               { font-size: .75em; line-height: 2em; margin-bottom: 2em; }
+/* main content block */
+.content { margin-top: 30px; }
+.content h1 { border-bottom: 1px solid $grayLight; padding-bottom: 15px; margin-bottom: 20px; }
 
+/* footer */
+.footer    { background: $grayDark; color: #fff; padding: 20px 0 30px 0; margin-top: 30px; }
+.footer a { color: white; line-height: 40px; }
+.footer h3 { font-weight: normal; margin: 0px; }
+.footer p { margin-top: 0px; }
+.footer a.font-icon { font-size: 2.5em; }
+.footer ul.footer-links    { list-style: none; }
+.footer ul.footer-links li { float: left; padding-right: 10px; }
+.footer ul.footer-links li.left-border { padding-left: 20px; margin-left: 10px; }
 
-/* nav bar */
-ul.nav li.dropdown:hover ul.dropdown-menu { display: block; }
-a.menu:after, .dropdown-toggle:after      { content: none; }
-.navbar .dropdown-menu                    { margin-top: 0px; }
+.work-in-progress { font-style: italic; color: rgb(19, 223, 231); margin-top: 20px; }
 
-/* Sponsor images */
-.logos img         { padding: 20px; }
-.big-logos img     { height: 125px; }
-.smaller-logos img { height: 60px; }
-.medium-logos img  { height: 80px; }
+/* Individual Page Styles */
 
-
-/* Version Two Styles */
-
-a.logo { float: left; margin: 10px 0px 10px 35px;  }
-
-.header ul.nav    { height: 70px; float: right; padding-right: 35px; }
-.header ul.nav li { line-height: 50px; font-weight: bold; }
-
-/* breadcrumbs */
-ul.breadcrumb   { background: none; margin: 0 0 20px 0; padding: 0; }
-
-/* side nav */
-ul.sidenav            { background: $grayLight; }
-ul.sidenav li.active  { background: white; }
-ul.sidenav li a:hover { background: white; }
-
-
-.left-border { border-left: 1px solid $grayMediumLight; }
-
-/* homepage */
+/* Home */
 .home { width:100%; min-height: 446px; background: transparent url('homepage-background.jpg') left top; color: #fff; padding-bottom: 20px; }
 .home { background: #66CD00; }
 .home-header { width: 515px; margin:30px 0px 60px 200px; padding-top: 30px; }
@@ -76,8 +122,14 @@ ul.sidenav li a:hover { background: white; }
 .home h3 { margin: 0 0 0 25px; font-style: italic; }
 .home h4 { margin: 0 0 0 25px; font-style: italic; }
 
-/* content */
-.content h1 { border-bottom: 1px solid $grayLight; padding-bottom: 15px; margin-bottom: 20px; }
+/* Sponsors */
+.logos img         { padding: 20px; }
+.big-logos img     { height: 125px; }
+.smaller-logos img { height: 60px; }
+.medium-logos img  { height: 80px; }
+
+
+/* Sandbox for messing around with sidebars and enhanced content */
 
 /* triptych situation */
 ul.triptych { position: relative; list-style-type: none; position: relative; margin-left: -10px; ;}
@@ -86,10 +138,6 @@ ul.triptych li:first-child { margin-left: 0; }
 ul.triptych li:last-child { width: 230px; }
 ul.triptych .icon-4x { margin-bottom: 10px; }
 
-.icon-heart { color: red; }
-.icon-money { color: green; }
-
-.clear { clear: both; }
 
 /* events listing */
 .events {  }
@@ -110,15 +158,36 @@ ul.triptych .icon-4x { margin-bottom: 10px; }
 .home_twitter { padding-right: 20px; }
 .home_twitter h3 { margin-left: 0px; margin-bottom: 13px; }
 
-/* footer */
-.footer    { background: $grayDark; color: #fff; padding: 20px 0 30px 0; }
-.footer a { color: white; line-height: 40px; }
-.footer h3 { font-weight: normal; margin: 0px; }
-.footer p { margin-top: 0px; }
-.footer a.font-icon { font-size: 2.5em; }
-.footer ul.footer-links    { list-style: none; }
-.footer ul.footer-links li { float: left; padding-right: 10px; }
-.footer ul.footer-links li.left-border { padding-left: 20px; margin-left: 10px; }
+.chapters-list h2 {
+  border-bottom: 1px solid pink;
+}
+.chapters-list .list-item {
+  width: 240px;
+  height: 100px;
+  float: left;
+  padding: 20px;
+  margin: 0 10px 10px 0;
+
+}
+
+.list-item {
+  border: 1px solid #dfdfdf;
+  border-top-width: 1px;
+  margin-top: 5px;
+}
 
 
-.work-in-progress { font-style: italic; color: rgb(19, 223, 231); margin-top: 20px; }
+.helping { background: #E0F8E0; }
+
+.helping ul.triptych li { border: 1px solid blue; border: none; }
+
+.helping .rb-section { text-align: center; padding: 10px;  border-left: 1px solid pink; }
+.helping .rb-section:first { border-left: none; }
+
+.helping h3 { text-align: center; }
+.helping .icon-4x { border:1px solid blue; border: none; }
+.helping p { text-align: left; }
+
+.teaching { background: #E0F8E0; }
+
+
