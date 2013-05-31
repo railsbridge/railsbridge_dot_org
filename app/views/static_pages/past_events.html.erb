@@ -1,6 +1,10 @@
 <% provide(:title, page_title(['About','Past Events'])) %>
 
-<h1>There have been so many workshops!</h1>
+<div class="container">
+  <h1>There have been so many workshops!</h1>
+
+  <div class="row">
+      <div class="span8">
 <p><em>Let's figure out a better way to display this info!</em></p>
   <ol>
 <li><a href="http://www.sfruby.info/events/10377288/">June 12-13 2009</a>: South San Francisco at OrangeLabs &#8211; organized by Sarah Mei &#038; Sarah Allen</li>
@@ -120,3 +124,43 @@
 </ul>
 </li>
 </ul>
+
+  </div>
+  <div class="span4">
+    <div class='feature-list cell12 pad0'>
+      <div class='feature clearfix pad2 feature-1'>
+        <div class='illustration'><div class="icon-4x icon-globe"></div></div>
+        <h4>Finding a workshop to attend</h4>
+        <small>
+        <p>There are RailsBridge workshops in over a dozen cities. Our <%= link_to "Chapters page", about_chapters_path %> can help you find a worskhop in your area. And if there isn't one planned, we can <%= link_to "help you set one up", organizing_path %>!</p>
+        </small>
+      </div>
+      <!-- 
+      <div class='feature clearfix pad2 feature-2'>
+        <div class='illustration'><div class="icon-4x icon-map-marker"></div></div>
+        <%= render 'mailing-list' %>
+        </div>-->
+      </div>
+
+
+
+
+    <div class='feature-list cell12 pad0'>
+      <div class='feature clearfix pad2 feature-1'>
+        <div class='illustration'><div class="icon-4x icon-globe"></div></div>
+        <h4>Finding a workshop to attend</h4>
+        <small>
+        <p>There are RailsBridge workshops in over a dozen cities. Our <%= link_to "Chapters page", about_chapters_path %> can help you find a worskhop in your area. And if there isn't one planned, we can <%= link_to "help you set one up", organizing_path %>!</p>
+        </small>
+      </div>
+      <!-- 
+      <div class='feature clearfix pad2 feature-2'>
+        <div class='illustration'><div class="icon-4x icon-map-marker"></div></div>
+        <%= render 'mailing-list' %>
+        </div>-->
+      </div>
+  </div>
+  </div>
+</div>
+
+</div>

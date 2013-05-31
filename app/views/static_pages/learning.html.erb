@@ -1,10 +1,31 @@
+<% provide(:title, page_title(['Learning'])) %>
+<div class="container">
 <h1>Want to learn something? Excellent!</h1>
 
-<h2>Finding a workshop to attend</h2>
-<p>  There are RailsBridge workshops in over a dozen cities. Our <%= link_to "Chapters page", about_chapters_path %> can help you find a worskhop in your area. And if there isn't one planned, we can <%= link_to "help you set one up", organizing_path %>!</p>
+<div class="row">
+  <div class="span8">
+    <h2>Before the workshop</h2>
+    <p>Our evening Installfest will match you up with a volunteer who will help make sure your computer is ready for you to build a Rails application. Make the most of Installfest by working through the <%= link_to "Installfest instructions", "http://installfest.railsbridge.org/installfest/installfest", target: "_blank" %> in advance. It's great if you can get your computer ready on your own; you'll have more time to get acquainted with students and coaches at Installfest. If you run into difficulties getting your computer ready at home, bring the problems to Installfest and we'll help you get everything working.</p>
 
-<h2>Before the workshop</h2>
-<p>Our evening Installfest will match you up with a volunteer who will help make sure your computer is ready for you to build a Rails application. Make the most of Installfest by working through the <a href="http://installfest.railsbridge.org/installfest/installfest" target="_blank">Installfest instructions</a> in advance. It's great if you can get your computer ready on your own; you'll have more time to get acquainted with students and coaches at Installfest. If you run into difficulties getting your computer ready at home, bring the problems to Installfest and we'll help you get everything working.</p>
+    
+  </div>
+  <div class="span4">
+    <div class='feature-list cell12 pad0'>
+      <div class='feature clearfix pad2 feature-1'>
+        <div class='illustration'><div class="icon-4x icon-book"></div></div>
+        <h4>Finding a workshop to attend</h4>
+        <small>
+        <p>There are RailsBridge workshops in over a dozen cities. Our <%= link_to "Chapters page", about_chapters_path %> can help you find a worskhop in your area. And if there isn't one planned, we can <%= link_to "help you set one up", organizing_path %>!</p>
+        </small>
+      </div>
+      <!-- 
+      <div class='feature clearfix pad2 feature-2'>
+        <div class='illustration'><div class="icon-4x icon-map-marker"></div></div>
+        <%= render 'mailing-list' %>
+        </div>-->
+      </div>
+  </div>
+</div>
 
 <h2>Get the most out of your workshop</h2>
 <p>We pack a lot of information into the 1.5 days of a RailsBridge workshop. Here are some things you can do to get the most out of your experience.</p>
@@ -28,17 +49,43 @@
 
 <div class='clear'></div>
 
+
 <h2>Have some free time?</h2>
 <p>If you do have some spare moments before the workshops, we recommend any of these things as a fun way to prep:</p>
 
+<ul class='triptych'>
+  <li>
+    <div class="icon-4x icon-comments"></div>
+    <p><strong>Get Cosy with the Command Line</strong></p>
+    <p>You'll need to run programs from your computer's command line to develop a Rails application. If you haven't used the computer's terminal application (PowerShell on Windows), take time to practice so you'll be ready. The <%= link_to "Command Line Crash Course", "http://cli.learncodethehardway.org/book/", target: "_blank" %> introduces the basics with a short self-study tutorial. For a quick video introduction, see <%= link_to "Command Line Basics", "http://schneems.com/post/26569696837/command-line-basics", target: "_blank" %> from Richard Schneeman.</p>
+  </li>
+  <li>
+    <div class="icon-4x icon-question-sign"></div>
+    <p><strong>Get a Taste of HTML and CSS</strong></p>
+    <p>You don't need to know HTML and CSS to attend a RailsBridge workshop but familiarity will help you progress faster. Any book or online introduction to HTML and CSS will give you the background you need to get the most from a RailsBridge workshop. RailsBridge offers occasional workshops on HTML and CSS for beginners if you want to learn in a supportive group environment.</p>
+  </li>
+  <li>
+    <div class="icon-4x icon-heart"></div>
+    <p><strong>Sneak a Peek at the Curriculum</strong></p>
+    <p>The <%= link_to "RailsBridge Curriculum", "http://curriculum.railsbridge.org/docs/", target: "_blank" %> is online so you can get an advance look at what you'll be learning. Most classes follow the <%= link_to "RailsBridge Introductory Curriculum", "http://curriculum.railsbridge.org/curriculum/curriculum", target: "_blank" %> (our "Suggestotron" project) but some workshops cover the Ruby language, HTML and CSS for beginners, or Intermediate Rails.</p>
+  </li>
+  <li>
+    <div class="icon-4x icon-heart"></div>
+    <p><strong>Advance Reading</strong></p>
+    <p>If you have time, you can prepare with the in-depth primer, <%= link_to "What is Ruby on Rails?", "http://railsapps.github.io/what-is-ruby-rails.html", target: "_blank" %> from the RailsApps project. The article introduces basic concepts, explains why Ruby on Rails is popular, and provides background so you’ll get the most from a RailsBridge workshop.</p>
+  </li>
+</ul>
+
+
 <h5>Get Cosy with the Command Line</h5>
-<p>You'll need to run programs from your computer's command line to develop a Rails application. If you haven't used the computer's terminal application (PowerShell on Windows), take time to practice so you'll be ready. The <a href="http://cli.learncodethehardway.org/book/" target="_blank">Command Line Crash Course</a> introduces the basics with a short self-study tutorial. For a quick video introduction, see <a href="http://schneems.com/post/26569696837/command-line-basics" target="_blank">Command Line Basics</a> from Richard Schneeman.</p>
+<p>You'll need to run programs from your computer's command line to develop a Rails application. If you haven't used the computer's terminal application (PowerShell on Windows), take time to practice so you'll be ready. The <%= link_to "Command Line Crash Course", "http://cli.learncodethehardway.org/book/", target: "_blank" %> introduces the basics with a short self-study tutorial. For a quick video introduction, see <%= link_to "Command Line Basics", "http://schneems.com/post/26569696837/command-line-basics", target: "_blank" %> from Richard Schneeman.</p>
 
 <h5>Get a Taste of HTML and CSS</h5>
 <p>You don't need to know HTML and CSS to attend a RailsBridge workshop but familiarity will help you progress faster. Any book or online introduction to HTML and CSS will give you the background you need to get the most from a RailsBridge workshop. RailsBridge offers occasional workshops on HTML and CSS for beginners if you want to learn in a supportive group environment.</p>
 
 <h5>Sneak a Peek at the Curriculum</h5>
-<p>The <a href="http://curriculum.railsbridge.org/docs/" target="_blank">RailsBridge Curriculum</a> is online so you can get an advance look at what you'll be learning. Most classes follow the <a href="http://curriculum.railsbridge.org/curriculum/curriculum" target="_blank">RailsBridge Introductory Curriculum</a> (our "Suggestotron" project) but some workshops cover the Ruby language, HTML and CSS for beginners, or Intermediate Rails.</p>
+<p>The <%= link_to "RailsBridge Curriculum", "http://curriculum.railsbridge.org/docs/", target: "_blank" %> is online so you can get an advance look at what you'll be learning. Most classes follow the <%= link_to "RailsBridge Introductory Curriculum", "http://curriculum.railsbridge.org/curriculum/curriculum", target: "_blank" %> (our "Suggestotron" project) but some workshops cover the Ruby language, HTML and CSS for beginners, or Intermediate Rails.</p>
 
 <h5>Advance Reading</h5>
-<p>If you have time, you can prepare with the in-depth primer, <a href="http://railsapps.github.io/what-is-ruby-rails.html" target="_blank">"What is Ruby on Rails?"</a> from the RailsApps project. The article introduces basic concepts, explains why Ruby on Rails is popular, and provides background so you’ll get the most from a RailsBridge workshop.</p>
+<p>If you have time, you can prepare with the in-depth primer, <%= link_to "What is Ruby on Rails?", "http://railsapps.github.io/what-is-ruby-rails.html", target: "_blank" %> from the RailsApps project. The article introduces basic concepts, explains why Ruby on Rails is popular, and provides background so you’ll get the most from a RailsBridge workshop.</p>
+</div>

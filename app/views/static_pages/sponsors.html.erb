@@ -1,77 +1,75 @@
 <% provide(:title, page_title(['About','Sponsors'])) %>
 
-<h1>We are so grateful!</h1>
-<p>RailsBridge has thrived because of its volunteers and its sponsors. These companies have provided us with space, wifi, projectors, and bought us so many Friday pizzas and Saturday lunches. We are so thankful that they are committed to helping tech become more equitable, welcoming, and diverse.</p>
+<div class="container">
+  <h1>We are so grateful!</h1>
+  <p>RailsBridge has thrived because of its volunteers and its sponsors. These companies have provided us with space, wifi, projectors, and bought us so many Friday pizzas and Saturday lunches. We are so thankful that they are committed to helping tech become more equitable, welcoming, and diverse.</p>
 
-<h2>Program Sponsor</h2>
-<a href="https://www.heroku.com/"><img src="assets/sponsor-logos/heroku.png"></a>
-<p>Heroku has encouraged RailsBridge to expand geographically, and with their encouragement and support, there have been workshops in 30 different cities around the world.</p>
+  <h2>Program Sponsor</h2>
+  <%= link_to image_tag("sponsor-logos/heroku.png"), "https://www.heroku.com/" %>
+  <p>Heroku has encouraged RailsBridge to expand geographically, and with their encouragement and support, there have been workshops in 30 different cities around the world.</p>
 
-<div class="logos big-logos">
-	<h2>Ongoing Workshop Sponsors</h2>
-	<p>These companies provide ongoing support by sponsoring workshops on a regular basis.</p>
-	<a href="http://pivotallabs.com/"><img src="assets/sponsor-logos/pivotal.jpg"></a>
-	<a href="http://carbonfive.com/"><img src="assets/sponsor-logos/carbonfive.png"></a>
-	<a href="https://www.engineyard.com/"><img src="assets/sponsor-logos/engineyard.png"></a>
+  <div class="logos big-logos">
+    <h2>Ongoing Workshop Sponsors</h2>
+    <p>These companies provide ongoing support by sponsoring workshops on a regular basis.</p>
+    <%= link_to image_tag("sponsor-logos/pivotal.jpg"), "http://pivotallabs.com/" %>
+    <%= link_to image_tag("sponsor-logos/carbonfive.png"), "http://carbonfive.com/" %>
+    <%= link_to image_tag("sponsor-logos/engineyard.png"), "https://www.engineyard.com/" %>
+  </div>
+
+  <div class="logos medium-logos">
+    <h2>Partner Organizations</h2>
+    <%= link_to image_tag("partner-org-logos/devchix.jpeg"), "http://www.devchix.com/" %>
+    <%= link_to image_tag("partner-org-logos/women2.jpeg"), "http://www.women2.com/" %>
+    <%= link_to image_tag("partner-org-logos/latino-startup-alliance.png"), "http://latinostartupalliance.org/" %>
+    <%= link_to image_tag("partner-org-logos/blackfounders.png"), "http://www.blackfounders.com/" %>
+    <%= link_to image_tag("partner-org-logos/sfruby.jpeg"), "http://www.sfruby.info/" %>
+  </div>
+
+  <div class="logos medium-logos">
+    <h2>Supporting Conferences</h2>
+    <%= link_to image_tag("conference-logos/ruby-on-ales.jpg"), "http://onales.com" %>
+    <%= link_to image_tag("conference-logos/rubyfuza.png"), "http://rubyfuza.org" %>
+    <%= link_to image_tag("conference-logos/madison-ruby.jpg"), "http://madisonruby.org" %>
+    <%= link_to image_tag("conference-logos/rocky-mountain-ruby.png"), "http://rockymtnruby.com" %>
+    <%= link_to image_tag("conference-logos/la-ruby.jpg"), "http://www.larubyconf.com" %>
+    <%= link_to image_tag("conference-logos/code4lib.png"), "http://code4lib.org/conference" %>
+    <%= link_to image_tag("conference-logos/aloha.jpg"), "http://www.alohaonrails.com" %>
+  </div>
+
+  <div class="logos smaller-logos">
+    <h2>Workshop Sponsors</h2>
+    <%= link_to image_tag("workshop-sponsor-logos/github.png"), "https://github.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/envylabs.jpeg"), "http://envylabs.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/modcloth.jpeg"), "http://www.modcloth.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/tapjoy.jpeg"), "https://www.tapjoy.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/verticalresponse.jpeg"), "http://www.verticalresponse.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/airbnb.jpeg"), "https://www.airbnb.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/bing.jpg"), "http://www.bing.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/nexTag.jpg"), "http://www.nextag.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/orange-labs.jpg"), "http://www.primezone.orange-labs.com/information.html?hl=en&info=orangelabs" %>
+    <%= link_to image_tag("workshop-sponsor-logos/outright.jpeg"), "http://outright.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/quickleft.jpg"), "http://quickleft.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/rackspace.jpeg"), "http://www.rackspace.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/scribd.jpeg"), "http://www.scribd.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/CfA.png"), "http://codeforamerica.org/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/coderow.jpg"), "http://www.coderow.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/galvanize.jpg"), "http://galvanize.it/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/gnip.jpeg"), "http://gnip.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/google-ventures.jpg"), "http://www.googleventures.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/groupon.jpeg"), "http://www.groupon.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/harvest.png"), "http://www.getharvest.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/ign-entertainment.png"), "http://corp.ign.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/hashrocket.jpg"), "http://hashrocket.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/kaporfoundation.jpg"), "http://mkf.org/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/mediacore.jpg"), "http://mediacore.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/microsoft.jpg"), "http://www.microsoft.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/neo.png"), "http://www.neo.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/square.jpg"), "https://squareup.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/thoughtworks.jpg"), "http://www.thoughtworks.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/twilio.png"), "http://www.twilio.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/twitter.png"), "https://twitter.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/wested.jpg"), "http://www.wested.org/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/workhappy.png"), "http://weworkhappy.com/" %>
+    <%= link_to image_tag("workshop-sponsor-logos/awesomeinc.jpeg"), "http://awesomeinc.org/" %>
+  </div>
 </div>
-
-<div class="logos medium-logos">
-	<h2>Partner Organizations</h2>
-	<a href="http://www.devchix.com/"><img src="assets/partner-org-logos/devchix.jpeg"></a>
-	<a href="http://www.women2.com/"><img src="assets/partner-org-logos/women2.jpeg"></a>
-	<a href="http://latinostartupalliance.org/"><img src="assets/partner-org-logos/latino-startup-alliance.png"></a>
-	<a href="http://www.blackfounders.com/"><img src="assets/partner-org-logos/blackfounders.png"></a>
-	<a href="http://www.sfruby.info/">SF Ruby Meetup</a>
-</div>
-
-<div class="logos medium-logos">
-	<h2>Supporting Conferences</h2>
-	<a href="http://onales.com"><img src="assets/conference-logos/ruby-on-ales.jpg"></a>
-	<a href="http://rubyfuza.org"><img src="assets/conference-logos/rubyfuza.png"></a>
-	<a href="http://madisonruby.org"><img src="assets/conference-logos/madison-ruby.jpg"></a>
-	<a href="http://rockymtnruby.com"><img src="assets/conference-logos/rocky-mountain-ruby.png"></a>
-	<a href="http://www.larubyconf.com"><img src="assets/conference-logos/la-ruby.jpg"></a>
-	<a href="http://code4lib.org/conference"><img src="assets/conference-logos/code4lib.png"></a>
-	<a href="http://www.alohaonrails.com"><img src="assets/conference-logos/aloha.jpg"></a>
-</div>
-
-
-
-<div class="logos smaller-logos">
-	<h2>Workshop Sponsors</h2>
-	<a href="https://github.com/"><img src="assets/workshop-sponsor-logos/github.png"></a>
-	<a href="http://envylabs.com/"><img src="assets/workshop-sponsor-logos/envylabs.jpeg"></a>
-	<a href="http://www.modcloth.com/"><img src="assets/workshop-sponsor-logos/modcloth.jpeg"></a>
-	<a href="https://www.tapjoy.com/"><img src="assets/workshop-sponsor-logos/tapjoy.jpeg"></a>
-	<a href="http://www.verticalresponse.com/"><img src="assets/workshop-sponsor-logos/verticalresponse.jpeg"></a>
-	<a href="https://www.airbnb.com/"><img src="assets/workshop-sponsor-logos/airbnb.jpeg"></a>
-	<a href="http://www.bing.com/"><img src="assets/workshop-sponsor-logos/bing.jpg"></a>
-	<a href="http://www.nextag.com/"><img src="assets/workshop-sponsor-logos/nexTag.jpg"></a>
-	<a href="http://www.primezone.orange-labs.com/information.html?hl=en&info=orangelabs"><img src="assets/workshop-sponsor-logos/orange-labs.jpg"></a>
-	<a href="http://outright.com/"><img src="assets/workshop-sponsor-logos/outright.jpeg"></a>
-	<a href="http://quickleft.com/"><img src="assets/workshop-sponsor-logos/quickleft.jpg"></a>
-	<a href="http://www.rackspace.com/"><img src="assets/workshop-sponsor-logos/rackspace.jpeg"></a>
-	<a href="http://www.scribd.com/"><img src="assets/workshop-sponsor-logos/scribd.jpeg"></a>
-	<a href="http://codeforamerica.org/"><img src="assets/workshop-sponsor-logos/CfA.png"></a>
-	<a href="http://www.coderow.com/"><img src="assets/workshop-sponsor-logos/coderow.jpg"></a>
-	<a href="http://galvanize.it/"><img src="assets/workshop-sponsor-logos/galvanize.jpg"></a>
-	<a href="http://gnip.com/"><img src="assets/workshop-sponsor-logos/gnip.jpeg"></a>
-	<a href="http://www.googleventures.com/"><img src="assets/workshop-sponsor-logos/google-ventures.jpg"></a>
-	<a href="http://www.groupon.com/"><img src="assets/workshop-sponsor-logos/groupon.jpeg"></a>
-	<a href="http://www.getharvest.com/"><img src="assets/workshop-sponsor-logos/harvest.png"></a>
-	<a href="http://corp.ign.com/"><img src="assets/workshop-sponsor-logos/ign-entertainment.png"></a>
-	<a href="http://hashrocket.com/"><img src="assets/workshop-sponsor-logos/hashrocket.jpg"></a>
-	<a href="http://mkf.org/"><img src="assets/workshop-sponsor-logos/kaporfoundation.jpg"></a>
-	<a href="http://mediacore.com/"><img src="assets/workshop-sponsor-logos/mediacore.jpg"></a>
-	<a href="http://www.microsoft.com/"><img src="assets/workshop-sponsor-logos/microsoft.jpg"></a>
-	<a href="http://www.neo.com/"><img src="assets/workshop-sponsor-logos/neo.png"></a>
-	<a href="https://squareup.com/"><img src="assets/workshop-sponsor-logos/square.jpg"></a>
-	<a href="http://www.thoughtworks.com/"><img src="assets/workshop-sponsor-logos/thoughtworks.jpg"></a>
-	<a href="http://www.twilio.com/"><img src="assets/workshop-sponsor-logos/twilio.png"></a>
-	<a href="https://twitter.com/"><img src="assets/workshop-sponsor-logos/twitter.png"></a>
-	<a href="http://www.wested.org/"><img src="assets/workshop-sponsor-logos/wested.jpg"></a>
-	<a href="http://weworkhappy.com/"><img src="assets/workshop-sponsor-logos/workhappy.png"></a>
-	<a href="http://awesomeinc.org/"><img src="assets/workshop-sponsor-logos/awesomeinc.jpeg"></a>
-
-</div>
-
