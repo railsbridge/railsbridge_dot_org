@@ -1,114 +1,12 @@
-<div class="navbar header">
-  <div class="navbar-static-top navbar-inner">
-    <div class="container">
-      <%= link_to 'RailsBridge Logo', root_path, class: 'image-placeholder logo' %>
-      <ul class="nav">
-        <li class="dropdown">
-          <%= link_to "Learning", learning_path %>
-          <ul class="dropdown-menu">
-              <li><%= link_to "Before Attending", learning_path %></li>
-              <li><%= link_to "FAQ", learning_faq_path %></li>
-              <li><%= link_to "Keep Learning", learning_resources_path %></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-        <%= link_to "Helping", helping_path %>
-        <ul class="dropdown-menu">
-            <li><%= link_to "Overview", helping_path %></li>
-            <li><%= link_to "Teach or TA", teaching_path %></li>
-            <li><%= link_to "Organizing", organizing_path %></li>
-            <li><%= link_to "Hosting & Sponsoring", hosting_path %></li>
-        </ul>
-        </li>
-        <li class="dropdown">
-          <%= link_to "About", about_path %>
-          <ul class="dropdown-menu">
-            <li><%= link_to "Overview", about_path %>
-            <li><%= link_to "Chapters", chapters_path %></li>
-            <li><%= link_to "Team", team_path %></li>
-            <li><%= link_to "Sponsors ", sponsors_path %></li>
-            <li><%= link_to "Past Events", past_events_path %></li>
-            <li><%= link_to "Projects", projects_path %></li>
-          </ul>
-        </li>
-
-        <li><a href="http://workshops.railsbridge.org/blog">Blog</a></li>
-        <li class='left-border'><a href="http://docs.railsbridge.org">Curriculum &amp; Installfest</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!--
-
-From the footer...
-
-<div class="container">
-  <nav>
-    <ul class="nav nav-pills">
-      <li><%= link_to "About RailsBridge", about_path %></li>
-      <li><%= link_to "Supporting RailsBridge", hosting_path %></li>
-      <li><%= link_to "Get in Touch", interest_form_path %></li>
+<div class="header navbar navbar-static-top">
+  <div class="container">
+    <%= link_to 'RailsBridge Logo', root_path, class: 'image-placeholder logo' %>
+    <ul class="header_nav nav">
+      <%= header_link "Learning", learning_path %>
+      <%= header_link "Helping", helping_path %>
+      <%= header_link "About", about_path %>
+      <li class='left-border' id='blog'><%= link_to 'Blog', 'http://workshops.railsbridge.org/blog', target: '_blank' %></li>
+      <li id='curriculum'><%= link_to 'Curriculum & Installfest', 'http://docs.railsbridge.org', target: '_blank' %></li>
     </ul>
-  </nav>
-</div>
-
-From the header...
-
-<div class="navbar">
-  <div class="navbar-static-top navbar-inner">
-    <div class="container">
-      <ul class="nav">
-        <li><%= link_to "Home", root_path %></li>        
-        <li class="dropdown">
-          <%= link_to "About RailsBridge", about_path %>
-          <ul class="dropdown-menu">
-            <li><%= link_to "Overview", about_path %>
-            <li><%= link_to "Chapters", about_chapters_path %></li>
-            <li><%= link_to "Past Events", about_past_path %></li>
-            <li><%= link_to "Team", about_team_path %></li>
-            <li><%= link_to "Sponsors ", about_sponsors_path %></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <%= link_to "Learning", learning_path %>
-          <ul class="dropdown-menu">
-            <li><%= link_to "Attending a Workshop", learning_path %></li>
-            <li><%= link_to "Further Resources", learning_resources_path %></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-        <%= link_to "Helping", helping_path %>
-        <ul class="dropdown-menu">
-            <li><%= link_to "Overview", helping_path %></li>
-            <li><%= link_to "Teaching", teaching_path %></li>
-            <li><%= link_to "Organizing", organizing_path %></li>
-            <li><%= link_to "Hosting & Sponsoring", hosting_path %></li>
-        </ul>
-        </li>
-        <li><%= link_to "Other Projects", projects_path %></li>
-      </ul>
-      <ul class="nav pull-right">
-        <li><a href="http://workshops.railsbridge.org/blog">RailsBridge Blog</a></li>
-        <li><a href="http://docs.railsbridge.org">Curricula & Installfest</a></li>
-      </ul>
-    </div>
   </div>
-</div> 
-
-From the home page content...
-
-<h2>Want to learn?</h2>
-
-<p>Our <%= link_to "Chapters Page", about_chapters_path %> shows all the cities we're in and where to find upcoming workshops listed online. We also have <%= link_to "general info for students", learning_path %>, too.</p>
-
-<p> <%= link_to "Find a RailsBridge chapter", about_chapters_path, class: "btn btn-primary btn-large" %>
-</p>
-
-<h2>Want to help out?</h2>
-<p>There are so many ways to help, including <%= link_to "volunteering as a teacher or TA", teaching_path %>, <%= link_to "organizing a workshop", organizing_path %>, <%= link_to "hosting or sponsoring a workshop", hosting_path %> and more.</p>
-<p>Find out more about what we need help with, and get in touch!</p>
-
-<p><%= link_to "Contribute Your Awesomeness", helping_path, class: "btn btn-primary btn-large" %></p>
 </div>
--->
