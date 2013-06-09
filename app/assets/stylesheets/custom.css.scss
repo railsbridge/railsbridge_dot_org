@@ -18,9 +18,14 @@ $blue: #2493B8;
 $green: #639239;
 $black: #333333;
 
+$sg_red: #DB2225;
+$sg_orange: #EF731F;
+$sg_purple: #6C266F;
+$sg_blue: #2493B8;
+$sg_green: #639239;
+$sg_black: #333;
+
 $greenMint: #E0F8E0;
-
-
 
 /*
 Nav Bar | 60px tall | navbar_texture.gif / #6C266F Text | Aleo Regular | 14px tall | #FFFFFF
@@ -62,9 +67,10 @@ h5                               { font-size: .75em; line-height: 2em; margin-bo
 /* Header -> Top Nav -> Content -> Footer */
 
 /* .header navbar navbar-static-top -> container -> a.image-placeholder logo - ul.nav -> li.main_nav selected -> a - span */
+.header                {  }
 .header ul.nav         { float: right; margin: 5px 0; }
 .header ul.nav li      { line-height: 50px; font-weight: bold; position: relative; }
-.header a.logo         { float: left; margin: 10px 0px;  }
+.header a.logo         { float: left; margin: 10px 0px; color: $sg_blue; font-size: 3em; font-family:'Opensans',Arial,sans-serif; line-height: 60px; }
 .header ul.nav a       { display: block; }
 .header ul.nav li.selected a  { font-weight: bold !important; color: $black !important; }
 
