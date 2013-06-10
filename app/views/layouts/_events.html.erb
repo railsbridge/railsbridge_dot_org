@@ -1,54 +1,16 @@
 <div class="events">
-  <div class="event">
-    <h4 class="event-title">Ruby Hackfest</h4>
-    <p class="event-logistics"><span class="event-location">Indianapolis, IN</span> - <span class="event-date">May 24th to 25th</span></p>
-    <%= link_to raw('<span class="icon-user"></span>The Indianapolis Ruby Group'), '', class: 'event-host' %>
-    <%= link_to raw('<span class="icon-map-marker"></span>The Speakeasy Room'), '', class: 'event-venue' %>
-    <%= link_to 'RSVP on Meetup', '', class: 'event-cta' %>
-  </div>
-  <div class="event">
-    <h4 class="event-title">Ruby Hackfest</h4>
-    <p class="event-logistics"><span class="event-location">Indianapolis, IN</span> - <span class="event-date">May 24th to 25th</span></p>
-    <%= link_to raw('<span class="icon-user"></span>The Indianapolis Ruby Group'), '', class: 'event-host' %>
-    <%= link_to raw('<span class="icon-map-marker"></span>The Speakeasy Room'), '', class: 'event-venue' %>
-    <%= link_to 'RSVP on Meetup', '', class: 'event-cta' %>
-  </div>
-  <div class="event">
-    <h4 class="event-title">Ruby Hackfest</h4>
-    <p class="event-logistics"><span class="event-location">Indianapolis, IN</span> - <span class="event-date">May 24th to 25th</span></p>
-    <%= link_to raw('<span class="icon-user"></span>The Indianapolis Ruby Group'), '', class: 'event-host' %>
-    <%= link_to raw('<span class="icon-map-marker"></span>The Speakeasy Room'), '', class: 'event-venue' %>
-    <%= link_to 'RSVP on Meetup', '', class: 'event-cta' %>
-  </div>
-  <div class="event">
-    <h4 class="event-title">Ruby Hackfest</h4>
-    <p class="event-logistics"><span class="event-location">Indianapolis, IN</span> - <span class="event-date">May 24th to 25th</span></p>
-    <%= link_to raw('<span class="icon-user"></span>The Indianapolis Ruby Group'), '', class: 'event-host' %>
-    <%= link_to raw('<span class="icon-map-marker"></span>The Speakeasy Room'), '', class: 'event-venue' %>
-    <%= link_to 'RSVP on Meetup', '', class: 'event-cta' %>
-  </div>
-  <div class="event">
-    <h4 class="event-title">Ruby Hackfest</h4>
-    <p class="event-logistics"><span class="event-location">Indianapolis, IN</span> - <span class="event-date">May 24th to 25th</span></p>
-    <%= link_to raw('<span class="icon-user"></span>The Indianapolis Ruby Group'), '', class: 'event-host' %>
-    <%= link_to raw('<span class="icon-map-marker"></span>The Speakeasy Room'), '', class: 'event-venue' %>
-    <%= link_to 'RSVP on Meetup', '', class: 'event-cta' %>
-  </div>
-  <div class="event event-help">
-    <h4 class="event-title">Not Finding a Workshop?</h4>
-    <p>Lorem ipsum dolor sit amet. Vitae. Parturient. Tempus mollis Sed netus Cum Maecenas molestie.</p>
-    <%= link_to 'Check Out Local Chapters', '', class: 'event-cta' %>
+  <%= render 'layouts/event' %>
+  <%= render 'layouts/event' %>
+  <%= render 'layouts/event' %>
+  <%= render 'layouts/event' %>
+  <%= render 'layouts/event' %>
+  <div class='feature-list horizontal-feature event event-help'>
+    <div class='feature clearfix'>
+      <h4>Not Finding a Workshop?</h4>
+      <ul>
+        <li><p>Lorem ipsum dolor sit amet. Vitae. Parturient. Tempus mollis Sed netus Cum Maecenas molestie.</p></li>
+      </ul>
+      <%= link_to 'Check Out Local Chapters', '', class: 'event-cta' %>
+    </div>
   </div>
 </div>
-
-  <!--
-
-Antiquated home page bucket...
-
-<div class="hp_option">
-  <div class="image_placeholder"></div>
-  <h2>Spread the Word</h2>
-  <p>Lorem ipsum dolor sit amet, neque porttitor justo erat, hendrerit augue pulvinar.</p>
-</div>
-
--->
