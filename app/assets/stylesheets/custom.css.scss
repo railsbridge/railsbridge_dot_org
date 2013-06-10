@@ -32,8 +32,7 @@ a:hover   { color: lighten($sg_purple, 30%); text-decoration: none; }
 hr        { margin: 0px 0px 20px; border: 0px; height: 1px; background: $grayLight; }
 
 // typography
-p, ol, ul, blockquote, pre, code { font-size: 1.1em; line-height: 1.6667em; margin: 0; padding: 0; margin-bottom: 1.5em;
-                                   font-family: Gibson-Regular, Arial; }
+p, ol, ul, blockquote, pre, code { font: 1.1em/1.6667em Gibson-Regular, Arial; margin: 0; padding: 0; margin-bottom: 1.5em; }
 h1, h2, h3, h4, h5, h6           { font-weight: normal; font-family:'Opensans',Arial,sans-serif; margin: 0; padding: 0; }
 h5, h6                           { font-weight:bold; }
 h1                               { font-size: 2em; line-height: 0.75em; margin-bottom: 0.75em; }
@@ -44,6 +43,10 @@ h5                               { font-size: 1.0em; line-height: 1.5em; margin-
 h6                               { font-size: .75em; line-height: 2em; margin-bottom: 2em; }
 em                               { font-style: italic; }
 strong                           { font-weight: bold; }
+
+// Style Guide
+.breadcrumbs { font: 14px/167% 'Aleo Light',Arial,sans-serif; color: #333; }
+p, ol, ul, blockquote, pre, code { font: 15px/167% 'Aleo Light',Arial,sans-serif; color: #333; }
 
 // Page Elements
 // Header -> Top Nav -> Content -> Footer
