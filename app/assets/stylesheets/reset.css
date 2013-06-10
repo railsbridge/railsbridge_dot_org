@@ -1,9 +1,5 @@
-/**
- * Reset ==============================================================
- * Based on http://meyerweb.com/eric/tools/css/reset
- */
-
-/* Inspired by slash ganked from http://www.mapbox.com/tour/#scale */
+// Reset ===========================================
+// Based on http://meyerweb.com/eric/tools/css/reset
 
 html, body,
 /* Structures */
@@ -61,7 +57,7 @@ table {
  * special treatment.
  */
 input, select, textarea, body { 
-  font: 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font: normal 1.2em/1.6667em Opensans, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 }
 
 /*
