@@ -76,7 +76,6 @@ input, select, textarea, body {
   visibility: hidden;
 }
 
-h1 { color: red !important; }
 .clearfix { display: inline-block; }
 
 /* Hides from IE-mac \*/
