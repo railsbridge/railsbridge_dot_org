@@ -15,6 +15,7 @@ RailsbridgeSite2013::Application.routes.draw do
   match '/helping/teaching',            to: 'static_pages#teaching',           as: 'teaching'
   match '/helping/organizing',          to: 'static_pages#organizing',         as: 'organizing'
   match '/helping/hosting',             to: 'static_pages#hosting',            as: 'hosting'
+  match '/helping/donor_faq',           to: 'static_pages#donor_faq',          as: 'donor_faq'
   match '/helping/interest_form',       to: 'static_pages#interest_form',      as: 'interest_form'
 
   match '/learning',                    to: 'static_pages#learning',           as: 'learning'

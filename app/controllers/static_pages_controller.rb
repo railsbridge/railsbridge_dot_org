@@ -20,6 +20,9 @@ class StaticPagesController < ApplicationController
   def hosting
   end
 
+  def faq
+  end
+
   def projects
   end
 
