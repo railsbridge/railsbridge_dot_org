@@ -1,10 +1,9 @@
 <% provide(:title, page_title(['Helping','Organize a Workshop'])) %>
 
-<div class="container">
-<h1>Want to organize a workshop? Wonderful!</h1>
-
 <div class="row">
   <div class="span7">
+    <h1>Want to organize a workshop? Wonderful!</h1>
+
     <h2>What does organizing entail?</h2>
     <p>A lot of organizers have never thrown an event like this before and want to know what qualifications it takes. You don't have to be a born event-planner to be an awesome organizer. Here are a couple of things that are most helpful:</p>
     <ul>
@@ -18,24 +17,20 @@
     </ul>
     <p>The time commitment varies depending on how you and your co-organizer divide the responsibilities; everyone organizing should plan on devoting their Friday night and most of Saturday to the workshop, and some time before the workshop to visiting the space, ordering food, and communicating with students and volunteers. Although it is a lot of little details to deal with, if it's your first time organizing we'll hook you up with a mentor to answer questions and help guide you.  That can be remote mentoring, if an experienced local organizer/mentor is't available.</p>
     <p>If you are interested in organizing a workshop, or even just vaguely curious, contact Rachel Myers and Lillie Chilen, who will be very happy to talk about it. (They are lilliechilen at gmail dot com, and rachelmariemyers at gmail dot com, respectively.)</p>
-    
-  </div>
-  <div class="span5">
-    <div class='feature-list cell12 pad0'>
-      <div class='feature clearfix pad2 feature-1'>
-        <div class='illustration'><div class="icon-4x icon-beaker"></div></div>
-        <h4>The Workshop Cookbook: How to Organize Every Workshop</h4>
-        <small>
-        <p>We've got tons of information in our Workshop Cookbook, which lives in a wiki on the RailsBridge GitHub page.</p>
-        <p>Read it, use it, and update it: <a href="https://github.com/railsbridge/docs/wiki/Cookbook">https://github.com/railsbridge/docs/wiki/Cookbook</a>.</p>
-        </small>
-      </div>
-      <div class='feature clearfix pad2 feature-2'>
-        <div class='illustration'><div class="icon-4x icon-envelope-alt"></div></div>
-        <%= render 'mailing-list' %>
-        </div>
-      </div>
-  </div>
-</div>
 
+  </div>
+  <div class="span4 offset1">
+
+    <div class='feature-list'>
+      <div class='feature clearfix feature-1'>
+        <div class="feature-icon icon-3x icon-beaker"></div>
+        <h4>The Workshop Cookbook: How to Organize Every Workshop</h4>
+        <p>We've got tons of information in our Workshop Cookbook, which lives in a wiki on the RailsBridge GitHub page.</p>
+        <p>Read it, use it, and update it: <a href="https://github.com/railsbridge/docs/wiki/Cookbook">https://github.com/railsbridge/docs/wiki/Cookbook</a></p>
+      </div>
+    </div>
+
+    <%= render 'mailing_list' %>
+
+  </div>
 </div>
