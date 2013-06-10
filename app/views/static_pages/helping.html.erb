@@ -1,7 +1,7 @@
 <% provide(:title, page_title(['Helping'])) %>
 
 <div class="row clearfix">
-  <div class="span7">
+  <div class="span6">
     <h1>Want to help RailsBridge?</h1>
 
     <h2>There are so many ways you can!</h2>
@@ -10,39 +10,33 @@
     <p>If you're interested in organizing, check out the <%= link_to("organizing page", :organizing)%> and <%= link_to "fill out our short interest form", :interest_form %>!</p>
 
   </div>
-  <div class="span4 offset1">
+  <div class="span5 offset1">
 
     <div class='feature-list'>
       <div class='feature clearfix feature-1'>
         <div class="feature-icon icon-3x icon-book"></div>
         <h4>Teach or TA</h4>
         <ul>
-          <li>Teaching Resources</li>
-          <li>Chapter List</li>
-          <li>Upcoming Events</li>
+          <li><%= link_to 'Teaching Resources', teaching_path %></li>
+          <li><%= link_to 'Chapter List', chapters_path %></li>
+          <li><%= link_to 'Upcoming Events', events_path %></li>
         </ul>
       </div>
     </div>
     
     <div class='feature-list'>
       <div class='feature clearfix'>
-        <div class="feature-icon icon-3x icon-map-marker"></div>
+        <div class="feature-icon icon-3x icon-cogs"></div>
         <h4>Organize, Sponsor or Host an Event</h4>
         <ul>
-          <li>Hosting Resources</li>
+          <li><%= nav_link 'Organize an Event', organizing_path %></li>
+          <li><%= nav_link 'Donor FAQ - TODO', organizing_path %></li>
+          <li><%= link_to 'Hosting Resources', hosting_path %></li>
         </ul>
       </div>
     </div>
 
-    <div class='feature-list'>
-      <div class='feature clearfix'>
-        <div class="feature-icon icon-2x icon-money"></div>
-        <h4>Be a Sponsor</h4>
-        <ul>
-          <li>Donor FAQ</li>
-        </ul>
-      </div>
-    </div>
+    <%= render 'mailing_list' %>
 
   </div>
 </div>
