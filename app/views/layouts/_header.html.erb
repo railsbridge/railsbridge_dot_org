@@ -1,11 +1,17 @@
 <div class="header navbar navbar-static-top">
   <div class="container">
-    <%= link_to 'RailsBridge', root_path, class: 'logo' %>
+    <%= link_to root_path, class: 'logo' do %>
+      <svg width="60" height="60">
+        <circle cx="30" cy="30" r="25" class="logo-placeholder" />
+      </svg>
+    <% end %>
     <ul class="header_nav nav">
-      <%= header_link "Learning", learning_path %>
-      <%= header_link "Helping", helping_path %>
+      <%= header_link "Learn", learning_path %>
+      <%= header_link "Help", helping_path %>
       <%= header_link "About", about_path %>
-      <li class='left-border' id='blog'><%= link_to 'Blog', 'http://workshops.railsbridge.org/blog', target: '_blank' %></li>
+      <li id='blog'><%= link_to 'Blog', 'http://workshops.railsbridge.org/blog', target: '_blank' %></li>
+    </ul>
+    <ul class="header_nav nav nav-right">
       <li id='curriculum'><%= link_to 'Curriculum & Installfest', 'http://docs.railsbridge.org', target: '_blank' %></li>
     </ul>
   </div>

@@ -20,6 +20,7 @@ $sg_blue: #2493B8;
 $sg_green: #639239;
 $sg_black: #333;
 
+
 $greenMint: #E0F8E0;
 
 // universal
@@ -58,11 +59,19 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'Aleo Light',Arial,sans-serif
 }
 
 // .header navbar navbar-static-top -> container -> a.image-placeholder logo - ul.nav -> li.main_nav selected -> a - span
-.header ul.nav         { float: right; margin: 5px 0; }
-.header ul.nav li      { line-height: 50px; font-weight: bold; position: relative; }
-.header a.logo         { float: left; margin: 10px 0px; color: $sg_blue; font-size: 3em; font-family:'Opensans',Arial,sans-serif; line-height: 60px; }
-.header ul.nav a       { display: block; }
-.header ul.nav li.selected a  { font-weight: bold !important; color: $black !important; }
+
+svg { border: 1px solid yellow; border: none; }
+
+circle.logo-placeholder { stroke: #fff; stroke-width: 2; fill: $sg_purple; }
+
+
+.header { background: url('/assets/navbar_texture.gif'); color: #fff; }
+.header ul.nav         { float: left; margin: 5px 0; }
+.header ul.nav-right   { float: right; }
+.header ul.nav li      { font: normal 17px/40px 'Aleo',Arial,sans-serif; }
+.header a.logo         { float: left; margin: 5px 0px; }
+.header ul.nav a       { display: block; color: #fff !important; font-weight: normal; text-shadow: none;}
+.header ul.nav li.selected a  { font-weight: bold !important; color: #fff !important; }
 
 // header top nav arrow
 .header_nav span { width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; 
