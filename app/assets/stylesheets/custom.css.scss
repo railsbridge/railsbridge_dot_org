@@ -34,7 +34,7 @@ hr        { margin: 0px 0px 20px; border: 0px; height: 1px; background: $grayLig
 
 // typography
 p, ol, ul, blockquote, pre, code { font: 1.1em/1.6667em Gibson-Regular, Arial; margin: 0; padding: 0; margin-bottom: 1.5em; }
-h1, h2, h3, h4, h5, h6           { font-weight: normal; font-family:'Opensans',Arial,sans-serif; margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6           { font-weight: normal; font-family:'AleoLight',Arial,sans-serif; margin: 0; padding: 0; }
 h5, h6                           { font-weight:bold; }
 h1                               { font-size: 2em; line-height: 0.75em; margin-bottom: 0.75em; }
 h2                               { font-size: 1.75em; line-height: 0.86em; margin-bottom: 0.86em; }
@@ -46,11 +46,12 @@ em                               { font-style: italic; }
 strong                           { font-weight: bold; }
 
 // Style Guide
-.breadcrumbs { font: 14px/167% 'AleoLight',Arial,sans-serif; color: #333; }
 p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif; color: #333; }
 
+
+
 // Page Elements
-// Header -> Top Nav -> Content -> Footer
+// Header -> Breadcrumbs -> Side Nav - Content -> Footer
 
 // Flattening page elements
 .header, .navbar, .navbar-static-top  {
@@ -58,47 +59,44 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
   -moz-transition: none; -webkit-transition: none;padding: 0; margin: 0;
 }
 
-// .header navbar navbar-static-top -> container -> a.image-placeholder logo - ul.nav -> li.main_nav selected -> a - span
-
-svg { border: 1px solid yellow; border: none; }
-
-circle.logo-placeholder { stroke: #fff; stroke-width: 2; fill: $sg_purple; }
-
-
-.header { background: url('/assets/navbar_texture.gif'); color: #fff; }
-.header ul.nav         { float: left; margin: 5px 0; }
+// .header navbar navbar-static-top -> container -> a svg circle - header_nav nav || nav-right -> li (selected) -> a - span
+.header                { height: 60px; background: url('/assets/navbar_texture.gif'); }
+.header ul.nav         { float: left; }
 .header ul.nav-right   { float: right; }
-.header ul.nav li      { font: normal 17px/40px 'Aleo',Arial,sans-serif; }
-.header a.logo         { float: left; margin: 5px 0px; }
-.header ul.nav a       { display: block; color: #fff !important; font-weight: normal; text-shadow: none;}
+.header li             { font: normal 15px/35px 'Aleo',Arial,sans-serif; }
+.header a.logo         { float: left; margin: 10px 10px 0 0; }
+.header circle         { stroke: #fff; stroke-width: 2; fill: $sg_purple; }
+.header ul.nav a       { display: block; color: #fff !important; font-weight: normal; text-shadow: none; }
 .header ul.nav li.selected a  { font-weight: bold !important; color: #fff !important; }
 
-// header top nav arrow
-// .header_nav span { width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; 
-//                  border-bottom: 10px solid $greenMint; position: absolute; bottom: -5px; left: 20px; display: none; }
-// .header_nav .alive span    { display: block; }
-// .header_nav .alive span    { border-bottom: 10px solid $greenMint; opacity: .6; }
-// .header_nav .selected span { display: block; }
-// .header_nav .selected span { border-bottom: 10px solid $greenMint; }
-// .header_nav .selected.alive span { opacity: 1; }
+// .breadcrumbs -> a span.divider
+.breadcrumbs           { font: 14px/50px 'AleoLight',Arial,sans-serif; color: #333; padding-left: 5px; }
+.breadcrumbs a         { color: #333; }
+.breadcrumbs a:hover   { color: #333; }
+.breadcrumbs .divider  { padding: 0 5px; }
 
-// .side_nav -> .container -> ul.topnav #learning_sub_nav #about_sub_nav #helping_sub_nav -> li.selected a
+// side bar and main content
+.content               { margin-top: 25px; }
+.side_bar              { float: left; width: 165px; margin-right: 20px; }
+.contentx               { float: right; width: 750px; margin-top: 22px; }
+.content h1            { font-size: 3em; border-bottom: 1px solid $grayLight; padding-bottom: 15px; margin-bottom: 20px; margin-top: -3px; }
 
-.side_nav                   { border: 1px solid $gray; font: normal 20px/40px 'Aleo',Arial,sans-serif; margin-right: 20px;}
+// .side_nav -> ul.side_nav_links (selected) -> li (selected) -> a
+.side_nav                   { margin-bottom: 20px; box-shadow: 1px 1px 3px #999; }
 .side_nav .side_nav_links   { display: none; }
 .side_nav .selected         { display: block; }
-.side_nav .alive            { display: block; }
 .side_nav ul                { list-style: none; margin: 0; }
-.side_nav ul li             { font-weight: bold; min-height: 70px; padding-left: 20px;  }
-
-.side_nav a                 { color: #333; display: inline-block; height:70px; display:table-cell; width: 150px; vertical-align: middle; text-align: center; }
-.side_nav ul li:hover       { background: lighten($sg_blue, 30%); }
-.side_nav ul li.selected    { background: $sg_blue; }
+.side_nav ul li             { text-align: center; line-height: 18px; padding: 12px 20px;  }
+.side_nav a                 { color: #333; }
+.side_nav ul li.selected    { background: $sg_blue;  }
+.side_nav ul li.selected:hover { background: $sg_blue; }
+.side_nav ul li:hover       { background: lighten($sg_blue, 30%); color: #fff; }
+.side_nav ul li:hover a     { color: #fff; }
 .side_nav ul li.selected a  { color: #fff; cursor: default; }
 
-
-
-
+.test_containerx { border: 1px solid yellow; }
+.test_containerx { background: url('/assets/railsbridge.png') -30px -60px; }
+.head_containerx { background: url('/assets/railsbridge.png') -30px 0px; }
 
 // various and sundry
 .left-border       { border-left: 1px solid $grayMediumLight; margin-left: 10px; padding-left: 10px; }
@@ -107,10 +105,6 @@ circle.logo-placeholder { stroke: #fff; stroke-width: 2; fill: $sg_purple; }
 .deemphasize       { color: #8f99a0; }
 .icon-heart        { color: red; }
 .icon-money        { color: green; }
-
-// main content block
-.content { margin-top: 30px; }
-.content h1 { border-bottom: 1px solid $grayLight; padding-bottom: 15px; margin-bottom: 20px; }
 
 // footer
 .footer    { background: $grayDark; color: #fff; padding: 20px 0 30px 0; margin-top: 30px; }
