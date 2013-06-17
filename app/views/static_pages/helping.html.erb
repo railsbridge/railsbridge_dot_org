@@ -1,19 +1,16 @@
 <% provide(:title, page_title(['Helping'])) %>
 
-<div class="row clearfix">
+<h1>Want to help RailsBridge?</h1>
+
+<h2>There are so many ways you can!</h2>
+<h3>Teachers, TAs, Organizers and Sponsors Needed</h3>
+<p>The most visible volunteer positions within RailsBridge are the worshop sponsors, organizers, teachers, and TAs. They make each workshop happen!</p>
+<p>If you're interested in teaching, check out the <%= link_to "RailsBridge chapters", chapters_path %> to see if one is coming up near you.</p>
+<p>If you're interested in organizing, check out the <%= link_to "organizing page", :organizing %> and <%= link_to "fill out our short interest form", :interest_form %>!</p>
+<p>If you're interested in sponsoring... todo...</p>
+
+<div class="row">
   <div class="span6">
-    <h1>Want to help RailsBridge?</h1>
-
-    <h2>There are so many ways you can!</h2>
-    <h3>Teachers, TAs, Organizers and Sponsors Needed</h3>
-    <p>The most visible volunteer positions within RailsBridge are the worshop sponsors, organizers, teachers, and TAs. They make each workshop happen!</p>
-    <p>If you're interested in teaching, check out the <%= link_to "RailsBridge chapters", chapters_path %> to see if one is coming up near you.</p>
-    <p>If you're interested in organizing, check out the <%= link_to "organizing page", :organizing %> and <%= link_to "fill out our short interest form", :interest_form %>!</p>
-    <p>If you're interested in sponsoring... todo...</p>
-
-  </div>
-  <div class="span5 offset1">
-
     <div class='feature-list'>
       <div class='feature clearfix feature-1'>
         <div class="feature-icon icon-3x icon-book"></div>
@@ -25,7 +22,10 @@
         </ul>
       </div>
     </div>
-    
+
+  </div>
+  <div class="span6">
+
     <div class='feature-list'>
       <div class='feature clearfix'>
         <div class="feature-icon icon-3x icon-cogs"></div>
@@ -37,6 +37,12 @@
         </ul>
       </div>
     </div>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="span12">
 
     <%= render 'mailing_list' %>
 

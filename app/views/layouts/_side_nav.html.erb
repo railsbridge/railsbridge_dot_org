@@ -2,7 +2,7 @@
     <ul class="side_nav_links<%= ' selected' if request.path.match(/^\/learning/) %>" id="learning_sub_nav">
       <%= nav_link "Overview", learning_path %>
       <%= nav_link 'Upcoming Workshops', events_path %>
-      <%= nav_link 'Chapters', events_path %>
+      <%= nav_link 'Chapters', chapters_path %>
       <%= nav_link 'FAQ', learning_faq_path %>
       <%= nav_link 'Keep Learning', learning_resources_path %>
     </ul>

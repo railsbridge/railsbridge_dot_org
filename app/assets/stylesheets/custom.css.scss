@@ -76,10 +76,10 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 .breadcrumbs .divider  { padding: 0 5px; }
 
 // side bar and main content
-.content               { margin-top: 25px; }
-.side_bar              { float: left; width: 165px; margin-right: 20px; }
+.content               { margin-top: 20px; }
+.side_bar              { float: left; width: 165px; margin-right: 20px; margin-top: 5px; }
 .contentx               { float: right; width: 750px; margin-top: 22px; }
-.content h1            { font-size: 3em; margin-bottom: 20px; margin-top: -3px; }
+.content h1            { font-size: 3em; margin-bottom: 20px; }
 .content hr            { border: none; height: 1px; color: $grayLight; background: $grayLight; }
 
 // .side_nav -> ul.side_nav_links (selected) -> li (selected) -> a
@@ -103,6 +103,7 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 .left-border       { border-left: 1px solid $grayMediumLight; margin-left: 10px; padding-left: 10px; }
 .image-placeholder { display: block; width: 170px; height: 50px; line-height: 50px; text-align: center; 
                      background: white; border: 2px dotted $grayMediumLight; }
+.clear             { clear: both; }
 .deemphasize       { color: #8f99a0; }
 .icon-heart        { color: red; }
 .icon-money        { color: green; }
@@ -129,6 +130,7 @@ p.work-in-progress { font-style: italic; color: rgb(19, 223, 231); margin-top: 2
 .home h4 { margin: 0 0 0 25px; font-style: italic; }
 
 // Sponsors
+.sponsors h2       { margin-top: 25px; font-weight: bold; }
 .logos img         { padding: 20px; }
 .big-logos img     { height: 125px; }
 .smaller-logos img { height: 60px; }
@@ -147,9 +149,11 @@ p.work-in-progress { font-style: italic; color: rgb(19, 223, 231); margin-top: 2
 .feature-icon { float: left;  }
 .horizontal-feature .feature-icon { float: left; margin: -7px 10px 0 -7px; opacity: .7; }
 .horizontal-feature .feature { min-height: 230px; margin-bottom: 20px; }
-.horizontal-feature h4 { padding-bottom: 5px; margin: 0 0 10px 0; margin-left: 25px; }
+.horizontal-feature h4 { padding-bottom: 5px; margin: 0 0 10px 25px; }
 .horizontal-feature ul { margin-left: 0px;  }
 .big-icons h4 { margin-left: 50px; }
+
+.feature-standalone { float: left; width: 300px; }
 
 // events listing
 .events .event { float: left; width: 31%; margin: 0 1.17% 20px 1.16%; }
@@ -173,8 +177,6 @@ p.work-in-progress { font-style: italic; color: rgb(19, 223, 231); margin-top: 2
 .home_twitter { padding-right: 20px; }
 .home_twitter h3 { margin-left: 0px; margin-bottom: 13px; }
 
-// chapters list interim solution
-.chapters h2 { border-bottom: 1px solid $gray; padding-bottom: 10px; }
-.chapters-list { margin-bottom: 20px; }
-.chapters-list .list-item { width: 240px; height: 100px; float: left; padding: 20px; margin: 0 10px 10px 0; }
-.list-item { border: 1px solid $gray; margin-top: 5px; }
+// chapters
+.chapters h2         { border-bottom: 1px solid $gray; padding-bottom: 15px; margin-top: 20px; }
+.chapters .list-item { float: left; width: 240px; height: 100px; border: 1px solid $gray; padding: 20px; margin: 5px 10px 10px 0; }
