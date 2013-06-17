@@ -79,7 +79,8 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 .content               { margin-top: 25px; }
 .side_bar              { float: left; width: 165px; margin-right: 20px; }
 .contentx               { float: right; width: 750px; margin-top: 22px; }
-.content h1            { font-size: 3em; border-bottom: 1px solid $grayLight; padding-bottom: 15px; margin-bottom: 20px; margin-top: -3px; }
+.content h1            { font-size: 3em; margin-bottom: 20px; margin-top: -3px; }
+.content hr            { border: none; height: 1px; color: $grayLight; background: $grayLight; }
 
 // .side_nav -> ul.side_nav_links (selected) -> li (selected) -> a
 .side_nav                   { margin-bottom: 20px; box-shadow: 1px 1px 3px #999; }
@@ -107,16 +108,15 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 .icon-money        { color: green; }
 
 // footer
-.footer    { background: $grayDark; color: #fff; padding: 20px 0 30px 0; margin-top: 30px; }
-.footer a { color: white; line-height: 40px; }
-.footer h3 { font-weight: normal; margin: 0px; }
-.footer p { margin-top: 0px; }
-.footer a.font-icon { font-size: 2.5em; }
+.footer                    { color: #fff; background: $grayDark; padding: 20px 0 30px 0; margin-top: 30px; }
+.footer a                  { color: #fff; line-height: 40px; }
+.footer p                  { color: #fff; margin-top: 0px; }
+.footer a.font-icon        { font-size: 2.5em; }
 .footer ul.footer-links    { list-style: none; }
 .footer ul.footer-links li { float: left; padding-right: 10px; }
 .footer ul.footer-links li.left-border { padding-left: 20px; margin-left: 10px; }
 
-.work-in-progress { font-style: italic; color: rgb(19, 223, 231); margin-top: 20px; }
+p.work-in-progress { font-style: italic; color: rgb(19, 223, 231); margin-top: 20px; }
 
 // Individual Page Styles
 
