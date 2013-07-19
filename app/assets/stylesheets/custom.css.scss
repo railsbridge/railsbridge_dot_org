@@ -69,20 +69,20 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 .header svg            { position: absolute; }
 .header circle         { stroke: #fff; stroke-width: 2; fill: $new_blue; }
 .header ul.nav         { float: right; margin: 17px 0 0 0; }
+.header li             { position: relative; height: 50px; }
 .header li a           { display: block; font: normal 15px/15px 'Opensans',Arial,sans-serif; color: $new_blue;
                          text-transform: uppercase; padding: 0 7px; }
-.header li.external    { background: #f8f8f8; border-left: 1px solid white; }
+.header li.external a  { background: #f8f8f8; border-left: 1px solid white; }
 .header ul.nav a       { color: $new_blue; }
 .header ul.nav li.selected a {  }
 
 
 // header top nav arrow
-.header-nav span { width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; 
-                 border-bottom: 10px solid $greenMint; position: absolute; bottom: -5px; left: 20px; display: none; }
-.header-nav .alive span    { display: block; }
-.header-nav .alive span    { border-bottom: 10px solid $greenMint; opacity: .6; }
-.header-nav .selected span { display: block; }
-.header-nav .selected span { border-bottom: 10px solid $greenMint; }
+.header-nav span            { width: 0; height: 0; position: absolute; bottom: -1px; left: 25px;
+                              border-left: 13px solid transparent; border-right: 13px solid transparent; border-bottom: 13px solid white; }
+.header-nav #volunteer span { left: 45px; }
+.header-nav .alive span     { border-bottom: 10px solid $greenMint; opacity: .6; border-bottom: 10px solid red; }
+.header-nav .selected span  { border-bottom: 10px solid $greenMint; border-bottom: 10px solid red; }
 .header-nav .selected.alive span { opacity: 1; }
 
 
