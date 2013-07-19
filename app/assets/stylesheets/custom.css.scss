@@ -63,7 +63,7 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 }
 
 // .header navbar navbar-static-top -> container -> a svg circle - header-nav nav || nav-right -> li (selected) -> a - span
-.header                { height: 68px; background: white; margin-top: -40px; }
+.header                { height: 68px; background: white; }
 .header a.logo         { position: relative; float: left; display: block; margin: 11px 10px 0 35px; }
 .header h1             { font: bold 28px/28px 'Opensans',Arial,sans-serif; color: $new_blue; margin: 8px 0 0 50px; }
 .header svg            { position: absolute; }
