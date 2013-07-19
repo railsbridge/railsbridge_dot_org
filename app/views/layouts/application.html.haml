@@ -9,10 +9,10 @@
     = csrf_meta_tags
     = yield(:head)
   %body
-    .the_background
+    .container.the_background
       = render "layouts/header"
       .container.test_container
-        = render "layouts/breadcrumbs"
+        = render "layouts/top_nav"
         .content
           .feature-list
             .feature.clearfix.feature-1

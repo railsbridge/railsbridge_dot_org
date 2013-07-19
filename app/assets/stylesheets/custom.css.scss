@@ -75,6 +75,24 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 .header ul.nav a       { color: $new_blue; }
 .header ul.nav li.selected a {  }
 
+// .top_nav -> .container -> ul.topnav #learning_sub_nav #about_sub_nav #helping_sub_nav -> li.selected a
+
+.top_nav                   { background: $greenMint; height: 40px; text-align: right; }
+.top_nav .top_nav_links    { display: none; float: right; margin-right: 35px; }
+.top_nav .selected         { display: block; }
+.top_nav .alive            { display: block; }
+.top_nav ul                { list-style: none; margin-left: 30px;  }
+.top_nav ul li             { float:left; font-weight: bold; padding: 10px 20px; }
+.top_nav ul li.selected a  { color: $black; cursor: default; }
+.top_nav_links             { margin-top: -10px; padding-top: 10px; }
+
+// various and sundry
+.left-border       { border-left: 1px solid $grayMediumLight; margin-left: 10px; padding-left: 10px; }
+.image-placeholder { display: block; width: 170px; height: 50px; line-height: 50px; text-align: center;
+                     background: white; border: 2px dotted $grayMediumLight; }
+.deemphasize       { color: #8f99a0; }
+.icon-heart        { color: red; }
+.icon-money        { color: green; }
 // .breadcrumbs -> a span.divider
 .breadcrumbs           { font: 14px/50px 'AleoLight',Arial,sans-serif; color: #333; padding-left: 5px; }
 .breadcrumbs a         { color: #333; }
