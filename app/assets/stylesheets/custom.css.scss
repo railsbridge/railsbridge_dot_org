@@ -62,8 +62,8 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
   -moz-transition: none; -webkit-transition: none;padding: 0; margin: 0;
 }
 
-// .header navbar navbar-static-top -> container -> a svg circle - header_nav nav || nav-right -> li (selected) -> a - span
-.header                { height: 68px; background: white; }
+// .header navbar navbar-static-top -> container -> a svg circle - header-nav nav || nav-right -> li (selected) -> a - span
+.header                { height: 68px; background: white; margin-top: -40px; }
 .header a.logo         { position: relative; float: left; display: block; margin: 11px 10px 0 35px; }
 .header h1             { font: bold 28px/28px 'Opensans',Arial,sans-serif; color: $new_blue; margin: 8px 0 0 50px; }
 .header svg            { position: absolute; }
@@ -75,16 +75,28 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 .header ul.nav a       { color: $new_blue; }
 .header ul.nav li.selected a {  }
 
-// .top_nav -> .container -> ul.topnav #learning_sub_nav #about_sub_nav #helping_sub_nav -> li.selected a
 
-.top_nav                   { background: $greenMint; height: 40px; text-align: right; }
-.top_nav .top_nav_links    { display: none; float: right; margin-right: 35px; }
-.top_nav .selected         { display: block; }
-.top_nav .alive            { display: block; }
-.top_nav ul                { list-style: none; margin-left: 30px;  }
-.top_nav ul li             { float:left; font-weight: bold; padding: 10px 20px; }
-.top_nav ul li.selected a  { color: $black; cursor: default; }
-.top_nav_links             { margin-top: -10px; padding-top: 10px; }
+// header top nav arrow
+.header-nav span { width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; 
+                 border-bottom: 10px solid $greenMint; position: absolute; bottom: -5px; left: 20px; display: none; }
+.header-nav .alive span    { display: block; }
+.header-nav .alive span    { border-bottom: 10px solid $greenMint; opacity: .6; }
+.header-nav .selected span { display: block; }
+.header-nav .selected span { border-bottom: 10px solid $greenMint; }
+.header-nav .selected.alive span { opacity: 1; }
+
+
+// .top-nav -> .container -> ul.topnav #learning-sub-nav #about-sub-nav #helping-sub-nav -> li.selected a
+
+.top-nav                   { background: $greenMint; height: 40px; text-align: right; }
+.top-nav .top-nav-links    { display: none; float: right; margin-right: 35px; }
+.top-nav .selected         { display: block; }
+.top-nav .alive            { display: block; }
+.top-nav ul                { list-style: none; margin-left: 30px;  }
+.top-nav ul li             { float:left; font-family: 'Opensans',Arial,sans-serif; padding: 10px 20px; }
+.top-nav ul li a           { color: $new_blue;  }
+.top-nav ul li.selected a  { color: $black; cursor: default; }
+.top-nav-links             { margin-top: -10px; padding-top: 10px; }
 
 // various and sundry
 .left-border       { border-left: 1px solid $grayMediumLight; margin-left: 10px; padding-left: 10px; }
@@ -101,27 +113,27 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 
 // side bar and main content
 .content               { margin-top: 20px; }
-.side_bar              { float: left; width: 165px; margin-right: 20px; margin-top: 5px; }
+.side-bar              { float: left; width: 165px; margin-right: 20px; margin-top: 5px; }
 .contentx               { float: right; width: 750px; margin-top: 22px; }
 .content h1            { font-size: 3em; margin-bottom: 20px; }
 .content hr            { border: none; height: 1px; color: $grayLight; background: $grayLight; }
 
-// .side_nav -> ul.side_nav_links (selected) -> li (selected) -> a
-.side_nav                   { margin-bottom: 20px; box-shadow: 1px 1px 3px #999; }
-.side_nav .side_nav_links   { display: none; }
-.side_nav .selected         { display: block; }
-.side_nav ul                { list-style: none; margin: 0; }
-.side_nav ul li             { text-align: center; line-height: 18px; padding: 12px 20px;  }
-.side_nav a                 { color: #333; }
-.side_nav ul li.selected    { background: $sg_blue;  }
-.side_nav ul li.selected:hover { background: $sg_blue; }
-.side_nav ul li:hover       { background: lighten($sg_blue, 30%); color: #fff; }
-.side_nav ul li:hover a     { color: #fff; }
-.side_nav ul li.selected a  { color: #fff; cursor: default; }
+// .side-nav -> ul.side-nav-links (selected) -> li (selected) -> a
+.side-nav                   { margin-bottom: 20px; box-shadow: 1px 1px 3px #999; }
+.side-nav .side-nav-links   { display: none; }
+.side-nav .selected         { display: block; }
+.side-nav ul                { list-style: none; margin: 0; }
+.side-nav ul li             { text-align: center; line-height: 18px; padding: 12px 20px;  }
+.side-nav a                 { color: #333; }
+.side-nav ul li.selected    { background: $sg_blue;  }
+.side-nav ul li.selected:hover { background: $sg_blue; }
+.side-nav ul li:hover       { background: lighten($sg_blue, 30%); color: #fff; }
+.side-nav ul li:hover a     { color: #fff; }
+.side-nav ul li.selected a  { color: #fff; cursor: default; }
 
-.test_containerx { border: 1px solid yellow; }
-.test_containerx { background: url('/assets/railsbridge.png') -30px -60px; }
-.head_containerx { background: url('/assets/railsbridge.png') -30px 0px; }
+.test-containerx { border: 1px solid yellow; }
+.test-containerx { background: url('/assets/railsbridge.png') -30px -60px; }
+.head-containerx { background: url('/assets/railsbridge.png') -30px 0px; }
 
 // various and sundry
 .left-border       { border-left: 1px solid $grayMediumLight; margin-left: 10px; padding-left: 10px; }
@@ -192,14 +204,14 @@ p.work-in-progress { font-style: italic; color: rgb(19, 223, 231); margin-top: 2
 
 
 // homepage events listing customizations
-.home_events { padding-left: 20px; }
-.home_events h3 { margin-left: 15px; }
-.home_events .events .event { float: left; width: 47%; margin: 0 1.5% 20px 1.5%; }
-.home_events .events .feature .event-cta { margin-left: 15px; }
+.home-events { padding-left: 20px; }
+.home-events h3 { margin-left: 15px; }
+.home-events .events .event { float: left; width: 47%; margin: 0 1.5% 20px 1.5%; }
+.home-events .events .feature .event-cta { margin-left: 15px; }
 
 // homepage customizations
-.home_twitter { padding-right: 20px; }
-.home_twitter h3 { margin-left: 0px; margin-bottom: 13px; }
+.home-twitter { padding-right: 20px; }
+.home-twitter h3 { margin-left: 0px; margin-bottom: 13px; }
 
 // chapters
 .chapters h2         { border-bottom: 1px solid $gray; padding-bottom: 15px; margin-top: 20px; }

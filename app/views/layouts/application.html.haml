@@ -11,7 +11,7 @@
   %body
     .container.the_background
       = render "layouts/header"
-      .container.test_container
+      .container
         = render "layouts/top_nav"
         .content
           .feature-list
@@ -21,6 +21,6 @@
               %ul
                 %li There are RailsBridge workshops in over a dozen cities. Our = link_to "Chapters page", chapters_path  can help you find a worskhop in your area. And if there isn't one planned, we can = link_to "help you set one up", organizing_path !
           = yield
-      .side_bar
+      .side-bar
         = render "layouts/side_nav"
     = render "layouts/footer"
