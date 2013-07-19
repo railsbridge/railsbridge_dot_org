@@ -1,0 +1,13 @@
+.header.navbar.navbar-static-top
+  .container
+    = link_to root_path, class: 'logo' do
+      %svg{ width: 40, height: 40 }
+        %circle.logo-placeholder{ cx: 20, cy: 20, r: 18 }
+    %ul.header_nav.nav
+      = header_link "Learn", learning_path
+      = header_link "Volunteer", helping_path
+      = header_link "About", about_path
+      %li#blog= link_to 'Blog', 'http://workshops.railsbridge.org/blog', target: '_blank'
+
+    %ul.header_nav.nav.nav-right
+      %li#curriculum= link_to 'Curriculum & Installfest', 'http://docs.railsbridge.org', target: '_blank'

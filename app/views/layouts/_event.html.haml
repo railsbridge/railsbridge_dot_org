@@ -1,0 +1,14 @@
+.feature-list.horizontal-feature.event
+  .feature.clearfix
+    %h4 Ruby Hackfest
+    %ul
+      -# %p.event-logistics
+      -# %span.event-location Indianapolis, IN -
+      -# %span.event-date May 24th to 25th
+      %li
+        %span.event-location Indianapolis, IN
+        %span.event-date May 24th to 25th
+      %li= link_to raw('<span class="icon-user"></span>The Indianapolis Ruby Group'), '', class: 'event-host'
+      %li= link_to raw('<span class="icon-map-marker"></span>The Speakeasy Room'), '', class: 'event-venue'
+
+    = link_to 'RSVP on Meetup', '', class: 'event-cta'
