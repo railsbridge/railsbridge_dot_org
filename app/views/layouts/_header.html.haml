@@ -16,7 +16,7 @@
           %li= link_to "FAQ", learning_faq_path
           %li= link_to "Keep Learning", learning_resources_path
       %li#help.nav-link{ class: ("selected" if request.path.match(/^\/help/)) }
-        = link_to "Volunteer", help_path, class: "dropdown-toggle", :"data-toggle" => "dropdown"
+        = link_to "Help", help_path, class: "dropdown-toggle", :"data-toggle" => "dropdown"
         %span
         %ul.dropdown-menu{ role: "menu", :"aria-labelledby" => "dLabel" }
           %li= link_to "Overview", help_path
