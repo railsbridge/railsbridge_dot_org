@@ -20,3 +20,5 @@ end
 
 gem "jquery-rails"
 gem "font-awesome-rails"
+gem "twitter"
+gem "tweetstream"
