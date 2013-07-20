@@ -9,7 +9,8 @@
 %p
   If you're interested in organizing, check out the #{link_to "organizing page", :organizing} and #{link_to "fill out our short interest form", :interest_form}!
 %p If you're interested in sponsoring... todo...
-.row
+
+.row-fluid
   .span6
     .feature-list
       .feature.clearfix.feature-1
@@ -28,17 +29,14 @@
           %li= nav_link 'Organize an Event', organize_path
           %li= link_to 'Hosting Resources', host_path
           %li= nav_link 'Donor FAQ', donor_faq_path
-.row
-  .span12
-    = render 'mailing_list'
-.row
+.row-fluid
   .span12
     %h2 So many other ways to help, too!
     %p
       There are
       %em ton
       of other things that have to happen to keep RailsBridge thriving. If you can help us with any of these things, fill out our quick #{link_to "volunteer interest form", interest_form_path} and we will be in touch.
-.row
+.row-fluid
   .span3
     .feature-list.horizontal-feature
       .feature.clearfix.feature-1
