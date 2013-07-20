@@ -6,7 +6,7 @@
         -# %circle.logo-placeholder{ cx: 22, cy: 22, r: 22 }
       %h1 RailsBridge
     %ul.header-nav.nav.dropdown
-      %li#learn.nav-link{:class => ("selected" if request.path.match(/^\/learn/))}
+      %li#learn.nav-link{ class: ("selected" if request.path.match(/^\/learn/)) }
         = link_to "Learn", learn_path, class: "dropdown-toggle", :"data-toggle" => "dropdown"
         %span
         %ul.dropdown-menu{ role: "menu", :"aria-labelledby" => "dLabel" }
@@ -15,7 +15,7 @@
           -# link_to "Before Attending", learn_path
           %li= link_to "FAQ", learning_faq_path
           %li= link_to "Keep Learning", learning_resources_path
-      %li#help.nav-link{:class => ("selected" if request.path.match(/^\/help/))}
+      %li#help.nav-link{ class: ("selected" if request.path.match(/^\/help/)) }
         = link_to "Volunteer", help_path, class: "dropdown-toggle", :"data-toggle" => "dropdown"
         %span
         %ul.dropdown-menu{ role: "menu", :"aria-labelledby" => "dLabel" }
@@ -25,7 +25,7 @@
           %li= link_to "Host an Event", host_path
           %li= link_to "Donor FAQ", donor_faq_path
           %li= link_to "Interest Form", interest_form_path
-      %li#about.nav-link{:class => ("selected" if request.path.match(/^\/about/))}
+      %li#about.nav-link{ class: ("selected" if request.path.match(/^\/about/)) }
         = link_to "About", about_path, class: "dropdown-toggle", :"data-toggle" => "dropdown"
         %span
         %ul.dropdown-menu{ role: "menu", :"aria-labelledby" => "dLabel" }

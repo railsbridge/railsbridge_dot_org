@@ -69,7 +69,7 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 }
 
 // .header navbar navbar-static-top -> container -> a svg circle - header-nav nav || nav-right -> li (selected) -> a - span
-.header                { height: 68px; background: white; border-bottom: 3px solid $gs_lightgray; }
+.header                { height: 68px; background: white; border-bottom: 1px solid $gs_lightgray; }
 .header a.logo         { position: relative; float: left; display: block; margin: 11px 10px 0 35px; }
 .header .logo img      { float: left; }
 .header h1             { font: bold 28px/28px 'Opensans',Arial,sans-serif; color: $gs_lightgray; margin: 8px 0 0 50px; }
@@ -89,7 +89,6 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 .header-nav .selected span { border-bottom: 10px solid $gs_lightgray; }
 .header-nav #help span     { left: 45px; }
 
-
 // various and sundry
 .left-border       { border-left: 1px solid $grayMediumLight; margin-left: 10px; padding-left: 10px; }
 .image-placeholder { display: block; width: 170px; height: 50px; line-height: 50px; text-align: center;
@@ -97,18 +96,19 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 .deemphasize       { color: #8f99a0; }
 .icon-heart        { color: red; }
 .icon-money        { color: green; }
+
 // .breadcrumbs -> a span.divider
-.breadcrumbs           { font: 14px/50px 'AleoLight',Arial,sans-serif; color: #333; padding-left: 5px; }
+.breadcrumbs           { font: 14px/50px 'AleoLight',Arial,sans-serif; color: #333; padding-left: 5px; margin-bottom: 20px; }
 .breadcrumbs a         { color: #333; }
 .breadcrumbs a:hover   { color: #333; }
 .breadcrumbs .divider  { padding: 0 5px; }
 
 // side bar and main content
-.content               { padding: 40px 0 20px 0; }
-.side-bar              { float: left; width: 165px; margin-right: 20px; margin-top: 5px; }
-.contentx               { float: right; width: 750px; margin-top: 22px; }
-.content h1            { font-size: 3em; margin-bottom: 20px; }
-.content hr            { border: none; height: 1px; color: $grayLight; background: $grayLight; }
+.test                 { background: pink; height: 40px; margin-bottom: 15px; }
+.content              {  }
+.side-bar             { float: left; width: 165px; margin-right: 20px; margin-top: 5px; }
+.content h1           { font-size: 3em; margin-bottom: 20px; }
+.content hr           { border: none; height: 1px; color: $grayLight; background: $grayLight; }
 
 // .side-nav -> ul.side-nav-links (selected) -> li (selected) -> a
 .side-nav                   { margin-bottom: 20px; box-shadow: 1px 1px 3px #999; }

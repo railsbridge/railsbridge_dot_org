@@ -8,13 +8,17 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
     = yield(:head)
-  %body
+  %body{ class: (params[:controller]), id: (params[:action]) }
     = render "layouts/header"
     .container
-      .content
-        = yield
-    -# .side-bar
-      =# render "layouts/side_nav"
+      = render "layouts/breadcrumbs"
+      .row
+        .span2
+          = render "layouts/side_nav"
+        .span10
+          .content
+            = yield
+
     = render "layouts/footer"
 
 /
