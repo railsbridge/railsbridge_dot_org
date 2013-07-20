@@ -69,7 +69,7 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 }
 
 // .header navbar navbar-static-top -> container -> a svg circle - header-nav nav || nav-right -> li (selected) -> a - span
-.header                { height: 68px; background: white; }
+.header                { height: 68px; background: white; border-bottom: 3px solid $gs_lightgray; }
 .header a.logo         { position: relative; float: left; display: block; margin: 11px 10px 0 35px; }
 .header .logo img      { float: left; }
 .header h1             { font: bold 28px/28px 'Opensans',Arial,sans-serif; color: $gs_lightgray; margin: 8px 0 0 50px; }
@@ -83,27 +83,12 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 .header ul.nav a       { color: $gs_lightgray; }
 .header ul.nav li.selected a {  }
 
-
 // header top nav arrow
-.header-nav span            { width: 0; height: 0; position: absolute; bottom: -1px; left: 25px;
-                              border-left: 13px solid transparent; border-right: 13px solid transparent; border-bottom: 13px solid white; }
-.header-nav #volunteer span { left: 45px; }
-.header-nav .alive span     { border-bottom: 10px solid $gs_lightgray; opacity: .6; border-bottom: 10px solid $gs_lightgray; }
-.header-nav .selected span  { border-bottom: 10px solid $gs_lightgray; border-bottom: 10px solid $gs_lightgray; }
-.header-nav .selected.alive span { opacity: 1; }
+.header-nav .nav-link span { width: 0; height: 0; position: absolute; bottom: -1px; left: 25px; opacity: .6;
+                              border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid transparent; }
+.header-nav .selected span { border-bottom: 10px solid $gs_lightgray; }
+.header-nav #help span     { left: 45px; }
 
-
-// .top-nav -> .container -> ul.topnav #learning-sub-nav #about-sub-nav #helping-sub-nav -> li.selected a
-
-.top-nav                   { background: $gs_lightgray; height: 40px; text-align: right; }
-.top-nav .top-nav-links    { display: none; float: right; margin-right: 35px; }
-.top-nav .selected         { display: block; }
-.top-nav .alive            { display: block; }
-.top-nav ul                { list-style: none; margin-left: 30px;  }
-.top-nav ul li             { float:left; font-family: 'Opensans',Arial,sans-serif; padding: 10px 20px; }
-.top-nav ul li a           { color: $black;  }
-.top-nav ul li.selected a  { color: $black; cursor: default; }
-.top-nav-links             { margin-top: -10px; padding-top: 10px; }
 
 // various and sundry
 .left-border       { border-left: 1px solid $grayMediumLight; margin-left: 10px; padding-left: 10px; }
