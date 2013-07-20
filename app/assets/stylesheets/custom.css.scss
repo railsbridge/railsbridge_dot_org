@@ -20,6 +20,13 @@ $sg_blue: #2493B8;
 $sg_green: #639239;
 $sg_black: #333;
 
+
+$gs_darkgray: #333;
+$gs_gray: #666;
+$gs_lightgray: #999;
+$gs_lightestgray: #ccc;
+$gs_firebrick: #8e2323;
+
 $new_blue: #3887be;
 $new_gray: #394e5a;
 
@@ -65,15 +72,16 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 // .header navbar navbar-static-top -> container -> a svg circle - header-nav nav || nav-right -> li (selected) -> a - span
 .header                { height: 68px; background: white; }
 .header a.logo         { position: relative; float: left; display: block; margin: 11px 10px 0 35px; }
-.header h1             { font: bold 28px/28px 'Opensans',Arial,sans-serif; color: $new_blue; margin: 8px 0 0 50px; }
+.header .logo img      { float: left; }
+.header h1             { font: bold 28px/28px 'Opensans',Arial,sans-serif; color: $gs_lightgray; margin: 8px 0 0 50px; }
 .header svg            { position: absolute; }
-.header circle         { stroke: #fff; stroke-width: 2; fill: $new_blue; }
+.header circle         { stroke: #fff; stroke-width: 2; fill: $gs_lightgray; }
 .header ul.nav         { float: right; margin: 17px 0 0 0; }
 .header li             { position: relative; height: 50px; }
-.header li a           { display: block; font: normal 15px/15px 'Opensans',Arial,sans-serif; color: $new_blue;
+.header li a           { display: block; font: normal 15px/15px 'Opensans',Arial,sans-serif; color: $gs_lightgray;
                          text-transform: uppercase; padding: 0 7px; }
 .header li.external a  { background: #f8f8f8; border-left: 1px solid white; }
-.header ul.nav a       { color: $new_blue; }
+.header ul.nav a       { color: $gs_lightgray; }
 .header ul.nav li.selected a {  }
 
 
@@ -81,20 +89,20 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 .header-nav span            { width: 0; height: 0; position: absolute; bottom: -1px; left: 25px;
                               border-left: 13px solid transparent; border-right: 13px solid transparent; border-bottom: 13px solid white; }
 .header-nav #volunteer span { left: 45px; }
-.header-nav .alive span     { border-bottom: 10px solid $greenMint; opacity: .6; border-bottom: 10px solid red; }
-.header-nav .selected span  { border-bottom: 10px solid $greenMint; border-bottom: 10px solid red; }
+.header-nav .alive span     { border-bottom: 10px solid $gs_lightgray; opacity: .6; border-bottom: 10px solid $gs_lightgray; }
+.header-nav .selected span  { border-bottom: 10px solid $gs_lightgray; border-bottom: 10px solid red; }
 .header-nav .selected.alive span { opacity: 1; }
 
 
 // .top-nav -> .container -> ul.topnav #learning-sub-nav #about-sub-nav #helping-sub-nav -> li.selected a
 
-.top-nav                   { background: $greenMint; height: 40px; text-align: right; }
+.top-nav                   { background: $gs_lightgray; height: 40px; text-align: right; opacity: .6; }
 .top-nav .top-nav-links    { display: none; float: right; margin-right: 35px; }
 .top-nav .selected         { display: block; }
 .top-nav .alive            { display: block; }
 .top-nav ul                { list-style: none; margin-left: 30px;  }
 .top-nav ul li             { float:left; font-family: 'Opensans',Arial,sans-serif; padding: 10px 20px; }
-.top-nav ul li a           { color: $new_blue;  }
+.top-nav ul li a           { color: $black;  }
 .top-nav ul li.selected a  { color: $black; cursor: default; }
 .top-nav-links             { margin-top: -10px; padding-top: 10px; }
 
@@ -158,15 +166,10 @@ p.work-in-progress { font-style: italic; color: rgb(19, 223, 231); margin-top: 2
 // Individual Page Styles
 
 // Home
-
-.home { width: 100%; background: transparent url('homepage-background.jpg') left top; color: #fff; color: black; padding-bottom: 20px; }
-.home { background: #66CD00; background: none; border: 1px solid pink; background: transparent url('homepage-background.jpg'); background-size: contain; }
-
-.home-header { float: right; width: 320px; min-height: 325px; margin: 58px 0px 60px 200px; padding: 35px 35px; border: 1px solid $new_gray; background: white; }
-.home h1, .home h2, .home h3 { font: bold 28px 'Opensans',Arial,sans-serif; color: $new_gray; }
-.home h2 { font-size: 16px; }
-.home h3 { margin: 0 0 0 25px; font-style: italic; }
-.home h4 { margin: 0 0 0 25px; font-style: italic; }
+.home { padding: 40px 0 20px 0; }
+.home-callout { float: left; width: 200px; min-height: 200px; margin: -20px 0px 60px 0px; padding: 35px; border: 1px solid $new_gray; background: white; }
+.home-callout h3, .home-callout h4 { font: bold 16px 'Opensans',Arial,sans-serif; color: $new_gray; }
+.home-callout h4 { font-size: 14px; }
 
 // Sponsors
 .sponsors h2       { margin-top: 25px; font-weight: bold; }
@@ -199,10 +202,12 @@ p.work-in-progress { font-style: italic; color: rgb(19, 223, 231); margin-top: 2
 .events .horizontal-feature .feature { margin-bottom: 0px; }
 .events .feature { min-height: 150px; background: #fff; color: $grayDark; }
 .events .feature-list h4 { margin-left: 0; }
+.events a { color: $gs_firebrick; }
 .events a span { padding-right: 5px; }
 .events ul { height: 90px; text-align: left; }
-.events .feature .event-cta { display: block; width: 200px; height: 30px; line-height: 30px; background: orange; color: white; text-align: center; margin-left: 30px; }
+.events .feature .event-cta { display: block; width: 200px; height: 30px; line-height: 30px; background: $gs_firebrick; color: white; text-align: center; margin-left: 30px; }
 .event-help .feature { background: $grayDark; color: #fff; border: 1px solid $grayDark; }
+.event-help .feature p { color: #fff; }
 .event-help .event-cta { background: $grayLight; color: #000; }
 
 
