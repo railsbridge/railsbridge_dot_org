@@ -1,21 +1,7 @@
 .side-nav
   %ul.side-nav-links{ class: ("selected" if request.path.match(/^\/learn/)) }
-    = nav_link "Overview", learn_path
-    = nav_link 'Upcoming Workshops', events_path
-    = nav_link 'Chapters', chapters_path
-    = nav_link 'FAQ', learning_faq_path
-    = nav_link 'Keep Learning', learning_resources_path
-  %ul.side-nav-links{ class: ("selected" if request.path.match(/^\/about/)) }
-    = nav_link "Overview", about_path
-    = nav_link "Team", team_path
-    = nav_link "Sponsors ", sponsors_path
-    = nav_link "Chapters", chapters_path
-    = nav_link "Past Events", past_events_path
-    = nav_link "Projects", projects_path
+    = render "layouts/nav_links", section: "learn"
   %ul.side-nav-links{ class: ("selected" if request.path.match(/^\/help/)) }
-    = nav_link 'Overview', help_path
-    = nav_link 'Teach or TA', teach_path
-    = nav_link 'Organize an Event', organize_path
-    = nav_link 'Host an Event', host_path
-    = nav_link 'Donor FAQ', donor_faq_path
-    = nav_link 'Interest Form', interest_form_path
+    = render "layouts/nav_links", section: "help"
+  %ul.side-nav-links{ class: ("selected" if request.path.match(/^\/about/)) }
+    = render "layouts/nav_links", section: "about"
