@@ -23,8 +23,7 @@ $sg_black: #333;
 
 $gs_darkgray: #333;
 $gs_gray: #666;
-$gs_lightgray: #999;
-$gs_lightestgray: #ccc;
+$gs_lightgray: #ccc;
 $gs_firebrick: #8e2323;
 
 $new_blue: #3887be;
@@ -90,13 +89,13 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
                               border-left: 13px solid transparent; border-right: 13px solid transparent; border-bottom: 13px solid white; }
 .header-nav #volunteer span { left: 45px; }
 .header-nav .alive span     { border-bottom: 10px solid $gs_lightgray; opacity: .6; border-bottom: 10px solid $gs_lightgray; }
-.header-nav .selected span  { border-bottom: 10px solid $gs_lightgray; border-bottom: 10px solid red; }
+.header-nav .selected span  { border-bottom: 10px solid $gs_lightgray; border-bottom: 10px solid $gs_lightgray; }
 .header-nav .selected.alive span { opacity: 1; }
 
 
 // .top-nav -> .container -> ul.topnav #learning-sub-nav #about-sub-nav #helping-sub-nav -> li.selected a
 
-.top-nav                   { background: $gs_lightgray; height: 40px; text-align: right; opacity: .6; }
+.top-nav                   { background: $gs_lightgray; height: 40px; text-align: right; }
 .top-nav .top-nav-links    { display: none; float: right; margin-right: 35px; }
 .top-nav .selected         { display: block; }
 .top-nav .alive            { display: block; }
