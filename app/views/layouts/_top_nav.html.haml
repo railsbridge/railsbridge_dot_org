@@ -1,9 +1,9 @@
 .top-nav
   .container
     %ul.top-nav-links#js-learn-sub-nav{:class => ("selected" if request.path.match(/^\/learn/))}
-      = nav_link "Overview", learning_path
+      = nav_link "Overview", learn_path
       = nav_link "Upcoming Workshops", events_path
-      -# nav_link "Before Attending", learning_path
+      -# nav_link "Before Attending", learn_path
       = nav_link "FAQ", learning_faq_path
       = nav_link "Keep Learning", learning_resources_path
     %ul.top-nav-links#js-about-sub-nav{:class => ("selected" if request.path.match(/^\/about/))}
@@ -14,9 +14,9 @@
       = nav_link "Past Events", past_events_path
       = nav_link "Projects", projects_path
     %ul.top-nav-links#js-volunteer-sub-nav{:class => ("selected" if request.path.match(/^\/help/))}
-      = nav_link "Overview", helping_path
-      = nav_link "Teach or TA", teaching_path
-      = nav_link "Organize an Event", organizing_path
-      = nav_link "Host an Event", hosting_path
+      = nav_link "Overview", help_path
+      = nav_link "Teach or TA", teach_path
+      = nav_link "Organize an Event", organize_path
+      = nav_link "Host an Event", host_path
       = nav_link "Donor FAQ", donor_faq_path
       = nav_link "Interest Form", interest_form_path

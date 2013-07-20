@@ -8,16 +8,16 @@ class StaticPagesController < ApplicationController
   def about
   end
 
-  def learning
+  def learn
   end
 
-  def teaching
+  def teach
   end
 
-  def organizing
+  def organize
   end
 
-  def hosting
+  def host
   end
 
   def faq
@@ -41,7 +41,7 @@ class StaticPagesController < ApplicationController
   def sponsors
   end
 
-  def helping
+  def help
   end
 
   def faq
