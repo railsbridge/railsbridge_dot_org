@@ -1,0 +1,77 @@
+- provide(:title, page_title(['Helping']))
+
+%h1 Want to help RailsBridge?
+%h2 There are so many ways you can!
+%h3 Teachers, TAs, Organizers and Sponsors Needed
+%p The most visible volunteer positions within RailsBridge are the worshop sponsors, organizers, teachers, and TAs. They make each workshop happen!
+%p
+  If you're interested in teaching, check out the #{link_to "RailsBridge chapters", chapters_path} to see if one is coming up near you.
+%p
+  If you're interested in organizing, check out the #{link_to "organizing page", :organizing} and #{link_to "fill out our short interest form", :interest_form}!
+%p If you're interested in sponsoring... todo...
+.row
+  .span6
+    .feature-list
+      .feature.clearfix.feature-1
+        .feature-icon.icon-3x.icon-book
+        %h4 Teach or TA
+        %ul
+          %li= link_to 'Teaching Resources', teaching_path
+          %li= link_to 'Chapter List', chapters_path
+          %li= link_to 'Upcoming Events', events_path
+  .span6
+    .feature-list
+      .feature.clearfix
+        .feature-icon.icon-3x.icon-cogs
+        %h4 Organize, Sponsor or Host an Event
+        %ul
+          %li= nav_link 'Organize an Event', organizing_path
+          %li= link_to 'Hosting Resources', hosting_path
+          %li= nav_link 'Donor FAQ', donor_faq_path
+.row
+  .span12
+    = render 'mailing_list'
+.row
+  .span12
+    %h2 So many other ways to help, too!
+    %p
+      There are
+      %em ton
+      of other things that have to happen to keep RailsBridge thriving. If you can help us with any of these things, fill out our quick #{link_to "volunteer interest form", interest_form_path} and we will be in touch.
+.row
+  .span3
+    .feature-list.horizontal-feature
+      .feature.clearfix.feature-1
+        .feature-icon.icon-3x.icon-book
+        %h4 Curriculum Stuff
+        %ul
+          %li Maintain and create new curricula
+          %li Keeping the constantly-changing Installfest up-to-date
+          %li Help our teachers level up by creating more in-depth teacher training
+  .span3
+    .feature-list.horizontal-feature
+      .feature.clearfix
+        .feature-icon.icon-3x.icon-wrench
+        %h4 Building Tools
+        %ul
+          %li We're trying to make organizing easier with Bridge Troll, an open source app we're buidling
+          %li We want to make tools to help students figure out what to learn next!
+  .span3
+    .feature-list.horizontal-feature
+      .feature.clearfix
+        .feature-icon.icon-3x.icon-bullhorn
+        %h4 Communicating
+        %ul
+          %li We need to tell the world what we're doing! PR dabblers welcome!
+          %li Blogging. Writers are the best.
+          %li Tweeting, Facebooking, LinkedIn-ing: social media is fun.
+  .span3
+    .feature-list.horizontal-feature
+      .feature.clearfix
+        .feature-icon.icon-3x.icon-phone
+        %h4 Strategy and Fundraising
+        %ul
+          %li We're building an organization called Bridge Foundry to help us (and other orgs) manage our funds (and people) better!
+          %li RailsBridge is growing a ton, and we can always use strategists and do-ers to help us think big and make those epic plans a reality
+%br/
+%h3.deemphasize TODO: Add more detail about the curriculum contribution process here or within the curriculum box...

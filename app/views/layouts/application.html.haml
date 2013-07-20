@@ -11,8 +11,9 @@
   %body
     = render "layouts/header"
     = render "layouts/top_nav"
-    .content
-      = yield
+    .container
+      .content
+        = yield
     -# .side-bar
       =# render "layouts/side_nav"
     = render "layouts/footer"
