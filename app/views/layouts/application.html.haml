@@ -11,12 +11,15 @@
   %body{ class: (params[:controller]), id: (params[:action]) }
     = render "layouts/header"
     .container
-      .row
-        .span2
-          = render "layouts/side_nav"
-        .span10
-          .content
-            = yield
+      - if params[:action] == "home"
+        = yield
+      - else
+        .row
+          .span2
+            = render "layouts/side_nav"
+          .span10
+            .content
+              = yield
 
     = render "layouts/footer"
 
