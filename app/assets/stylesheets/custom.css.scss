@@ -168,8 +168,10 @@ p.work-in-progress { font-style: italic; color: rgb(19, 223, 231); margin-top: 2
 // Home
 .home { padding: 40px 0 20px 0; }
 .home-callout { float: left; width: 200px; min-height: 200px; margin: -20px 0px 60px 0px; padding: 35px; border: 1px solid $new_gray; background: white; }
-.home-callout h3, .home-callout h4 { font: bold 16px 'Opensans',Arial,sans-serif; color: $new_gray; }
-.home-callout h4 { font-size: 14px; }
+.home-header { margin: 0 20px; }
+.home h1, .home h2, .home h3 { font-weight: normal; }
+.home h3 { margin: 0 0 0 25px; font-style: italic; }
+.home h4 { margin: 0 0 0 25px; font-style: italic; }
 
 // Sponsors
 .sponsors h2       { margin-top: 25px; font-weight: bold; }
