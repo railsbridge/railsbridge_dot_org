@@ -1,19 +1,20 @@
 - provide(:title, page_title(['Home']))
 
 .home
-  .home-header
-    %h1 Tech needs you!
-    %h2 Learn to code with RailsBridge
-    %p RailsBridge workshops are a free and fun way to get started or level up with Rails, Ruby, and other web technologies. Our events focus on increasing diversity in tech, so that people of all backgrounds can feel welcome and comfortable in our industry.
-  .row
-    .span8
-      .home-events
-        %h3 Upcoming Events:
-        = render 'layouts/events'
-    .span4
-      .home-twitter
-        %h3 Recent Tweets
-        = render 'tweets'
+  .container
+    .home-header
+      %h1 Tech needs you!
+      %h2 Learn to code with RailsBridge
+      %p RailsBridge workshops are a free and fun way to get started or level up with Rails, Ruby, and other web technologies. Our events focus on increasing diversity in tech, so that people of all backgrounds can feel welcome and comfortable in our industry.
+    .row
+      .span8
+        .home-events
+          %h3 Upcoming Events:
+          = render 'layouts/events'
+      .span4
+        .home-twitter
+          %h3 Recent Tweets
+          = render 'tweets'
 
 /
   Original home page content...
