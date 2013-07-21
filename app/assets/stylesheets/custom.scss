@@ -1,44 +1,14 @@
 // mixins, variables, etc.
-$grayMediumLight: #eaeaea;
-$gray: #dfdfdf;
-$grayLight: #e9e9e9;
-$grayDark: #767676;
 @mixin box_sizing { -moz-box-sizing: border-box;  -webkit-box-sizing: border-box;  box-sizing: border-box; }
 
-// colors
-$red: #DB2225;
-$orange: #EF731F;
-$purple: #6C266F;
-$blue: #2493B8;
-$green: #639239;
-$black: #333333;
-
-$sg_red: #DB2225;
-$sg_orange: #EF731F;
-$sg_purple: #6C266F;
-$sg_blue: #2493B8;
-$sg_green: #639239;
-$sg_black: #333;
-
-
-$gs_darkgray: #333;
-$gs_gray: #666;
-$gs_lightgray: #ccc;
-$gs_firebrick: #8e2323;
-
-$new_blue: #3887be;
-$new_gray: #394e5a;
-
-
-$greenMint: #E0F8E0;
 
 // universal
 html      { overflow-y: scroll; }
 section   { overflow: auto; }
 textarea  { resize: vertical; }
 .center   { text-align: center; }
-a         { color: $sg_purple }
-a:hover   { color: lighten($sg_purple, 30%); text-decoration: none; }
+a         { color: $purple }
+a:hover   { color: lighten($purple, 30%); text-decoration: none; }
 hr        { margin: 0px 0px 20px; border: 0px; height: 1px; background: $grayLight; }
 
 // typography
@@ -65,196 +35,12 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 .icon-heart        { color: red; }
 .icon-money        { color: green; }
 
-// Page Elements
-// Header -> Side Nav - Content -> Footer
-// header navbar navbar-static-top -> container -> a.logo - ul.header-nav nav dropdown -> li.nav-link -> a - span - ul.dropdown-menu
-
-// Flattening page elements
-.header, .navbar, .navbar-static-top  {
-  border: none;
-  box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none;
-  -moz-transition: none;
-  -webkit-transition: none;
-  padding: 0;
-  margin: 0;
-}
-
-// header
-.header {
-  height: 65px;
-  background: white;
-  border-bottom: 1px solid $gs_lightgray;
-  margin-bottom: 30px;
-  a.logo {
-    float: left;
-    display: block;
-    margin: 11px 0 0 20px;
-  }
-  .logo img {
-    float: left;
-  }
-  h1 {
-    font: bold 28px/28px 'Opensans',Arial,sans-serif;
-    color: $gs_lightgray;
-    margin: 8px 0 0 60px;
-  }
-  ul.nav {
-    float: right;
-    margin-top: 17px;
-    li {
-      position: relative;
-      height: 50px;
-      a {
-        display: block;
-        font: normal 15px/15px 'Opensans',Arial,sans-serif;
-        color: $gs_lightgray;
-        text-transform: uppercase;
-        padding: 10px 22px;
-      }
-    }
-    li.external a {
-      background: #f8f8f8;
-      border-left: 1px solid white;
-    }
-    li.selected a {
-      color: $black;
-      span {
-        border-bottom: 10px solid $gs_lightgray;
-      }
-    }
-    li#help span {
-      left: 30px;
-    }
-  }
-}
-
-// header selected arrow
-.header-nav {
-  .nav-link span {
-    width: 0;
-    height: 0;
-    opacity: .6;
-    position: absolute; bottom: 1px; left: 35px;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-  }
-  .selected span {
-    border-bottom: 10px solid $gs_lightgray;
-  }
-}
-
-// logo placeholder
-.header {
-  svg {
-    position: absolute;
-  }
-  circle {
-    stroke: #fff;
-    stroke-width: 2;
-    fill: $gs_lightgray;
-  }
-}
-
-// side nav
-.side-nav {
-  margin-bottom: 20px;
-  box-shadow: 1px 1px 3px #999;
-  .side-nav-links {
-    display: none;
-  }
-  .selected {
-    display: block;
-  }
-  a {
-    color: #333;
-  }
-  ul {
-    list-style: none;
-    margin: 0;
-    li {
-      text-align: center;
-      line-height: 18px;
-      padding: 12px 20px;
-      &.selected {
-        background: $sg_blue;
-        &:hover {
-          background: $sg_blue;
-        }
-        a {
-          color: #fff;
-          cursor: default;
-        }
-      }
-      &:hover {
-        background: lighten($sg_blue, 30%);
-        color: #fff;
-        a {
-          color: #fff;
-        }
-      }
-    }
-  }
-}
-
-// content
-.content {
-  h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-  }
-  hr {
-    border: none;
-    height: 1px;
-    color: $grayLight;
-    background: $grayLight;
-  }
-}
-
-// footer
-.footer {
-  color: #fff;
-  background: $grayDark;
-  padding: 20px 0 30px 0;
-  margin-top: 30px;
-  a {
-    color: #fff;
-    line-height: 40px;
-  }
-  p {
-    color: #fff;
-    margin-top: 0px;
-  }
-  a.font-icon {
-    font-size: 2.5em;
-  }
-  ul.footer-links {
-    list-style: none;
-    li {
-      float: left;
-      padding-right: 10px;
-      .left-border {
-        padding-left: 20px;
-        margin-left: 10px;
-      }
-    }
-  }
-  p.work-in-progress {
-    font-style: italic;
-    color: rgb(19, 223, 231);
-    margin-top: 20px;
-  }
-}
-
-
-
-
 
 // Individual Page Styles
 
 // Home
 .home {  }
-.home-callout { float: left; width: 200px; min-height: 200px; margin: -20px 0px 60px 0px; padding: 35px; border: 1px solid $new_gray; background: white; }
+.home-callout { float: left; width: 200px; min-height: 200px; margin: -20px 0px 60px 0px; padding: 35px; border: 1px solid $tempGray; background: white; }
 .home-header { margin: 0 20px; }
 .home h1, .home h2, .home h3 { font-weight: normal; }
 .home h3 { margin: 0 0 0 25px; font-style: italic; }
@@ -291,10 +77,10 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 .events .horizontal-feature .feature { margin-bottom: 0px; }
 .events .feature { min-height: 150px; background: #fff; color: $grayDark; }
 .events .feature-list h4 { margin-left: 0; }
-.events a { color: $gs_firebrick; }
+.events a { color: $tempFirebrick; }
 .events a span { padding-right: 5px; }
 .events ul {  }
-.events .feature .event-cta { display: block; width: 200px; height: 30px; line-height: 30px; background: $gs_firebrick; color: white; text-align: center; margin: 10px auto 0 auto; }
+.events .feature .event-cta { display: block; width: 200px; height: 30px; line-height: 30px; background: $tempFirebrick; color: white; text-align: center; margin: 10px auto 0 auto; }
 .event-help .feature { background: $grayDark; color: #fff; border: 1px solid $grayDark; }
 .event-help .feature p { color: #fff; }
 .event-help .event-cta { background: $grayLight; color: #000; }

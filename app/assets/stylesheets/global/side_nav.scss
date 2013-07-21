@@ -1,0 +1,40 @@
+// side nav
+.side-nav {
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 3px #999;
+  .side-nav-links {
+    display: none;
+  }
+  .selected {
+    display: block;
+  }
+  a {
+    color: #333;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    li {
+      text-align: center;
+      line-height: 18px;
+      padding: 12px 20px;
+      &.selected {
+        background: $blue;
+        &:hover {
+          background: $blue;
+        }
+        a {
+          color: #fff;
+          cursor: default;
+        }
+      }
+      &:hover {
+        background: lighten($blue, 30%);
+        color: #fff;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+// content
+.content {
+  h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  }
+  hr {
+    border: none;
+    height: 1px;
+    color: $grayLight;
+    background: $grayLight;
+  }
+}

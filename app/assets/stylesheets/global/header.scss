@@ -1,0 +1,87 @@
+// header
+
+// Flattening page elements
+.header, .navbar, .navbar-static-top  {
+  border: none;
+  box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  height: 65px;
+  background: white;
+  border-bottom: 1px solid $grayMediumLight;
+  margin-bottom: 30px;
+  a.logo {
+    float: left;
+    display: block;
+    margin: 11px 0 0 20px;
+  }
+  .logo img {
+    float: left;
+  }
+  h1 {
+    font: bold 28px/28px 'Opensans',Arial,sans-serif;
+    color: $grayMediumLight;
+    margin: 8px 0 0 60px;
+  }
+  ul.nav {
+    float: right;
+    margin-top: 17px;
+    li {
+      position: relative;
+      height: 50px;
+      a {
+        display: block;
+        font: normal 15px/15px 'Opensans',Arial,sans-serif;
+        color: $grayMediumLight;
+        text-transform: uppercase;
+        padding: 10px 22px;
+      }
+    }
+    li.external a {
+      background: #f8f8f8;
+      border-left: 1px solid white;
+    }
+    li.selected a {
+      color: $black;
+      span {
+        border-bottom: 10px solid $grayMediumLight;
+      }
+    }
+    li#help span {
+      left: 30px;
+    }
+  }
+}
+
+// header selected arrow
+.header-nav {
+  .nav-link span {
+    width: 0;
+    height: 0;
+    opacity: .6;
+    position: absolute; bottom: 1px; left: 35px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  .selected span {
+    border-bottom: 10px solid $grayMediumLight;
+  }
+}
+
+// logo placeholder
+.header {
+  svg {
+    position: absolute;
+  }
+  circle {
+    stroke: #fff;
+    stroke-width: 2;
+    fill: $grayMediumLight;
+  }
+}
