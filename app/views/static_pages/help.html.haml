@@ -5,9 +5,9 @@
 %h3 Teachers, TAs, Organizers and Sponsors Needed
 %p The most visible volunteer positions within RailsBridge are the worshop sponsors, organizers, teachers, and TAs. They make each workshop happen!
 %p
-  If you're interested in teaching, check out the #{link_to "RailsBridge chapters", chapters_path} to see if one is coming up near you.
+  If you're interested in teaching, check out the #{link_to "RailsBridge chapters", :chapters} to see if one is coming up near you.
 %p
-  If you're interested in organizing, check out the #{link_to "organizing page", :organizing} and #{link_to "fill out our short interest form", :interest_form}!
+  If you're interested in organizing, check out the #{link_to "organizing page", :organize} and #{link_to "fill out our short interest form", :interest_form}!
 %p If you're interested in sponsoring... todo...
 
 .row-fluid
@@ -17,25 +17,25 @@
         .feature-icon.icon-3x.icon-book
         %h4 Teach or TA
         %ul
-          %li= link_to 'Teaching Resources', teach_path
-          %li= link_to 'Chapter List', chapters_path
-          %li= link_to 'Upcoming Events', events_path
+          %li= link_to 'Teaching Resources', :teach
+          %li= link_to 'Chapter List', :chapters
+          %li= link_to 'Upcoming Events', :events
   .span6
     .feature-list
       .feature.clearfix
         .feature-icon.icon-3x.icon-cogs
         %h4 Organize, Sponsor or Host an Event
         %ul
-          %li= nav_link 'Organize an Event', organize_path
-          %li= link_to 'Hosting Resources', host_path
-          %li= nav_link 'Donor FAQ', donor_faq_path
+          %li= nav_link 'Organize an Event', :organize
+          %li= link_to 'Hosting Resources', :host
+          %li= nav_link 'Donor FAQ', :donor_faq
 .row-fluid
   .span12
     %h2 So many other ways to help, too!
     %p
       There are
       %em ton
-      of other things that have to happen to keep RailsBridge thriving. If you can help us with any of these things, fill out our quick #{link_to "volunteer interest form", interest_form_path} and we will be in touch.
+      of other things that have to happen to keep RailsBridge thriving. If you can help us with any of these things, fill out our quick #{link_to "volunteer interest form", :interest_form} and we will be in touch.
 .row-fluid
   .span3
     .feature-list.horizontal-feature

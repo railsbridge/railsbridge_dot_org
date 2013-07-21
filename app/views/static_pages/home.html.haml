@@ -1,6 +1,5 @@
 - provide(:title, page_title(['Home']))
 
-
 .row
   .span12
     .home-header
@@ -23,24 +22,16 @@
   %h2 Want to learn?
 
   %p
-    Our 
-    = link_to "Chapters Page", chapters_path 
-    shows all the cities we're in and where to find upcoming workshops listed online. We also have 
-    = link_to "general info for students", learn_path
-    , too.
+    Our #{link_to "Chapters Page", :chapters} shows all the cities we're in and where to find
+    upcoming workshops listed online. We also have #{link_to "general info for students", :learn}, too.
 
-  %p= link_to "Find a RailsBridge chapter", chapters_path, class: "btn btn-primary btn-large"
+  %p= link_to "Find a RailsBridge chapter", :chapters, class: "btn btn-primary btn-large"
 
   %h2 Want to help out?
   %p
-    There are so many ways to help, including 
-    = link_to "volunteering as a teacher or TA", teach_path
-    , 
-    = link_to "organizing a workshop", organize_path
-    , 
-    = link_to "hosting or sponsoring a workshop", host_path 
-    and more.
+    There are so many ways to help, including #{link_to "volunteering as a teacher or TA", :teach},
+    #{link_to "organizing a workshop", :organize}, #{link_to "hosting or sponsoring a workshop", :host} and more.
 
   %p Find out more about what we need help with, and get in touch!
 
-  %p= link_to "Contribute Your Awesomeness", help_path, class: "btn btn-primary btn-large"
+  %p= link_to "Contribute Your Awesomeness", :help, class: "btn btn-primary btn-large"

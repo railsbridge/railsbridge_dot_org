@@ -1,25 +1,25 @@
 .header.navbar.navbar-static-top
   .container
-    = link_to root_path, class: 'logo' do
-      = image_tag 'madison_ruby.png'
+    = link_to :root, class: "logo" do
+      = image_tag "madison_ruby.png"
       -# %svg{ width: 50, height: 50 }
         -# %circle.logo-placeholder{ cx: 22, cy: 22, r: 22 }
       %h1 RailsBridge
     %ul.header-nav.nav.dropdown
       %li#learn.nav-link{ class: ("selected" if request.path.match(/^\/learn/)) }
-        = link_to "Learn", learn_path, class: "dropdown-toggle", :"data-toggle" => "dropdown"
+        = link_to "Learn", :learn, class: "dropdown-toggle", :"data-toggle" => "dropdown"
         %span
         %ul.dropdown-menu{ role: "menu", :"aria-labelledby" => "dLabel" }
           = render "layouts/nav_links", section: "learn"
       %li#help.nav-link{ class: ("selected" if request.path.match(/^\/help/)) }
-        = link_to "Help", help_path, class: "dropdown-toggle", :"data-toggle" => "dropdown"
+        = link_to "Help", :help, class: "dropdown-toggle", :"data-toggle" => "dropdown"
         %span
         %ul.dropdown-menu{ role: "menu", :"aria-labelledby" => "dLabel" }
           = render "layouts/nav_links", section: "help"
       %li#about.nav-link{ class: ("selected" if request.path.match(/^\/about/)) }
-        = link_to "About", about_path, class: "dropdown-toggle", :"data-toggle" => "dropdown"
+        = link_to "About", :about, class: "dropdown-toggle", :"data-toggle" => "dropdown"
         %span
         %ul.dropdown-menu{ role: "menu", :"aria-labelledby" => "dLabel" }
           = render "layouts/nav_links", section: "about"
-      %li.external#blog= link_to 'Blog', 'http://workshops.railsbridge.org/blog', target: '_blank'
-      %li.external#curriculum= link_to 'Curriculum & Installfest', 'http://docs.railsbridge.org', target: '_blank'
+      %li.external#blog= link_to "Blog", "http://workshops.railsbridge.org/blog", target: "_blank"
+      %li.external#curriculum= link_to "Curriculum & Installfest", "http://docs.railsbridge.org", target: "_blank"
