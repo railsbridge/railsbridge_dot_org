@@ -57,18 +57,29 @@ strong                           { font-weight: bold; }
 // Style Guide
 p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif; color: #333; }
 
-
-// Flattening page elements
-.header, .navbar, .navbar-static-top  {
-  border: none; box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; 
-  -moz-transition: none; -webkit-transition: none;padding: 0; margin: 0;
-}
+// various and sundry
+.left-border       { border-left: 1px solid $grayMediumLight; margin-left: 10px; padding-left: 10px; }
+.image-placeholder { display: block; width: 170px; height: 50px; line-height: 50px; text-align: center;
+                     background: white; border: 2px dotted $grayMediumLight; }
+.deemphasize       { color: #8f99a0; }
+.icon-heart        { color: red; }
+.icon-money        { color: green; }
 
 // Page Elements
 // Header -> Side Nav - Content -> Footer
-// .header navbar navbar-static-top -> container -> a svg circle - header-nav nav || nav-right -> li (selected) -> a - span
-// header selected arrow
+// header navbar navbar-static-top -> container -> a.logo - ul.header-nav nav dropdown -> li.nav-link -> a - span - ul.dropdown-menu
 
+// Flattening page elements
+.header, .navbar, .navbar-static-top  {
+  border: none;
+  box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+  padding: 0;
+  margin: 0;
+}
+
+// header
 .header {
   height: 65px;
   background: white;
@@ -117,6 +128,7 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
   }
 }
 
+// header selected arrow
 .header-nav {
   .nav-link span {
     width: 0;
@@ -132,61 +144,111 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
   }
 }
 
-// various and sundry
-.left-border       { border-left: 1px solid $grayMediumLight; margin-left: 10px; padding-left: 10px; }
-.image-placeholder { display: block; width: 170px; height: 50px; line-height: 50px; text-align: center;
-                     background: white; border: 2px dotted $grayMediumLight; }
-.deemphasize       { color: #8f99a0; }
-.icon-heart        { color: red; }
-.icon-money        { color: green; }
+// logo placeholder
+.header {
+  svg {
+    position: absolute;
+  }
+  circle {
+    stroke: #fff;
+    stroke-width: 2;
+    fill: $gs_lightgray;
+  }
+}
 
-// logo placeholder if needed
-.header svg            { position: absolute; }
-.header circle         { stroke: #fff; stroke-width: 2; fill: $gs_lightgray; }
+// side nav
+.side-nav {
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 3px #999;
+  .side-nav-links {
+    display: none;
+  }
+  .selected {
+    display: block;
+  }
+  a {
+    color: #333;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    li {
+      text-align: center;
+      line-height: 18px;
+      padding: 12px 20px;
+      &.selected {
+        background: $sg_blue;
+        &:hover {
+          background: $sg_blue;
+        }
+        a {
+          color: #fff;
+          cursor: default;
+        }
+      }
+      &:hover {
+        background: lighten($sg_blue, 30%);
+        color: #fff;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
 
-// side bar and main content
-.test                 { background: pink; height: 40px; margin-bottom: 15px; }
-.content              {  }
-.side-bar             { float: left; width: 165px; margin-right: 20px; margin-top: 5px; }
-.content h1           { font-size: 3em; margin-bottom: 20px; }
-.content hr           { border: none; height: 1px; color: $grayLight; background: $grayLight; }
-
-// .side-nav -> ul.side-nav-links (selected) -> li (selected) -> a
-.side-nav                   { margin-bottom: 20px; box-shadow: 1px 1px 3px #999; }
-.side-nav .side-nav-links   { display: none; }
-.side-nav .selected         { display: block; }
-.side-nav ul                { list-style: none; margin: 0; }
-.side-nav ul li             { text-align: center; line-height: 18px; padding: 12px 20px;  }
-.side-nav a                 { color: #333; }
-.side-nav ul li.selected    { background: $sg_blue;  }
-.side-nav ul li.selected:hover { background: $sg_blue; }
-.side-nav ul li:hover       { background: lighten($sg_blue, 30%); color: #fff; }
-.side-nav ul li:hover a     { color: #fff; }
-.side-nav ul li.selected a  { color: #fff; cursor: default; }
-
-.test-containerx { border: 1px solid yellow; }
-.test-containerx { background: url('/assets/railsbridge.png') -30px -60px; }
-.head-containerx { background: url('/assets/railsbridge.png') -30px 0px; }
-
-// various and sundry
-.left-border       { border-left: 1px solid $grayMediumLight; margin-left: 10px; padding-left: 10px; }
-.image-placeholder { display: block; width: 170px; height: 50px; line-height: 50px; text-align: center; 
-                     background: white; border: 2px dotted $grayMediumLight; }
-.clear             { clear: both; }
-.deemphasize       { color: #8f99a0; }
-.icon-heart        { color: red; }
-.icon-money        { color: green; }
+// content
+.content {
+  h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  }
+  hr {
+    border: none;
+    height: 1px;
+    color: $grayLight;
+    background: $grayLight;
+  }
+}
 
 // footer
-.footer                    { color: #fff; background: $grayDark; padding: 20px 0 30px 0; margin-top: 30px; }
-.footer a                  { color: #fff; line-height: 40px; }
-.footer p                  { color: #fff; margin-top: 0px; }
-.footer a.font-icon        { font-size: 2.5em; }
-.footer ul.footer-links    { list-style: none; }
-.footer ul.footer-links li { float: left; padding-right: 10px; }
-.footer ul.footer-links li.left-border { padding-left: 20px; margin-left: 10px; }
+.footer {
+  color: #fff;
+  background: $grayDark;
+  padding: 20px 0 30px 0;
+  margin-top: 30px;
+  a {
+    color: #fff;
+    line-height: 40px;
+  }
+  p {
+    color: #fff;
+    margin-top: 0px;
+  }
+  a.font-icon {
+    font-size: 2.5em;
+  }
+  ul.footer-links {
+    list-style: none;
+    li {
+      float: left;
+      padding-right: 10px;
+      .left-border {
+        padding-left: 20px;
+        margin-left: 10px;
+      }
+    }
+  }
+  p.work-in-progress {
+    font-style: italic;
+    color: rgb(19, 223, 231);
+    margin-top: 20px;
+  }
+}
 
-p.work-in-progress { font-style: italic; color: rgb(19, 223, 231); margin-top: 20px; }
+
+
+
 
 // Individual Page Styles
 
