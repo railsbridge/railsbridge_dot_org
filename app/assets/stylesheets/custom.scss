@@ -34,14 +34,6 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 
 // Individual Page Styles
 
-// Home
-.home {  }
-.home-callout { float: left; width: 200px; min-height: 200px; margin: -20px 0px 60px 0px; padding: 35px; border: 1px solid $tempGray; background: white; }
-.home-header { margin: 0 20px; }
-.home h1, .home h2, .home h3 { font-weight: normal; }
-.home h3 { margin: 0 0 0 25px; font-style: italic; }
-.home h4 { margin: 0 0 0 25px; font-style: italic; }
-
 // Sponsors
 .sponsors h2       { margin-top: 25px; font-weight: bold; }
 .logos img         { padding: 20px; }
@@ -71,22 +63,19 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 // events listing
 .events .event { float: left; width: 31%; margin: 0 1.17% 20px 1.16%; }
 .events .horizontal-feature .feature { margin-bottom: 0px; }
-.events .feature { min-height: 150px; background: #fff; color: $grayDark; }
+.events .feature { min-height: 160px; background: #fff; color: $grayDark; }
 .events .feature-list h4 { margin-left: 0; }
 .events a { color: $tempFirebrick; }
 .events a span { padding-right: 5px; }
 .events ul {  }
-.events .feature .event-cta { display: block; width: 200px; height: 30px; line-height: 30px; background: $tempFirebrick; color: white; text-align: center; margin: 10px auto 0 auto; }
-.event-help .feature { background: $grayDark; color: #fff; border: 1px solid $grayDark; }
+.events .feature .event-cta { display: block; width: 200px; line-height: 30px; background: $tempFirebrick; color: white; text-align: center; margin: 20px auto 0 auto; }
+.event-help .feature { min-height: 160px; background: $grayMediumLight; color: #fff; border: 1px solid $grayMediumLight; }
 .event-help .feature p { color: #fff; }
 .event-help .event-cta { background: $grayLight; color: #000; }
 
 
 // homepage events listing customizations
-.home-events { padding-left: 20px; }
-.home-events h3 { margin-left: 15px; }
-.home-events .events .event { float: left; width: 47%; margin: 0 1.5% 20px 1.5%; }
-.home-events .events .feature .event-cta { margin-left: 15px; }
+.home-events .events .event { float: left; width: 47%; margin: 0 3% 20px 0; }
 
 // homepage customizations
 .home-twitter { padding-right: 20px; }
