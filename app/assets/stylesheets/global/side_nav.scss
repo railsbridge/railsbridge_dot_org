@@ -1,7 +1,8 @@
 // side nav
 .side-nav {
   margin-bottom: 20px;
-  box-shadow: 1px 1px 3px #999;
+  // box-shadow: 2px 2px $grayLight;
+  border: 1px solid $gray;
   .side-nav-links {
     display: none;
   }
@@ -9,7 +10,7 @@
     display: block;
   }
   a {
-    color: #333;
+    color: $black;
   }
   ul {
     list-style: none;
@@ -24,15 +25,15 @@
           background: $blue;
         }
         a {
-          color: #fff;
+          color: $white;
           cursor: default;
         }
       }
       &:hover {
         background: lighten($blue, 30%);
-        color: #fff;
+        color: $white;
         a {
-          color: #fff;
+          color: $white;
         }
       }
     }

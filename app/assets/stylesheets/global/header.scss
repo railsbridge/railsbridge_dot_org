@@ -3,9 +3,7 @@
 // Flattening page elements
 .header, .navbar, .navbar-static-top  {
   border: none;
-  box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none;
-  -moz-transition: none;
-  -webkit-transition: none;
+  box-shadow: none;
   padding: 0;
   margin: 0;
 }
@@ -43,7 +41,7 @@
       }
     }
     li.external a {
-      background: #f8f8f8;
+      background: $warmGray;
       border-left: 1px solid white;
     }
     li.selected a {
@@ -80,7 +78,7 @@
     position: absolute;
   }
   circle {
-    stroke: #fff;
+    stroke: $white;
     stroke-width: 2;
     fill: $grayMediumLight;
   }

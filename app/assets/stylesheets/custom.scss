@@ -21,13 +21,13 @@ em                               { font-style: italic; }
 strong                           { font-weight: bold; }
 
 // Style Guide
-p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif; color: #333; }
+p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif; color: $black; }
 
 // various and sundry
 .left-border       { border-left: 1px solid $grayMediumLight; margin-left: 10px; padding-left: 10px; }
 .image-placeholder { display: block; width: 170px; height: 50px; line-height: 50px; text-align: center;
                      background: white; border: 2px dotted $grayMediumLight; }
-.deemphasize       { color: #8f99a0; }
+.deemphasize       { color: $grayMedium; }
 .icon-heart        { color: red; }
 .icon-money        { color: green; }
 
@@ -48,7 +48,7 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 .feature-list { margin-bottom: 10px; margin-right: 20px; }
 .feature-list p { font-size: 1.05em; }
 .feature-list .feature { border: 1px solid $gray; border-top-width: 1px; margin-top: 5px; padding: 20px; }
-.feature-list h4 { border-bottom: 1px solid #e9e9e9; margin-left: 50px; padding-bottom: 5px; margin-bottom: 10px; }
+.feature-list h4 { border-bottom: 1px solid $grayLight; margin-left: 50px; padding-bottom: 5px; margin-bottom: 10px; }
 .feature-list ul { margin-left: 50px; margin-bottom: 0px; }
 .feature-list li { margin-bottom: 5px; }
 .feature-icon { float: left;  }
@@ -63,15 +63,15 @@ p, ol, ul, blockquote, pre, code { font: 15px/167% 'AleoLight',Arial,sans-serif;
 // events listing
 .events .event { float: left; width: 31%; margin: 0 1.17% 20px 1.16%; }
 .events .horizontal-feature .feature { margin-bottom: 0px; }
-.events .feature { min-height: 160px; background: #fff; color: $grayDark; }
+.events .feature { min-height: 160px; background: $white; color: $grayDark; }
 .events .feature-list h4 { margin-left: 0; }
 .events a { color: $tempFirebrick; }
 .events a span { padding-right: 5px; }
 .events ul {  }
 .events .feature .event-cta { display: block; width: 200px; line-height: 30px; background: $tempFirebrick; color: white; text-align: center; margin: 20px auto 0 auto; }
-.event-help .feature { min-height: 160px; background: $grayMediumLight; color: #fff; border: 1px solid $grayMediumLight; }
-.event-help .feature p { color: #fff; }
-.event-help .event-cta { background: $grayLight; color: #000; }
+.event-help .feature { min-height: 160px; background: $grayMediumLight; color: $white; border: 1px solid $grayMediumLight; }
+.event-help .feature p { color: $white; }
+.event-help .event-cta { background: $grayLight; color: $black; }
 
 
 // homepage events listing customizations
