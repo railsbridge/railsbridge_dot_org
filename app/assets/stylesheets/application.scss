@@ -1,21 +1,23 @@
-// Vendor Dependencies
+// Dependencies
 @import "bourbon";
-@import "reset";
+@import "global/reset";
 @import "twitter/bootstrap";
 @import "font-awesome";
 
-// Authored dependencies
+// Global styles
+@import "global/fonts";
 @import "global/colors";
 @import "global/mixins";
+@import "global/base";
 
-// Patterns
-@import "global/events";
-// @import "global/modals";
+// Layout
+@import "layout/header";
+@import "layout/side_nav";
+@import "layout/content";
+@import "layout/footer";
 
-// Sections
-@import "global/header";
-@import "global/side_nav";
-@import "global/content";
-@import "global/footer";
+// Modules
+@import "modules/events";
+@import "modules/features";
 
 @import "custom";

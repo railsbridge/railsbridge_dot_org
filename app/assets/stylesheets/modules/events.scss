@@ -1,0 +1,16 @@
+// events listing
+.events .event { float: left; width: 31%; margin: 0 1.17% 20px 1.16%; }
+.events .horizontal-feature .feature { margin-bottom: 0px; }
+.events .feature { min-height: 160px; background: $white; color: $grayDark; }
+.events .feature-list h4 { margin-left: 0; }
+.events a { color: $tempFirebrick; }
+.events a span { padding-right: 5px; }
+.events ul {  }
+.events .feature .event-cta { display: block; width: 200px; line-height: 30px; background: $tempFirebrick; color: white; text-align: center; margin: 20px auto 0 auto; }
+.event-help .feature { min-height: 160px; background: $grayMediumLight; color: $white; border: 1px solid $grayMediumLight; }
+.event-help .feature p { color: $white; }
+.event-help .event-cta { background: $grayLight; color: $black; }
+
+
+// homepage events listing customizations
+.home-events .events .event { float: left; width: 47%; margin: 0 3% 20px 0; }

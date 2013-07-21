@@ -1,0 +1,32 @@
+// universal
+html      { overflow-y: scroll; }
+section   { overflow: auto; }
+textarea  { resize: vertical; }
+.center   { text-align: center; }
+a         { color: $purple }
+a:hover   { color: lighten($purple, 30%); text-decoration: none; }
+hr        { margin: 0px 0px 20px; border: 0px; height: 1px; background: $grayLight; }
+
+// typography
+p, ol, ul, blockquote, pre, code { font: 1.1em/1.6667em 'OpenSans',Arial,sans-serif; margin: 0; padding: 0; margin-bottom: 1.5em; }
+h1, h2, h3, h4, h5, h6           { font-weight: normal; font-family:'OpenSans',Arial,sans-serif; margin: 0; padding: 0; }
+h5, h6                           { font-weight:bold; }
+h1                               { font-size: 2em; line-height: 0.75em; margin-bottom: 0.75em; }
+h2                               { font-size: 1.75em; line-height: 0.86em; margin-bottom: 0.86em; }
+h3                               { font-size: 1.50em; line-height: 1.0em; margin-bottom: 1.0em; }
+h4                               { font-size: 1.25em; line-height: 1.2em; margin-bottom: 1.2em; }
+h5                               { font-size: 1.0em; line-height: 1.5em; margin-bottom: 1.5em; }
+h6                               { font-size: .75em; line-height: 2em; margin-bottom: 2em; }
+em                               { font-style: italic; }
+strong                           { font-weight: bold; }
+
+// Style Guide
+p, ol, ul, blockquote, pre, code { font: 15px/167% 'OpenSansLight',Arial,sans-serif; color: $black; }
+
+// various and sundry
+.left-border       { border-left: 1px solid $grayMediumLight; margin-left: 10px; padding-left: 10px; }
+.image-placeholder { display: block; width: 170px; height: 50px; line-height: 50px; text-align: center;
+                     background: white; border: 2px dotted $grayMediumLight; }
+.deemphasize       { color: $grayMedium; }
+.icon-heart        { color: red; }
+.icon-money        { color: green; }
