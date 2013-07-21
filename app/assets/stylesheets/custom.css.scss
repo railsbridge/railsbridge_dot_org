@@ -184,8 +184,8 @@ p.work-in-progress { font-style: italic; color: rgb(19, 223, 231); margin-top: 2
 .events .feature-list h4 { margin-left: 0; }
 .events a { color: $gs_firebrick; }
 .events a span { padding-right: 5px; }
-.events ul { height: 90px; text-align: left; }
-.events .feature .event-cta { display: block; width: 200px; height: 30px; line-height: 30px; background: $gs_firebrick; color: white; text-align: center; margin-left: 30px; }
+.events ul {  }
+.events .feature .event-cta { display: block; width: 200px; height: 30px; line-height: 30px; background: $gs_firebrick; color: white; text-align: center; margin: 10px auto 0 auto; }
 .event-help .feature { background: $grayDark; color: #fff; border: 1px solid $grayDark; }
 .event-help .feature p { color: #fff; }
 .event-help .event-cta { background: $grayLight; color: #000; }
