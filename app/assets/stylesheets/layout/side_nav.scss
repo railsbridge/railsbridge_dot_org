@@ -6,7 +6,7 @@
   .side-nav-links {
     display: none;
   }
-  .selected {
+  .is-selected {
     display: block;
   }
   a {
@@ -19,7 +19,7 @@
       text-align: center;
       line-height: 18px;
       padding: 12px 20px;
-      &.selected {
+      &.is-selected {
         background: $blue;
         &:hover {
           background: $blue;

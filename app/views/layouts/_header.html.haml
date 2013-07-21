@@ -6,17 +6,17 @@
         -# %circle.logo-placeholder{ cx: 22, cy: 22, r: 22 }
       %h1 RailsBridge
     %ul.header-nav.nav.dropdown
-      %li#learn.nav-link{ class: ("selected" if request.path.match(/^\/learn/)) }
+      %li#learn.nav-link{ class: ("is-selected" if request.path.match(/^\/learn/)) }
         = link_to "Learn", :learn, class: "dropdown-toggle", :"data-toggle" => "dropdown"
         %span
         %ul.dropdown-menu{ role: "menu", :"aria-labelledby" => "dLabel" }
           = render "layouts/nav_links", section: "learn"
-      %li#help.nav-link{ class: ("selected" if request.path.match(/^\/help/)) }
+      %li#help.nav-link{ class: ("is-selected" if request.path.match(/^\/help/)) }
         = link_to "Help", :help, class: "dropdown-toggle", :"data-toggle" => "dropdown"
         %span
         %ul.dropdown-menu{ role: "menu", :"aria-labelledby" => "dLabel" }
           = render "layouts/nav_links", section: "help"
-      %li#about.nav-link{ class: ("selected" if request.path.match(/^\/about/)) }
+      %li#about.nav-link{ class: ("is-selected" if request.path.match(/^\/about/)) }
         = link_to "About", :about, class: "dropdown-toggle", :"data-toggle" => "dropdown"
         %span
         %ul.dropdown-menu{ role: "menu", :"aria-labelledby" => "dLabel" }

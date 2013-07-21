@@ -7,7 +7,7 @@ module ApplicationHelper
 
   def header_link(link_text, link)
     path_regex = /^\/#{link_text.downcase}/
-    class_name = (current_page?(link) || request.path.match(path_regex)) ? 'selected' : ''
+    class_name = (current_page?(link) || request.path.match(path_regex)) ? 'is-selected' : ''
     content_tag(:li, class: class_name, id: link_text.downcase) do
       concat link_to link_text, link
       concat content_tag(:span)
@@ -15,7 +15,7 @@ module ApplicationHelper
   end
 
   def nav_link(link_text, link)
-    class_name = current_page?(link) ? 'selected' : ''
+    class_name = current_page?(link) ? 'is-selected' : ''
     content_tag(:li, class: class_name) do
       link_to link_text, link
     end

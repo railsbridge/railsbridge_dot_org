@@ -44,7 +44,7 @@
       background: $warmGray;
       border-left: 1px solid white;
     }
-    li.selected a {
+    li.is-selected a {
       color: $black;
       span {
         border-bottom: 10px solid $grayMediumLight;
@@ -56,7 +56,7 @@
   }
 }
 
-// header selected arrow
+// header is-selected arrow
 .header-nav {
   .nav-link span {
     width: 0;
@@ -67,7 +67,7 @@
     border-right: 10px solid transparent;
     border-bottom: 10px solid transparent;
   }
-  .selected span {
+  .is-selected span {
     border-bottom: 10px solid $grayMediumLight;
   }
 }

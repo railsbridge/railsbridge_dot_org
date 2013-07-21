@@ -1,7 +1,7 @@
 .side-nav
-  %ul.side-nav-links{ class: ("selected" if request.path.match(/^\/learn/)) }
+  %ul.side-nav-links{ class: ("is-selected" if request.path.match(/^\/learn/)) }
     = render "layouts/nav_links", section: "learn"
-  %ul.side-nav-links{ class: ("selected" if request.path.match(/^\/help/)) }
+  %ul.side-nav-links{ class: ("is-selected" if request.path.match(/^\/help/)) }
     = render "layouts/nav_links", section: "help"
-  %ul.side-nav-links{ class: ("selected" if request.path.match(/^\/about/)) }
+  %ul.side-nav-links{ class: ("is-selected" if request.path.match(/^\/about/)) }
     = render "layouts/nav_links", section: "about"
