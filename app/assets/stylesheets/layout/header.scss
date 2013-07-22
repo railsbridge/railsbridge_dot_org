@@ -42,7 +42,16 @@
         color: $white;
         text-transform: uppercase;
         padding: 5px 22px;
+        &:hover {
+          color: lighten($blue, 50%);
+        }
+        &:active {
+          color: lighten($blue, 50%);
+        }
       }
+    }
+    ul.dropdown-menu li a {
+      color: $black;
     }
     li.external a {
       border-left: 1px solid white;
