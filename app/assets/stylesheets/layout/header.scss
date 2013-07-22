@@ -9,43 +9,46 @@
 }
 
 .header {
-  height: 65px;
-  background: white;
-  border-bottom: 1px solid $grayMediumLight;
+  height: 60px;
+  background: url(navbar_texture.gif);
   margin-bottom: 30px;
   a.logo {
     float: left;
     display: block;
-    margin: 11px 0 0 20px;
+    margin: 10px 0 0 20px;
   }
-  .logo img {
-    float: left;
+  svg {
+    margin-top: -5px;
+    circle {
+      stroke: $white;
+      stroke-width: 3;
+      fill: $blue;
+    }
   }
   h1 {
-    font: bold 28px/28px 'OpenSans',Arial,sans-serif;
-    color: $grayMediumLight;
+    font: bold 28px 'Aleo',Arial,sans-serif;
+    color: $white;
     margin: 8px 0 0 60px;
   }
   ul.nav {
     float: right;
-    margin-top: 17px;
+    margin-top: 20px;
     li {
       position: relative;
-      height: 50px;
+      height: 40px;
       a {
         display: block;
-        font: normal 15px/15px 'OpenSans',Arial,sans-serif;
-        color: $grayMediumLight;
+        font: normal 14px 'Aleo',Arial,sans-serif;
+        color: $white;
         text-transform: uppercase;
-        padding: 10px 22px;
+        padding: 5px 22px;
       }
     }
     li.external a {
-      background: $warmGray;
       border-left: 1px solid white;
     }
     li.is-selected a {
-      color: $black;
+      color: $warmGray;
       span {
         border-bottom: 10px solid $grayMediumLight;
       }
@@ -61,14 +64,13 @@
   .nav-link span {
     width: 0;
     height: 0;
-    opacity: .6;
-    position: absolute; bottom: 1px; left: 35px;
+    position: absolute; bottom: 0px; left: 35px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid transparent;
   }
   .is-selected span {
-    border-bottom: 10px solid $grayMediumLight;
+    border-bottom: 10px solid $white;
   }
 }
 
