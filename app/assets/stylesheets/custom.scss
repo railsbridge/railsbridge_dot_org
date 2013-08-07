@@ -16,7 +16,7 @@
 .feature-list { margin-bottom: 10px; margin-right: 20px; }
 .feature-list p { font-size: 1.05em; }
 .feature-list .feature { border: 1px solid $gray; border-top-width: 1px; margin-top: 5px; padding: 20px; }
-.feature-list h4 { border-bottom: 1px solid $grayLight; margin-left: 50px; padding-bottom: 5px; margin-bottom: 10px; }
+.feature-list h4 { color: $black; border-bottom: 1px solid $grayLight; margin-left: 50px; padding-bottom: 5px; margin-bottom: 10px; }
 .feature-list ul { margin-left: 50px; margin-bottom: 0px; }
 .feature-list li { margin-bottom: 5px; }
 .feature-icon { float: left;  }
@@ -27,23 +27,6 @@
 .big-icons h4 { margin-left: 50px; }
 
 .feature-standalone { float: left; width: 300px; }
-
-// events listing
-.events .event { float: left; width: 31%; margin: 0 1.17% 20px 1.16%; }
-.events .horizontal-feature .feature { margin-bottom: 0px; }
-.events .feature { min-height: 160px; background: $white; color: $grayDark; }
-.events .feature-list h4 { margin-left: 0; }
-.events a { color: $tempFirebrick; }
-.events a span { padding-right: 5px; }
-.events ul {  }
-.events .feature .event-cta { display: block; width: 200px; line-height: 30px; background: $tempFirebrick; color: white; text-align: center; margin: 20px auto 0 auto; }
-.event-help .feature { min-height: 160px; background: $grayMediumLight; color: $white; border: 1px solid $grayMediumLight; }
-.event-help .feature p { color: $white; }
-.event-help .event-cta { background: $grayLight; color: $black; }
-
-
-// homepage events listing customizations
-.home-events .events .event { float: left; width: 47%; margin: 0 3% 20px 0; }
 
 // homepage customizations
 .home-twitter { padding-right: 20px; }
