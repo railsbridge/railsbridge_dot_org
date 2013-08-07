@@ -1,9 +1,7 @@
+- @events = Event.all
 .events
-  = render 'layouts/event'
-  = render 'layouts/event'
-  = render 'layouts/event'
-  = render 'layouts/event'
-  = render 'layouts/event'
+  - @events.each do |event|
+    = render 'layouts/event', event: event
   .feature-list.horizontal-feature.event.event-help
     .feature.clearfix
       %h4 Not Finding a Workshop?
