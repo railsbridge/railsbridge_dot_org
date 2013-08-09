@@ -19,7 +19,7 @@
     padding-bottom: 15px;
     margin-top: 20px;
   }
-  .list-item {
+  .chapter-box {
     float: left;
     width: 240px;
     height: 100px;
@@ -28,6 +28,7 @@
     margin: 5px 10px 10px 0;
     ul {
       margin: 0;
+      list-style: none;
     }
   }
 }
