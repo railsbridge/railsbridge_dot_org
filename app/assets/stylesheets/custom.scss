@@ -3,7 +3,12 @@
 // Individual Page Styles
 
 // Sponsors
-.sponsors h2       { margin-top: 25px; font-weight: bold; }
+.sponsors {
+  h2 {
+    font-family: OpenSansExtraBold;
+    margin: 35px 0 20px 0;
+   }
+}
 .logos img         { padding: 20px; }
 .big-logos img     { height: 125px; }
 .smaller-logos img { height: 60px; }

@@ -1,12 +1,41 @@
 // events listing
-.events .event { float: left; width: 31%; margin: 0 1.17% 20px 1.16%; }
-.events .horizontal-feature .feature { margin-bottom: 0px; }
-.events .feature { min-height: 200px; background: $white; color: $grayDark; position: relative; }
-.events .feature-list h4 { margin-left: 0; }
-.events a { color: $blue; }
-.events a span { padding-right: 5px; }
-.events ul {  }
-.events .feature .event-cta { position: absolute; bottom: 20px; left: 42px; display: block; width: 200px; line-height: 30px; background: $blue; color: white; text-align: center; margin: 20px auto 0 auto; }
+.events {
+  .event {
+    float: left;
+    width: 31%;
+    margin: 0 1.17% 20px 1.16%;
+  }
+  .event-host, .event-venue {
+    color: $purple;
+  }
+  .horizontal-feature .feature { margin-bottom: 0px; }
+  .feature {
+    min-height: 200px;
+    background: $white;
+    color: $grayDark;
+    position: relative;
+    .event-cta {
+      position: absolute;
+      bottom: 20px;
+      left: 42px;
+      display: block;
+      width: 200px;
+      line-height: 30px;
+      background: $blue;
+      color: white;
+      text-align: center;
+      margin: 20px auto 0 auto;
+      &:hover {
+        background-color: lighten($blue, 10%);
+      }
+    }
+  }
+  .feature-list h4 { margin-left: 0; }
+  a { color: $blue; }
+  a span { padding-right: 5px; }
+}
+
+
 .event-help .feature { min-height: 160px; background: $grayMediumLight; color: $white; border: 1px solid $grayMediumLight; }
 .event-help .feature p { color: $white; }
 .event-help .event-cta { background: $grayLight; color: $black; }
@@ -15,3 +44,16 @@
 
 // homepage events listing customizations
 .home-events .events .event { float: left; width: 47%; margin: 0 3% 20px 0; }
+
+// upcoming events listing customizations
+.upcoming-events {
+  .events {
+    .feature {
+      min-height: 220px;
+      .event-cta {
+        left: 21px;
+        bottom: 20px;
+      }
+    }
+  }
+}
