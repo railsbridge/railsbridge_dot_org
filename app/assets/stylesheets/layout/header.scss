@@ -42,11 +42,9 @@
         color: $white;
         text-transform: uppercase;
         padding: 5px 22px;
-        &:hover {
-          color: lighten($blue, 50%);
-        }
-        &:active {
-          color: lighten($blue, 50%);
+        text-shadow: none;
+        &:hover, &:active, &:focus {
+          color: lighten($blue, 20%);
         }
       }
     }
