@@ -10,7 +10,6 @@
   }
   .horizontal-feature .feature { margin-bottom: 0px; }
   .feature {
-    min-height: 200px;
     background: $white;
     color: $grayDark;
     position: relative;
@@ -36,7 +35,7 @@
 }
 
 
-.event-help .feature { min-height: 160px; background: $grayMediumLight; color: $white; border: 1px solid $grayMediumLight; }
+.event-help .feature { background: $grayMediumLight; color: $white; border: 1px solid $grayMediumLight; }
 .event-help .feature p { color: $white; }
 .event-help .event-cta { background: $grayLight; color: $black; }
 .event-date { color: $grayDark }
