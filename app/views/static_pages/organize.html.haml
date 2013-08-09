@@ -1,10 +1,14 @@
 - provide(:title, page_title(['Helping','Organize a Workshop']))
 
-%h1 Want to organize a workshop?
-%h1 Wonderful!
-%h2 What does organizing entail?
-%p A lot of organizers have never thrown an event like this before and want to know what qualifications it takes. You don't have to be a born event-planner to be an awesome organizer. Here are a couple of things that are most helpful:
-%ul
+.question-header
+  %h1 Want to organize a workshop?
+  %h2 Neat!
+%p
+  A lot of organizers have never thrown an event like this before and want to know what qualifications it takes. You
+  %em don't
+  have to be a born event-planner to be an awesome organizer.
+%p Here are several things that are helpful:
+%ul.with-dots
   %li Excitement
   %li 1 or 2 other people who can help you get word out to local community
   %li A few hours a week leading up to the weekend for pre-workshop planning
@@ -19,10 +23,9 @@
     .feature-list
       .feature.clearfix.feature-1
         .feature-icon.icon-3x.icon-beaker
-        %h4 The Workshop Cookbook: How to Organize Every Workshop
-        %p We've got tons of information in our Workshop Cookbook, which lives in a wiki on the RailsBridge GitHub page.
-        %p
-          Read it, use it, and update it:
-          %a{:href => "https://github.com/railsbridge/docs/wiki/Cookbook"} https://github.com/railsbridge/docs/wiki/Cookbook
+        %h4 The Workshop Cookbook
+        %p We've got tons of information in our #{ link_to "Workshop Cookbook", "https://github.com/railsbridge/docs/wiki/Cookbook"}, which lives in a wiki on the RailsBridge GitHub page.
+        %p The #{ link_to "cookbook", "https://github.com/railsbridge/docs/wiki/Cookbook"} will be your best friend. Read it, use it, and update it!
+        %p (You just have to be logged into GitHub to make updates.)
   .span6
     = render 'mailing_list'

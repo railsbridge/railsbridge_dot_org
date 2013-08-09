@@ -2,10 +2,10 @@
 p, ol, ul, blockquote, pre, code { font: 15px/1.5 'Aleo',Arial,sans-serif; color: $black; }
 h1, h2, h3, h4, h5, h6           { font-weight: normal; font-family:'Aleo',Arial,sans-serif; }
 h5, h6                           { font-weight:bold; }
-h1                               { font-family:'AleoLight',Arial,sans-serif; font-size: 42px; line-height: 1.5; }
+h1                               { font-family:'AleoLight',Arial,sans-serif; font-size: 42px; line-height: 1.2; }
 h2                               { font-size: 26px; line-height: 1.2; }
 h3                               { font-size: 18px; line-height: 1.2; }
-h4                               { font-size: 16px; line-height: 1.2;  }
+h4                               { font-size: 16px; line-height: 1.2; font-family: OpenSansBold; }
 h5                               { font-size: 14px; line-height: 1.2;  }
 h6                               { font-size: 12px; line-height: 1.2; }
 em                               { font-style: italic; }
@@ -27,3 +27,16 @@ hr        { margin: 0px 0px 20px; border: 0px; height: 1px; background: $grayLig
 .deemphasize       { color: $grayMedium; }
 .icon-heart        { color: red; }
 .icon-money        { color: green; }
+ul.with-dots {
+    list-style: disc;
+}
+.question-header {
+  line-height: 1em;
+  h1 {
+    margin: 0;
+  }
+  h2 {
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+}
