@@ -1,5 +1,8 @@
 // footer
-.footer {
+footer {
+  .container {
+    padding-top: 20px;
+  }
   color: $white;
   background: $grayDark;
   padding: 20px 0 30px 0;
@@ -34,6 +37,9 @@
   p.work-in-progress {
     font-style: italic;
     color: rgb(19, 223, 231);
-    margin-top: 20px;
+    margin-top: 10px;
+  }
+  h2 {
+    margin: 0;
   }
 }
