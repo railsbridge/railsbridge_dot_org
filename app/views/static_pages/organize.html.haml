@@ -1,8 +1,18 @@
 - provide(:title, page_title(['Helping','Organize a Workshop']))
+
+.question-header
+  %h1 Want to organize a workshop?
+  %h2 Neat!
+.row-fluid.feature-list.organize-boxes
+  .span6
+    .feature.clearfix.feature-1
+      .feature-icon.icon-3x.icon-beaker
+      %h4 The Workshop Cookbook
+      %p We've got tons of information in our #{ link_to "Workshop Cookbook", "https://github.com/railsbridge/docs/wiki/Cookbook"}, which lives in the RailsBridge GitHub wiki.
+      %p Read it, use it, and update it! (You just have to be logged into GitHub to make updates.)
+  .span6
+    = render 'mailing_list'
 .spaced-help-content
-  .question-header
-    %h1 Want to organize a workshop?
-    %h2 Neat!
   %h4 Organizing: totally doable.
   %p
     A lot of organizers have never thrown an event like this before and want to know what qualifications it takes. You
@@ -29,13 +39,3 @@
     %li Use #{link_to "Bridge Troll", "http://www.bridgetroll.org"}, our event management software. It'll make RSVPs and dividing up the class much, much easier.
     %li Side benefit of Bridge Troll: your event will automatically be displayed on the RailsBridge.org website.
     %li If you haven't already, join the #{link_to "mailing list", "https://groups.google.com/forum/#!forum/railsbridge-workshops"} and let the community know that your workshop is in the works. We like to help spread the word (and also keep a tally of the workshops happening in the world).
-.row-fluid
-  .span6
-    .feature-list
-      .feature.clearfix.feature-1
-        .feature-icon.icon-3x.icon-beaker
-        %h4 The Workshop Cookbook
-        %p We've got tons of information in our #{ link_to "Workshop Cookbook", "https://github.com/railsbridge/docs/wiki/Cookbook"}, which lives in the RailsBridge GitHub wiki.
-        %p Read it, use it, and update it! (You just have to be logged into GitHub to make updates.)
-  .span6
-    = render 'mailing_list'
