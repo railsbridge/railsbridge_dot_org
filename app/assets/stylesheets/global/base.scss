@@ -20,13 +20,31 @@ a         { color: $purple }
 a:hover   { color: lighten($purple, 30%); text-decoration: none; }
 hr        { margin: 0px 0px 20px; border: 0px; height: 1px; background: $grayLight; }
 
+// colorful icons
+.icon-heart { color: red; }
+.icon-phone { color: $red; }
+.icon-money { color: green; }
+.icon-asterisk { color: $yellow; }
+.icon-comments { color: $purple; }
+.icon-bullhorn { color: $purple; }
+.icon-thumbs-up { color: $purple; }
+.icon-question-sign { color: $orange; }
+.icon-eye-open { color: $orange; }
+.icon-cogs { color: $orange; }
+.icon-envelope { color: $orange; }
+.icon-book { color: $blue; }
+.icon-rocket { color: $blue; }
+.icon-umbrella { color: $blue; }
+.icon-star { color: $yellow; }
+.icon-bolt { color: $yellow; }
+.icon-beaker { color: $blue; }
+
+
 // various and sundry
 .left-border       { border-left: 1px solid $grayMediumLight; margin-left: 10px; padding-left: 10px; }
 .image-placeholder { display: block; width: 170px; height: 50px; line-height: 50px; text-align: center;
                      background: white; border: 2px dotted $grayMediumLight; }
 .deemphasize       { color: $grayMedium; }
-.icon-heart        { color: red; }
-.icon-money        { color: green; }
 
 .question-header {
   line-height: 1em;
@@ -38,3 +56,4 @@ hr        { margin: 0px 0px 20px; border: 0px; height: 1px; background: $grayLig
     margin-bottom: 20px;
   }
 }
+
