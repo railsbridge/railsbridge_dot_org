@@ -1,7 +1,8 @@
 // footer
 footer {
+  margin: 0 -20px;
   .container {
-    padding-top: 20px;
+    padding: 20px;
   }
   color: $white;
   background: $grayDark;
@@ -18,20 +19,25 @@ footer {
   a.font-icon {
     font-size: 2.5em;
   }
-  ul.footer-links {
+  .email {
+    display: block;
+    float: right;
+  }
+  ul.footer-icons {
+    height: 30px;
     list-style: none;
     li {
-      float: left;
+      float: right;
       padding-right: 10px;
       .left-border {
         padding-left: 20px;
         margin-left: 10px;
       }
-    a {
-      &:hover {
-        color: lighten($blue, 30%);
+      a {
+        &:hover {
+          color: lighten($blue, 30%);
+        }
       }
-    }
     }
   }
   p.work-in-progress {
@@ -41,5 +47,20 @@ footer {
   }
   h2 {
     margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    ul.footer-icons {
+      margin: 20px 0;
+      li {
+        float: left;
+      }
+    }
+    .email {
+      float: none;
+      margin-top: 20px;
+    }
   }
 }
