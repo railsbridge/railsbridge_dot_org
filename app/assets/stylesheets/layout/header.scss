@@ -1,94 +1,137 @@
-// header
-
-// Flattening page elements
-.header, .navbar, .navbar-static-top  {
-  border: none;
-  box-shadow: none;
-  padding: 0;
-  margin: 0;
-}
-
-.header {
-  height: 60px;
-  background: url(navbar_texture.gif);
-  margin-bottom: 30px;
-  a.logo {
-    float: left;
-    display: block;
-    margin: 10px 0 0 20px;
+@media (min-width: 769px) {
+  // Flattening page elements
+  .header, .navbar, .navbar-static-top  {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
   }
-  svg {
-    margin-top: -5px;
-    circle {
-      stroke: $white;
-      stroke-width: 3;
-      fill: $blue;
+
+  .header {
+    height: 60px;
+    background: url(navbar_texture.gif);
+    margin-bottom: 30px;
+    a.logo {
+      float: left;
+      display: block;
+      margin: 10px 0 0 20px;
+    }
+    svg {
+      margin-top: -5px;
+      circle {
+        stroke: $white;
+        stroke-width: 3;
+        fill: $blue;
+      }
+    }
+    h1 {
+      font: bold 28px 'Aleo',Arial,sans-serif;
+      color: $white;
+      margin: 8px 0 0 60px;
+    }
+    ul.nav {
+      float: right;
+      margin-top: 20px;
+      li {
+        position: relative;
+        height: 40px;
+        a {
+          display: block;
+          font: normal 14px 'Aleo',Arial,sans-serif;
+          color: $white;
+          text-transform: uppercase;
+          padding: 5px 22px;
+          text-shadow: none;
+          &:hover, &:active, &:focus {
+            color: lighten($blue, 20%);
+          }
+        }
+      }
+      ul.dropdown-menu li a {
+        color: $black;
+      }
+      li.external a {
+        border-left: 1px solid white;
+      }
+      li.is-selected a {
+        color: $warmGray;
+        span {
+          border-bottom: 10px solid $grayMediumLight;
+        }
+      }
+      li#help span {
+        left: 30px;
+      }
     }
   }
-  h1 {
-    font: bold 28px 'Aleo',Arial,sans-serif;
-    color: $white;
-    margin: 8px 0 0 60px;
+
+  // header is-selected arrow
+  .header-nav {
+    .nav-link span {
+      width: 0;
+      height: 0;
+      position: absolute; bottom: 0px; left: 35px;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+    }
+    .is-selected span {
+      border-bottom: 10px solid $white;
+    }
   }
-  ul.nav {
-    float: right;
-    margin-top: 20px;
-    li {
-      position: relative;
-      height: 40px;
-      a {
-        display: block;
-        font: normal 14px 'Aleo',Arial,sans-serif;
-        color: $white;
-        text-transform: uppercase;
-        padding: 5px 22px;
-        text-shadow: none;
-        &:hover, &:active, &:focus {
-          color: lighten($blue, 20%);
+  // logo placeholder
+  .header {
+    svg {
+      position: absolute;
+    }
+    circle {
+      stroke: $white;
+      stroke-width: 2;
+      fill: $grayMediumLight;
+    }
+  }
+}
+
+// Mobile menu
+
+@media (max-width: 768px) {
+  .header {
+    h1 {
+      margin: 10px 0 0 20px;
+    }
+    svg {
+      display: none;
+    }
+    background: url(navbar_texture.gif);
+    a.logo {
+      color: white;
+    }
+  }
+  .navbar {
+    .nav {
+      padding-bottom: 10px;
+      li {
+        margin: 10px 22px;
+        a {
+          padding: 0;
+          color: white;
+          font-size: 22px;
+          text-shadow: none;
+          &:focus, &:hover {
+            color: $grayMediumLight;
+          }
         }
       }
     }
-    ul.dropdown-menu li a {
-      color: $black;
-    }
-    li.external a {
-      border-left: 1px solid white;
-    }
-    li.is-selected a {
-      color: $warmGray;
-      span {
-        border-bottom: 10px solid $grayMediumLight;
+    .dropdown-menu {
+      background: white;
+      li {
+        a {
+          font-size: 25px;
+          color: $grayDark;
+        }
+        margin: 20px 0;
       }
     }
-    li#help span {
-      left: 30px;
-    }
-  }
-}
-
-// header is-selected arrow
-.header-nav {
-  .nav-link span {
-    width: 0;
-    height: 0;
-    position: absolute; bottom: 0px; left: 35px;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-  }
-  .is-selected span {
-    border-bottom: 10px solid $white;
-  }
-}
-
-// logo placeholder
-.header {
-  svg {
-    position: absolute;
-  }
-  circle {
-    stroke: $white;
-    stroke-width: 2;
-    fill: $grayMediumLight;
   }
 }
