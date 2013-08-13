@@ -4,15 +4,24 @@
     float: left;
     width: 199px;
     margin: 0 1.17% 20px 1.16%;
-  }
-  .event-host, .event-venue {
-    color: $purple;
+    .event-date {
+      color: $grayDark
+    }
+    .event-location {
+      color: $grayDark
+    }
+    .event-host, .event-venue {
+      color: $purple;
+    }
   }
   .feature {
     background: $white;
     color: $grayDark;
     position: relative;
     .event-cta {
+      position: absolute;
+      bottom: 20px;
+      left: 42px;
       display: block;
       width: 200px;
       line-height: 30px;
@@ -25,30 +34,49 @@
       }
     }
   }
-  .features-grid h4 { margin-left: 0; }
-  a { color: $blue; }
-  a span { padding-right: 5px; }
+  h4 {
+    margin-left: 0;
+  }
+  a {
+    color: $blue;
+    span {
+      padding-right: 5px;
+    }
+  }
+  .event-help {
+    background: $grayMediumLight;
+    color: $white;
+    border: 1px solid $grayMediumLight;
+    p {
+      color: $white;
+    }
+  }
 }
 
-
-.event-help .feature { background: $grayMediumLight; color: $white; border: 1px solid $grayMediumLight; }
-.event-help .feature p { color: $white; }
-.event-help .event-cta { background: $grayLight; color: $black; }
-.event-date { color: $grayDark }
-.event-location { color: $grayDark }
-
 // homepage events listing customizations
-.home-events .events .event { float: left; width: 248px; margin: 0 3% 20px 0; }
+.home-events {
+  .event {
+    float: left;
+    width: 248px;
+    min-height: 215px;
+    margin: 0 3% 20px 0;
+  }
+  .event-cta {
+    position: absolute;
+    bottom: 20px;
+    left: 42px;
+  }
+}
 
 // upcoming events listing customizations
 .upcoming-events {
   .events {
     .feature {
       min-height: 220px;
-      // .event-cta {
-      //   left: 21px;
-      //   bottom: 20px;
-      // }
+      .event-cta {
+        left: 21px;
+        bottom: 20px;
+      }
     }
   }
 }
