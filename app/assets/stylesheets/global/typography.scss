@@ -1,0 +1,12 @@
+// typography
+p, ol, ul, blockquote, pre, code { font: 15px/1.5 'Aleo',Arial,sans-serif; color: $black; }
+h1, h2, h3, h4, h5, h6           { font-weight: normal; font-family:'Aleo',Arial,sans-serif; }
+h5, h6                           { font-weight:bold; }
+h1                               { font-family:'AleoLight',Arial,sans-serif; font-size: 42px; line-height: 1.2; }
+h2                               { font-size: 26px; line-height: 1.2; margin-top: 30px; }
+h3                               { font-size: 18px; line-height: 1.2; }
+h4                               { font-size: 16px; line-height: 1.2; font-family: OpenSansBold; }
+h5                               { font-size: 14px; line-height: 1.2;  }
+h6                               { font-size: 12px; line-height: 1.2; }
+em                               { font-style: italic; }
+strong                           { font-weight: bold; }
