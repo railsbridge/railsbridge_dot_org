@@ -10,6 +10,12 @@ h5                               { font-size: 14px; line-height: 1.2;  }
 h6                               { font-size: 12px; line-height: 1.2; }
 em                               { font-style: italic; }
 strong                           { font-weight: bold; }
+// responsive layouts
+@media (min-width: 768px) {
+  .container {
+    width: 940px;
+  }
+}
 
 // universal
 html      { overflow-y: scroll; }
