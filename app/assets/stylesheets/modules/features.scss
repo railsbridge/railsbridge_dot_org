@@ -1,53 +1,35 @@
 // feature lists
 
-.horizontal-feature {
+.feature {
+  border: 1px solid $gray;
+  border-top-width: 1px;
+  margin-top: 5px;
+  padding: 20px;
   .feature-icon {
     float: left;
     margin: -7px 10px 0 -7px;
   }
   h4 {
+    color: $black;
+    border-bottom: 1px solid $grayLight;
     padding-bottom: 5px;
-    margin: 0 0 10px 25px;
+    margin: 0 0 10px 50px;
+  }
+  p {
+    font-size: 1.05em;
   }
   ul {
     margin: 0;
     li {
+      margin-bottom: 5px;
       list-style: none;
     }
   }
 }
 
-.feature-list {
+.features-grid {
   margin-bottom: 10px;
   margin-right: 20px;
-  p {
-    font-size: 1.05em;
-  }
-  .feature {
-    border: 1px solid $gray;
-    border-top-width: 1px;
-    margin-top: 5px;
-    padding: 20px;
-  }
-  h4 {
-    color: $black;
-    border-bottom: 1px solid $grayLight;
-    margin-left: 50px;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-  }
-  ul {
-    margin-bottom: 0px;
-  }
-  li {
-    margin-bottom: 5px;
-  }
-}
-
-.tall-features {
-  .feature {
-    min-height: 360px;
-  }
 }
 
 .medium-features {
@@ -60,14 +42,6 @@
   .feature {
     min-height: 230px;
   }
-}
-
-.feature-icon {
-  float: left;
-}
-
-.big-icons h4 {
-  margin-left: 50px;
 }
 
 .feature-standalone {

@@ -2,21 +2,17 @@
 .events {
   .event {
     float: left;
-    width: 31%;
+    width: 199px;
     margin: 0 1.17% 20px 1.16%;
   }
   .event-host, .event-venue {
     color: $purple;
   }
-  .horizontal-feature .feature { margin-bottom: 0px; }
   .feature {
     background: $white;
     color: $grayDark;
     position: relative;
     .event-cta {
-      position: absolute;
-      bottom: 20px;
-      left: 42px;
       display: block;
       width: 200px;
       line-height: 30px;
@@ -29,7 +25,7 @@
       }
     }
   }
-  .feature-list h4 { margin-left: 0; }
+  .features-grid h4 { margin-left: 0; }
   a { color: $blue; }
   a span { padding-right: 5px; }
 }
@@ -42,17 +38,17 @@
 .event-location { color: $grayDark }
 
 // homepage events listing customizations
-.home-events .events .event { float: left; width: 47%; margin: 0 3% 20px 0; }
+.home-events .events .event { float: left; width: 248px; margin: 0 3% 20px 0; }
 
 // upcoming events listing customizations
 .upcoming-events {
   .events {
     .feature {
       min-height: 220px;
-      .event-cta {
-        left: 21px;
-        bottom: 20px;
-      }
+      // .event-cta {
+      //   left: 21px;
+      //   bottom: 20px;
+      // }
     }
   }
 }

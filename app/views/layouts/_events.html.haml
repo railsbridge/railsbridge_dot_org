@@ -1,8 +1,9 @@
 - @events = Event.all
 .events
+  .short-features
   - @events.each do |event|
     = render 'layouts/event', event: event
-  .feature-list.horizontal-feature.event.event-help.short-features
+  .features-grid.event.event-help.short-features
     .feature.clearfix
       %h4 Not Finding a Workshop?
       %ul
