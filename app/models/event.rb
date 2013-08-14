@@ -1,3 +1,3 @@
 class Event < ActiveResource::Base
-  self.site = "http://bridgetroll-staging.herokuapp.com/"
+  self.site = "http://www.bridgetroll.org/"
 end
