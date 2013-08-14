@@ -1,39 +1,72 @@
 // side nav
-.side-nav {
-  margin-bottom: 20px;
-  // box-shadow: 2px 2px $grayLight;
-  border: 1px solid $gray;
-  .side-nav-links {
-    display: none;
-  }
-  .is-selected {
-    display: block;
-  }
-  a {
-    color: $black;
-  }
-  ul {
-    list-style: none;
-    margin: 0;
-    li {
-      text-align: center;
-      line-height: 18px;
-      padding: 12px 20px;
-      &.is-selected {
-        background: $blue;
-        &:hover {
+@media (min-width: 769px) {
+  .side-nav {
+    margin-bottom: 20px;
+    border: 1px solid $gray;
+    .side-nav-links {
+      display: none;
+    }
+    .is-selected {
+      display: block;
+    }
+    a {
+      color: $black;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      li {
+        text-align: center;
+        line-height: 18px;
+        padding: 12px 20px;
+        &.is-selected {
           background: $blue;
+          &:hover {
+            background: $blue;
+          }
+          a {
+            color: $white;
+            cursor: default;
+          }
         }
-        a {
+        &:hover {
+          background: lighten($blue, 30%);
           color: $white;
-          cursor: default;
+          a {
+            color: $white;
+          }
         }
       }
-      &:hover {
-        background: lighten($blue, 30%);
-        color: $white;
-        a {
-          color: $white;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .side-nav {
+    margin: 10px 0;
+    .side-nav-links {
+      display: none;
+    }
+    .is-selected {
+      display: inline-block;
+    }
+    a {
+      color: $black;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      li {
+        background: $grayLight;
+        display: inline-block;
+        line-height: 20px;
+        padding: 5px;
+        margin: 5px;
+        &.is-selected {
+          background: $blue;
+          a {
+            color: $white;
+          }
         }
       }
     }
