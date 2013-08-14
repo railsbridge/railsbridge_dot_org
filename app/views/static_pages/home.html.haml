@@ -1,10 +1,12 @@
 - provide(:title, page_title(['Home']))
 
 .row-fluid
-  .span12.home-headlines
-    %h1 The Internet needs you.
-    %h1 Tech needs you.
-    %h1 We need you!
+  .home-headlines
+    .span12
+      %h1 The Internet needs you.
+      %h1 Tech needs you.
+      %h1 We need you!
+  .span12.home-subhead
     %h2 Learn to code with RailsBridge
   .span8.offset2
     %p RailsBridge workshops are a free and fun way to get started or level up with Rails, Ruby, and other web technologies. Our events focus on increasing diversity in tech, so that people of all backgrounds can feel welcome and comfortable in our industry.
@@ -17,23 +19,3 @@
     .home-twitter
       %h3 Recent Tweets
       = render 'tweets'
-
-/
-  Original home page content...
-
-  %h2 Want to learn?
-
-  %p
-    Our #{link_to "Chapters Page", :chapters} shows all the cities we're in and where to find
-    upcoming workshops listed online. We also have #{link_to "general info for students", :learn}, too.
-
-  %p= link_to "Find a RailsBridge chapter", :chapters, class: "btn btn-primary btn-large"
-
-  %h2 Want to help out?
-  %p
-    There are so many ways to help, including #{link_to "volunteering as a teacher or TA", :teach},
-    #{link_to "organizing a workshop", :organize}, #{link_to "hosting or sponsoring a workshop", :host} and more.
-
-  %p Find out more about what we need help with, and get in touch!
-
-  %p= link_to "Contribute Your Awesomeness", :help, class: "btn btn-primary btn-large"

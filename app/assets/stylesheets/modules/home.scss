@@ -8,7 +8,19 @@
 }
 
 .home-headlines {
-  h1, h2 {
+  h1 {
     text-align: center;
+  }
+}
+
+.home-subhead {
+  h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-headlines {
+    display: none;
   }
 }
