@@ -1,0 +1,114 @@
+// this is for all those feature boxes all over the site
+
+// feature lists
+
+.feature {
+  border: 1px solid $gray;
+  border-top-width: 1px;
+  margin-top: 5px;
+  padding: 20px;
+  .feature-icon {
+    float: left;
+    margin: -7px 10px 0 -7px;
+  }
+  h4 {
+    color: $black;
+    border-bottom: 1px solid $grayLight;
+    padding-bottom: 5px;
+    margin: 0 0 10px 50px;
+  }
+  p {
+    font-size: 1.05em;
+  }
+  ul {
+    margin: 0;
+    li {
+      margin-bottom: 5px;
+      list-style: none;
+    }
+  }
+}
+
+.features-grid {
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+// add back in bulleted lists on help overview
+
+.help {
+  .feature {
+    ul {
+      padding-top: 10px;
+      li {
+        list-style-type: disc;
+        margin-left: 25px;
+      }
+    }
+  }
+}
+
+
+// feature heights!!!
+
+@media (min-width: 768px) {
+  .medium-features {
+    .feature {
+      min-height: 300px;
+    }
+  }
+
+  .short-features {
+    .feature {
+      min-height: 230px;
+    }
+  }
+
+  // used on chapters page
+
+  .feature-standalone {
+    float: left;
+    width: 300px;
+  }
+
+  // projects boxes
+
+  .short-project-features {
+    .feature {
+      min-height: 221px;
+    }
+  }
+
+  // organizing boxes
+
+  .organize-boxes {
+    .feature {
+      min-height: 160px;
+    }
+  }
+
+  // help page
+
+  .ways-to-help {
+    .feature {
+      min-height: 190px;
+    }
+  }
+
+  // resources page stylings
+
+  .advice-boxes {
+    .feature {
+      min-height: 204px;
+    }
+  }
+
+  // learn overview stylings
+
+  .get-the-most-out {
+    .feature {
+      min-height: 256px;
+    }
+  }
+}
+
