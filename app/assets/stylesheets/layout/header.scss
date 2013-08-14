@@ -33,6 +33,14 @@
       float: right;
       margin-top: 20px;
       li {
+        ul {
+          display: none;
+        }
+        &:hover {
+          ul {
+            display: block;
+          }
+        }
         position: relative;
         height: 40px;
         a {
@@ -121,16 +129,6 @@
             color: $grayMediumLight;
           }
         }
-      }
-    }
-    .dropdown-menu {
-      background: white;
-      li {
-        a {
-          font-size: 15px;
-          color: $grayDark;
-        }
-        margin: 10px 0;
       }
     }
   }
