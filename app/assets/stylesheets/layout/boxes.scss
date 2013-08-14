@@ -48,10 +48,24 @@
   }
 }
 
+.prep-ideas {
+  .feature {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin: 0 20px 20px 0;
+  }
+}
 
 // feature heights!!!
 
 @media (min-width: 768px) {
+  .prep-ideas {
+    .feature {
+      min-height: 305px;
+    }
+  }
+
   .medium-features {
     .feature {
       min-height: 300px;
