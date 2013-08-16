@@ -7,6 +7,10 @@
     margin: 0;
   }
 
+  .navbar-static-top .container {
+    width: 940px;
+  }
+
   .header {
     height: 60px;
     background: url(navbar_texture.gif);
@@ -14,7 +18,7 @@
     a.logo {
       float: left;
       display: block;
-      margin: 10px 0 0 20px;
+      margin: 10px 0 0 0;
     }
     svg {
       margin-top: -5px;
@@ -31,7 +35,7 @@
     }
     ul.nav {
       float: right;
-      margin-top: 20px;
+      margin: 20px 0 0 0;
       li {
         ul {
           display: none;
@@ -40,6 +44,9 @@
           ul {
             display: block;
           }
+        }
+        &:last-child a {
+          padding-right: 0;
         }
         position: relative;
         height: 40px;
