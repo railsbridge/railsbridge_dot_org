@@ -10,7 +10,7 @@
   %body{ class: (params[:controller]), id: (params[:action]) }
     = render "layouts/header"
     .container
-      - if params[:action] == "home"
+      - if @suppress_sidenav
         = yield
       - else
         .row-fluid
