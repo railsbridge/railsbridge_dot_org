@@ -62,8 +62,20 @@
           }
         }
       }
-      ul.dropdown-menu li a {
-        color: $black;
+      ul.dropdown-menu {
+        margin: -10px 0 0 20px;
+        border-radius: 0;
+        padding: 20px 0 0 0;
+        li a {
+          color: $black;
+          &:hover, &:active, &:focus {
+            color: $blue;
+            background: none;
+          }
+        }
+        li.is-selected a {
+          color: $blue;
+        }
       }
       li.external a {
         border-left: 1px solid white;
