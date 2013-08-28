@@ -58,5 +58,21 @@ module RailsbridgeSite2013
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # # Setting Better Errors to use Pry
+    # BetterErrors.use_pry!
+    # AwesomePrint.defaults = { plain: true }
+
+    # Generator configuration for RSpec and Factory Girl
+    config.generators do |g|
+      g.test_framework :rspec,
+        :fixtures => true,
+        :view_specs => false,
+        :helper_specs => false,
+        :routing_specs => false,
+        :controller_specs => true,
+        :request_specs => true
+      g.fixture_replacement :factory_girl, :dir => "spec/factories"
+    end
   end
 end
