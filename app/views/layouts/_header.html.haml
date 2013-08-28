@@ -9,16 +9,16 @@
         = link_to "Learn", :learn
         %span
         %ul.dropdown-menu{ role: "menu", :"aria-labelledby" => "dLabel" }
-          = render "layouts/nav_links", section: "learn"
+          = render "layouts/nav_links", nav_group: "learn"
       %li#help.nav-link{ class: ("is-selected" if request.path.match(/^\/help/)) }
         = link_to "Help", :help
         %span
         %ul.dropdown-menu{ role: "menu", :"aria-labelledby" => "dLabel" }
-          = render "layouts/nav_links", section: "help"
+          = render "layouts/nav_links", nav_group: "help"
       %li#about.nav-link{ class: ("is-selected" if request.path.match(/^\/about/)) }
         = link_to "About", :about
         %span
         %ul.dropdown-menu{ role: "menu", :"aria-labelledby" => "dLabel" }
-          = render "layouts/nav_links", section: "about"
+          = render "layouts/nav_links", nav_group: "about"
       %li.external#blog= link_to "Blog", "http://workshops.railsbridge.org/blog", target: "_blank"
       %li.external#curriculum= link_to "Curriculum & Installfest", "http://docs.railsbridge.org", target: "_blank"
