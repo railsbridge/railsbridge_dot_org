@@ -1,10 +1,10 @@
-- if section == "learn"
+- if nav_group == "learn"
   = nav_link "Overview", :learn
   = nav_link "Upcoming Workshops", :events
   = nav_link "FAQ", :learning_faq
   = nav_link "Keep Learning", :learning_resources
 
-- if section == "help"
+- if nav_group == "help"
   = nav_link "Overview", :help
   = nav_link "Teach or TA", :teach
   = nav_link "Organize an Event", :organize
@@ -12,7 +12,7 @@
   = nav_link "Donor FAQ", :donor_faq
   = nav_link "Interest Form", :interest_form
 
-- if section == "about"
+- if nav_group == "about"
   = nav_link "Overview", :about
   = nav_link "Team", :team
   = nav_link "Sponsors ", :sponsors
