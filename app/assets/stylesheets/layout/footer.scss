@@ -1,5 +1,5 @@
 // footer
-footer {
+.footer {
   margin: 0 -20px;
   .container {
     padding: 20px;
@@ -51,7 +51,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  footer {
+  .footer {
     ul.footer-icons {
       margin: 20px 0;
       li {
