@@ -2,11 +2,10 @@ source "https://rubygems.org"
 
 gem "rails", "3.2.12"
 gem "haml-rails",   "~> 0.4"
-
-
-group :development, :test do
-  gem "sqlite3"
-end
+gem "jquery-rails"
+gem "font-awesome-rails"
+gem "twitter"
+gem "tweetstream"
 
 group :production do
   gem "pg"
@@ -20,7 +19,24 @@ group :assets do
   gem "bourbon",      "~> 3.1.8"
 end
 
-gem "jquery-rails"
-gem "font-awesome-rails"
-gem "twitter"
-gem "tweetstream"
+group :test, :development do
+  gem "sqlite3"
+
+  # Testing
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
+  gem 'timecop'
+  gem 'simplecov', :require => false
+
+  # Debugging
+  gem "quiet_assets"
+  gem "jazz_hands"
+end
+
+group :development do
+  gem "thin"
+  gem "better_errors"
+  gem "binding_of_caller"
+end

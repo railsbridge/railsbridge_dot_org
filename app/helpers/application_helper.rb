@@ -1,17 +1,8 @@
 module ApplicationHelper
 
-  def page_title(title)
+  def page_title(title = nil)
     base_title = "RailsBridge"
-    title.empty? ? base_title : "#{base_title} | #{title.join(' | ')}"
-  end
-
-  def header_link(link_text, link)
-    path_regex = /^\/#{link_text.downcase}/
-    class_name = (current_page?(link) || request.path.match(path_regex)) ? 'is-selected' : ''
-    content_tag(:li, class: class_name, id: link_text.downcase) do
-      concat link_to link_text, link
-      concat content_tag(:span)
-    end
+    title ? "#{base_title} | #{title.join(' | ')}" : base_title
   end
 
   def nav_link(link_text, link)
