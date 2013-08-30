@@ -3,6 +3,7 @@
 // feature lists
 
 .feature {
+  @include clearfix();
   border: 1px solid $gray;
   border-top-width: 1px;
   margin-top: 5px;
