@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
 gem "rails", "3.2.12"
-gem "thin"
 gem "haml-rails",   "~> 0.4"
 gem "jquery-rails"
 gem "font-awesome-rails"
@@ -37,6 +36,7 @@ group :test, :development do
 end
 
 group :development do
+  gem "thin"
   gem "better_errors"
   gem "binding_of_caller"
 end
