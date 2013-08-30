@@ -1,27 +1,29 @@
 // chapters
 
 #chapters {
-  h2 {
-    border-bottom: 1px solid $gray;
-    padding-bottom: 15px;
-    margin-top: 20px;
-  }
-  .chapter-box {
-    float: left;
-    width: 207px;
-    height: 115px;
-    border: 1px solid $gray;
-    padding: 15px 20px;
-    margin: 5px 10px 10px 0;
-    ul {
-      margin: 0;
-      list-style: none;
-      li {
-        margin-bottom: 5px;
-      }
+  .content {
+    h2 {
+      border-bottom: 1px solid $gray;
+      padding-bottom: 15px;
+      margin-top: 20px;
     }
-    h4 {
-      margin: 0 0 10px 0;
+    .chapter-box {
+      float: left;
+      width: 207px;
+      height: 115px;
+      border: 1px solid $gray;
+      padding: 15px 20px;
+      margin: 5px 10px 10px 0;
+      ul {
+        margin: 0;
+        list-style: none;
+        li {
+          margin-bottom: 5px;
+        }
+      }
+      h4 {
+        margin: 0 0 10px 0;
+      }
     }
   }
 }
