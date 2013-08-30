@@ -10,4 +10,4 @@
     %li= link_to raw("<span class='icon-user'></span>Organized by #{event.organizers.first} & friends"), '', class: 'event-host'
     - if event.location
       %li= link_to raw("<span class='icon-map-marker'></span>Held at #{event.location.name}"), '', class: 'event-venue'
-  = link_to 'RSVP on Bridge Troll', "http://bridgetroll-staging.herokuapp.com/events/#{event.id}", class: 'event-cta'
+  = link_to 'RSVP on Bridge Troll', "http://www.bridgetroll.org/events/#{event.id}", class: 'event-cta'
