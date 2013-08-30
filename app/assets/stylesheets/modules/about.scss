@@ -8,6 +8,7 @@
       margin-top: 20px;
     }
     .chapter-box {
+      @include clearfix();
       float: left;
       width: 207px;
       height: 115px;
