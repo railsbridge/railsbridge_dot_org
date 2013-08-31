@@ -54,23 +54,3 @@ input, select, textarea, body {
  font: normal 1.2em/1.6667em 'OpenSans', Arial, sans-serif;
  -webkit-font-smoothing: antialiased;
 }
-
-// Markup free clearing
-// Details: http://www.positioniseverything.net/easyclearing.html
-
-.clearfix:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-
-.clearfix {
-  display: inline-block;
-}
-
-// Hides from IE-mac \
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-// End hide from IE-mac
