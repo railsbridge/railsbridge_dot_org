@@ -58,7 +58,15 @@
   }
 }
 
-// feature heights!!!
+@media (max-width: 767px) {
+  .prep-ideas {
+    .feature {
+      width: 235px;
+    }
+  }
+}
+
+// feature heights!!
 
 @media (min-width: 768px) {
   .prep-ideas {
