@@ -3,12 +3,14 @@ class StaticPagesController < ApplicationController
 
   def home
     @suppress_sidenav = true
+    @events = Event.all
   end
 
   def about
   end
 
   def learn
+    @events = Event.all
   end
 
   def teach
@@ -32,7 +34,12 @@ class StaticPagesController < ApplicationController
   def chapters
   end
 
-  def past
+  def events
+    @events = Event.all
+  end
+
+  def past_events
+    @past_events = PastEvent.all
   end
 
   def team
@@ -44,12 +51,6 @@ class StaticPagesController < ApplicationController
   def help
   end
 
-  def faq
-  end
-
-  def faq
-  end
-  
   def interest_form
   end
 
