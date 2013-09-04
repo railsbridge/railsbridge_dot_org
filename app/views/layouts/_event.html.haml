@@ -2,7 +2,7 @@
   %h4= event.title
   %ul
     %li
-      .event-date #{DateTime.parse(event.sessions.first.starts_at).strftime("%B %e")} – #{DateTime.parse(event.sessions.last.ends_at).strftime("%B %e, %Y")}
+      .event-date #{formatted_event_date(event)}
       - if event.location
         .event-location #{event.location.city}, #{event.location.state}
       - else
@@ -10,4 +10,4 @@
     %li= link_to raw("<span class='icon-user'></span>Organized by #{event.organizers.first} & friends"), '', class: 'event-host'
     - if event.location
       %li= link_to raw("<span class='icon-map-marker'></span>Held at #{event.location.name}"), '', class: 'event-venue'
-  = link_to 'RSVP on Bridge Troll', "http://www.bridgetroll.org/events/#{event.id}", class: 'event-cta'
+  = link_to 'RSVP on Bridge Troll', bridgetroll_event_url(event), class: 'event-cta'

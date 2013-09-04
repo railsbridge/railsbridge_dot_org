@@ -19,3 +19,6 @@
 
 # Ignore all simplecov files
 /coverage
+
+# Ignore Rubymine created folder
+.idea
