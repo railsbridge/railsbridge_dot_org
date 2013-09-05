@@ -44,11 +44,10 @@
     }
   }
   .event-help {
-    background: $grayMediumLight;
-    color: $white;
-    border: 1px solid $grayMediumLight;
-    p {
-      color: $white;
+    background: $grayLight;
+    border: 1px solid $grayLight;
+    h4 {
+      border-bottom: none;
     }
   }
 }

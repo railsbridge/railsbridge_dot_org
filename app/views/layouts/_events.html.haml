@@ -5,5 +5,7 @@
   .events.feature.event.event-help
     %h4 Not Finding a Workshop?
     %ul
-      %li There are communities around the world that hold workshops. If there isn't one in your area, we'd love to help you get one started.
-    = link_to 'Check Out Local Chapters', :chapters, class: 'event-cta'
+      %li
+        %p There are communities around the world that hold workshops. If there isn't one in your area, we'd love to help you get one started.
+      %li= link_to 'Check Out Local Chapters', :chapters
+      %li= link_to 'Organize a Workshop', :organize
