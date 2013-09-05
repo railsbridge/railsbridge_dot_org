@@ -11,7 +11,7 @@
       color: $grayDark
     }
     .event-host, .event-venue {
-      color: $purple;
+      color: $blue;
     }
   }
   .feature {
@@ -39,12 +39,15 @@
   }
   a {
     color: $blue;
+    &:hover {
+      color: darken($blue, 10%);
+    }
     span {
       padding-right: 5px;
     }
   }
   .event-help {
-    background: $grayLight;
+    background: $grayMegaLight;
     border: 1px solid $grayLight;
     h4 {
       border-bottom: none;
