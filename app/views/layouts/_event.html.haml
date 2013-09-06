@@ -7,7 +7,12 @@
         .event-location #{event.location.city}, #{event.location.state}
       - else
         .event-location Location TBD
-    %li= link_to raw("<span class='icon-user'></span>Organized by #{event.organizers.first} & friends"), '', class: 'event-host'
-    - if event.location
-      %li= link_to raw("<span class='icon-map-marker'></span>Held at #{event.location.name}"), '', class: 'event-venue'
+    %li
+      %span.icon-user
+      = "Organized by #{event.organizers.first} & friends"
+    - if event.location && valid_location?(event.location)
+      %li
+        = link_to location_url(event.location), class: 'event-venue', target: '_blank' do
+          %span.icon-map-marker
+          = "Held at #{location_name(event.location)}"
   = link_to 'RSVP on Bridge Troll', bridgetroll_event_url(event), class: 'event-cta'
