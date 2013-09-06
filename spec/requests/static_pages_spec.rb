@@ -38,7 +38,7 @@ describe "Static pages" do
     end
 
     it "has a past events page" do
-      visit '/about/past_events'
+      visit '/about/past-events'
       status_code.should be 200
     end
 
@@ -96,12 +96,12 @@ describe "Static pages" do
     end
 
     it "has a donor faq page" do
-      visit '/help/donor_faq'
+      visit '/help/donor-faq'
       status_code.should be 200
     end
 
     it "has an interest form page" do
-      visit '/help/interest_form'
+      visit '/help/interest-form'
       status_code.should be 200
     end
 
