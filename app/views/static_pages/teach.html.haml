@@ -1,45 +1,10 @@
 - provide(:title, page_title(['Teach or TA']))
-.spaced-help-content
-  .row-fluid
-    .span12
-      .question-header
-        %h1 Want to teach technologies?
-        %h2 Amazing!
-      %h2 Teacher and TA FAQ
-      %h4 Should I be a teacher or a TA?
-      %p
-        If this is your first workshop, you should probably TA. Otherwise, it depends! We often find that the most technically advanced volunteer in the room can make a great TA, while the person who can most enthusiastically move the class makes a great teacher.
-        %p Sample class configurations:
-        %ul
-          %li 7 students, 1 teacher, 2 TAs: teacher advances slides and generally moves the class forward, TAs help students who get stuck and explain specific topics as requested by the teacher.
-          %li 4 students, 2 teachers: teachers take turns leading different sections of the curriculum.
-          %li 12 students, 1 teacher, 3 TAs: teacher leads the class for most of the day, swapping out with a TA for certain sections. Teacher gets super tired around 3pm and a TA takes over at the break.
-        %h4 Do I know enough Rails to teach?
-        %p Maybe! Probably! Sometimes the best teachers are people who have most recently processed the material themselves, and can really relate to their students. Having multiple teachers/TAs in a room means that even if you get something wrong, you can look to the other volunteers to help clarify/correct.
-        %p We feel especially warm and fuzzy about former RailsBridge students coming back as TAs or teachers, so if you're in that bucket, please do!
-        %h4 I'm a dude. Can I teach?
-        %p Yep! Our goal isn't just to teach underrespresented folks tech skills. We also want to help our volunteers challenge their own preconceptions of what a programmer is! So, everyone wins! We are always trying to recruit students into teaching roles, so please help by encouraging your students to come back and volunteer.
-        %h4 I think this part of the curriculum is weird.
-        %p
-          Good question? But really, please
-          %a{:href => "https://github.com/railsbridge/docs"} fork the curriculum
-          and make a pull request with what you think would be better. This whole thing is open source and a 100% volunteer effort, so your contributions are very, very valued.
-        %h4 Do I need to come both days?
-        %p No, you can RSVP for either or both. Just remember to come!
-        %h4 Why should I do this?
-        %p You should volunteer at a workshop if:
-        %ul
-          %li You're passionate about teaching technology
-          %li You think it's weird that people in tech don't actually reflect the people in the world
-          %li You're excited about teaching the RailsBridge curriculum
-        %p And for good measure, you shouldn't volunteer at a workshop if:
-        %ul
-          %li You desire more attention, and think that students will provide that
-          %li You (just) want to show off your awesome tech skills
-          %li You're only in it for the free pizza
-          %li You want to find your one true love. (You can't ask anyone out at RailsBridge. It's a professional event, and we want all students to feel totally safe.)
-        %br
+
+%h1 Want to teach technologies?
+%h2 Amazing!
+
 %h2 Things you should do as a teacher or TA
+
 .row-fluid.medium-features
   .span4
     .feature
@@ -62,41 +27,41 @@
         to give you some things to think about.
   .span4
     = render 'mailing_list'
-  %br
-%h2 Advice on Teaching Beginners
-%p You'll probably be working with people who may not even be familiar with using their terminal (or had their very first taste of using the terminal at the InstallFest the previous night) and won't understand intuitively why certain commands are worded the way they are.  When you're teaching beginners, the goal is not necessarily to get through the curriculum, but rather to provide a good grounding in what programming is and how it works — and to get them excited about the possibilities programming offers.
-%p Think ahead of time about how you would explain the following:
-%ul
-  %li What's a program? Operating system?
-  %li
-    What's a framework?
-    %ul
-      %li something that makes it faster to build an application because it contains most of the things you would commonly write
-  %li
-    Workflow - how do you write a program?
-    %ul
-      %li Learn about customer's requirements and translate into "stories"
-      %li Pick a story that seems doable and start writing code that does it
-      %li Show your work to the customer, get feedback
-      %li Based on feedback, adjust stories (customer's "up front" requirements vs. changes once they see something working)
-      %li Once story is finished, go back to "pick a story"... keep going until you're done! (This is an example of looping!)
-  %li
-    Basic programming structures - or, how to do the "start writing code" step
-    %ul
-      %li variables - words that hold information
-      %li types of information - text, numbers, collections
-      %li operators - doing stuff with variables
-      %li loops - doing the same action a bunch of times
-      %li printing - to the screen, or to a file
-  %li
-    Writing a simple program
-    %ul
-      %li opening the editor
-      %li opening the command line
-      %li adding two numbers together, storing in a variable
-      %li printing variable to the screen
-      %li save and run
-%h2 Advice on Teaching Experienced Programmers
-%ul
-  %li At the beginning of your class, make sure to find out what your student's technical backgrounds are, and make parallels ("This is like X in Java") when you can.
-  %li Use the curriculum as a jumping off point. If the students want to dig into a particular aspect of Rails or Ruby, go for it!
+
+%h2 Teacher and TA FAQ
+
+.indented-content
+  %h4 Should I be a teacher or a TA?
+  %p If this is your first workshop, you should probably TA. Otherwise, it depends! We often find that the most technically advanced volunteer in the room can make a great TA, while the person who can most enthusiastically move the class makes a great teacher.
+  %p Sample class configurations:
+  %ul
+    %li 7 students, 1 teacher, 2 TAs: teacher advances slides and generally moves the class forward, TAs help students who get stuck and explain specific topics as requested by the teacher.
+    %li 4 students, 2 teachers: teachers take turns leading different sections of the curriculum.
+    %li 12 students, 1 teacher, 3 TAs: teacher leads the class for most of the day, swapping out with a TA for certain sections. Teacher gets super tired around 3pm and a TA takes over at the break.
+
+  %h4 Do I know enough Rails to teach?
+  %p Maybe! Probably! Sometimes the best teachers are people who have most recently processed the material themselves, and can really relate to their students. Having multiple teachers/TAs in a room means that even if you get something wrong, you can look to the other volunteers to help clarify/correct.
+  %p We feel especially warm and fuzzy about former RailsBridge students coming back as TAs or teachers, so if you're in that bucket, please do!
+
+  %h4 I'm a dude. Can I teach?
+  %p Yep! Our goal isn't just to teach underrespresented folks tech skills. We also want to help our volunteers challenge their own preconceptions of what a programmer is! So, everyone wins! We are always trying to recruit students into teaching roles, so please help by encouraging your students to come back and volunteer.
+
+  %h4 I think this part of the curriculum is weird.
+  %p Good question? But really, please #{ link_to "fork the curriculum", "https://github.com/railsbridge/docs" } and make a pull request with what you think would be better. This whole thing is open source and a 100% volunteer effort, so your contributions are very, very valued.
+
+  %h4 Do I need to come both days?
+  %p No, you can RSVP for either or both. Just remember to come!
+
+  %h4 Why should I do this?
+  %p You should volunteer at a workshop if:
+  %ul
+    %li You're passionate about teaching technology
+    %li You think it's weird that people in tech don't actually reflect the people in the world
+    %li You're excited about teaching the RailsBridge curriculum
+
+  %p And for good measure, you <em>shouldn't</em> volunteer at a workshop if:
+  %ul
+    %li You desire more attention, and think that students will provide that
+    %li You (just) want to show off your awesome tech skills
+    %li You're only in it for the free pizza
+    %li You want to find your one true love. (You can't ask anyone out at RailsBridge. It's a professional event, and we want all students to feel totally safe.)

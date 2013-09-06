@@ -13,21 +13,3 @@ textarea  { resize: vertical; }
 a         { color: $purple }
 a:hover   { color: lighten($purple, 30%); text-decoration: none; }
 hr        { margin: 0px 0px 20px; border: 0px; height: 1px; background: $grayLight; }
-
-// various and sundry
-.left-border       { border-left: 1px solid $grayMediumLight; margin-left: 10px; padding-left: 10px; }
-.image-placeholder { display: block; width: 170px; height: 50px; line-height: 50px; text-align: center;
-                     background: white; border: 2px dotted $grayMediumLight; }
-.deemphasize       { color: $grayMedium; }
-
-.question-header {
-  line-height: 1em;
-  h1 {
-    margin: 0;
-  }
-  h2 {
-    margin-top: -10px;
-    margin-bottom: 20px;
-  }
-}
-

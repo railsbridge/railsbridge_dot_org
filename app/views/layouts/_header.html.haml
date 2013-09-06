@@ -1,8 +1,6 @@
 .header.navbar.navbar-static-top
   .container
     = link_to :root, class: "logo" do
-      %svg{ width: 50, height: 50 }
-        %circle{ cx: 25, cy: 25, r: 22 }
       %h1 RailsBridge
     %ul.header-nav.nav
       %li#learn.nav-link{ class: ("is-selected" if request.path.match(/^\/learn/)) }

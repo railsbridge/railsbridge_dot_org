@@ -15,23 +15,11 @@
     height: 60px;
     background: url(navbar_texture.gif);
     margin-bottom: 30px;
-    a.logo {
-      float: left;
-      display: block;
-      margin: 10px 0 0 0;
-    }
-    svg {
-      margin-top: -5px;
-      circle {
-        stroke: $white;
-        stroke-width: 3;
-        fill: $blue;
-      }
-    }
     h1 {
+      float: left;
       font: bold 28px 'Aleo',Arial,sans-serif;
       color: $white;
-      margin: 8px 0 0 60px;
+      margin: 18px 0 0 0;
     }
     ul.nav {
       float: right;
