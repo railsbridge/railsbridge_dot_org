@@ -85,6 +85,11 @@ describe "Static pages" do
       status_code.should be 200
     end
 
+    it "has a teacher page" do
+      visit '/help/teacher-advice'
+      status_code.should be 200
+    end
+
     it "has an organize page" do
       visit '/help/organize'
       status_code.should be 200
