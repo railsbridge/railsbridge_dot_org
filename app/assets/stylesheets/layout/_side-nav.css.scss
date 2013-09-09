@@ -3,12 +3,6 @@
   .side-nav {
     margin-bottom: 20px;
     border: 1px solid $gray;
-    .side-nav-links {
-      display: none;
-    }
-    .is-selected {
-      display: block;
-    }
     a {
       color: $black;
     }
@@ -18,7 +12,10 @@
       li {
         text-align: center;
         line-height: 18px;
-        padding: 12px 20px;
+        a {
+          display: block;
+          padding: 12px 20px;
+        }
         &.is-selected {
           background: $blue;
           &:hover {
@@ -44,12 +41,6 @@
 @media (max-width: 768px) {
   .side-nav {
     margin: 10px 0;
-    .side-nav-links {
-      display: none;
-    }
-    .is-selected {
-      display: inline-block;
-    }
     a {
       color: $black;
     }
