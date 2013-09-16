@@ -34,4 +34,7 @@ RailsbridgeSite2013::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # Fake secret token
+  config.secret_token = ('x' * 30)
 end

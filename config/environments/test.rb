@@ -34,4 +34,7 @@ RailsbridgeSite2013::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+
+  # Fake secret token
+  config.secret_token = ('x' * 30)
 end
