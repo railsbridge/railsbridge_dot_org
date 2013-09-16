@@ -64,4 +64,10 @@ RailsbridgeSite2013::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+  # Your secret key for verifying the integrity of signed cookies.
+  # If you change this key, all old signed cookies will become invalid!
+  # Make sure the secret is at least 30 characters and all random,
+  # no regular words or you'll be exposed to dictionary attacks.
+  config.secret_token = ENV['SECRET_TOKEN']
 end
