@@ -108,6 +108,7 @@ GEM
     fastercsv (1.5.5)
     font-awesome-rails (3.2.1.2)
       railties (>= 3.2, < 5.0)
+    google-analytics-rails (0.0.4)
     grit (2.5.0)
       diff-lcs (~> 1.1)
       mime-types (~> 1.15)
@@ -287,6 +288,7 @@ DEPENDENCIES
   database_cleaner
   factory_girl_rails
   font-awesome-rails
+  google-analytics-rails (~> 0.0.4)
   haml-rails (~> 0.4)
   jazz_hands
   jquery-rails

@@ -70,4 +70,7 @@ RailsbridgeSite2013::Application.configure do
   # Make sure the secret is at least 30 characters and all random,
   # no regular words or you'll be exposed to dictionary attacks.
   config.secret_token = ENV['SECRET_TOKEN']
+
+  # Google Analytics code for google-analytics-rails
+  GA.tracker = "UA-40977319-3"
 end

@@ -10,6 +10,7 @@ gem "tweetstream"
 
 group :production do
   gem "pg"
+  gem "google-analytics-rails", "~> 0.0.4"
 end
 
 group :assets do
