@@ -25,6 +25,8 @@
       float: right;
       margin: 20px 0 0 0;
       li {
+        position: relative;
+        height: 40px;
         ul {
           display: none;
         }
@@ -36,8 +38,6 @@
         &:last-child a {
           padding-right: 0;
         }
-        position: relative;
-        height: 40px;
         a {
           display: block;
           font: normal 14px 'Aleo',Arial,sans-serif;
@@ -65,20 +65,22 @@
           color: $blue;
         }
       }
-      li.external a {
-        border-left: 1px solid white;
-      }
-      li.is-selected a {
-        color: $warmGray;
-        span {
-          border-bottom: 10px solid $grayMediumLight;
+      li {
+        &.external a {
+          border-left: 1px solid white;
         }
-      }
-      li.is-selected ul {
-        display: none;
-      }
-      li#help span {
-        left: 30px;
+        &.is-selected ul {
+          display: none;
+        }
+        &.is-selected a {
+          color: $warmGray;
+          span {
+            border-bottom: 10px solid $grayMediumLight;
+          }
+        }
+        &#help span {
+          left: 30px;
+        }
       }
     }
   }
@@ -97,17 +99,6 @@
       border-bottom: 10px solid $blue;
     }
   }
-  // logo placeholder
-  .header {
-    svg {
-      position: absolute;
-    }
-    circle {
-      stroke: $white;
-      stroke-width: 2;
-      fill: $grayMediumLight;
-    }
-  }
 }
 
 // Mobile menu
@@ -116,9 +107,6 @@
   .header {
     h1 {
       margin: 10px 0 0 14px;
-    }
-    svg {
-      display: none;
     }
     background: url(navbar_texture.gif);
     a.logo {
