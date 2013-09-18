@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title RailsBridge | Server Error
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1" }
+    %meta{ charset: "UTF-8" }
+    = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag "application"
+    = analytics_init if Rails.env.production?
+    = csrf_meta_tags
+  %body
+    .container
+      #error_500.logistics
+        .content
+          %h1 There has been an internal server error.
+          %h3 This error is being logged and reported...
+
+          %p If you need assistance or found a persisting problem please #{ link_to "create an issue", "https://github.com/railsbridge/site_de_railsbridge_2013/issues/new" } on GitHub.
+
+          .error-code
+            %i.icon-gears
