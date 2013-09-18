@@ -7,6 +7,7 @@ gem "jquery-rails"
 gem "font-awesome-rails"
 gem "twitter"
 gem "tweetstream"
+gem "newrelic_rpm"
 
 group :production do
   gem "pg"
