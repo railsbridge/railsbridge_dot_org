@@ -1,0 +1,36 @@
+.subnav {
+  background: $blue;
+  margin: -30px 0 30px 0;
+  .subnav-center {
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+  ul {
+    float: left;
+    position: relative;
+    left: 50%;
+    text-align: center;
+    margin: 0;
+    li {
+      float: left;
+      position: relative;
+      right: 50%;
+      line-height: 40px;
+      margin-right: 30px;
+      a {
+        color: lighten($blue, 40%);
+        font-size: 14px;
+        line-height: 40px;
+        font-weight: bold;
+        &:hover {
+          color: $white;
+        }
+      }
+      &.is-selected a {
+        color: $white;
+        cursor: default;
+      }
+    }
+  }
+}
