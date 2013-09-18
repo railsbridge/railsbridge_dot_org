@@ -1,7 +1,4 @@
 class StaticPagesController < ApplicationController
-  before_filter :assign_nav_group
-
-  @suppress_sidenav = false
 
   def home
     @suppress_sidenav = true
@@ -59,11 +56,4 @@ class StaticPagesController < ApplicationController
   def interest_form
   end
 
-  private
-
-  def assign_nav_group
-    [:learn, :help, :about].each do |group|
-      @nav_group = group if request.path.match(/^\/#{group}/)
-    end
-  end
 end

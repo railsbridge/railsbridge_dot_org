@@ -59,6 +59,9 @@ module RailsbridgeSite2013
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+    # Set custom 404 and 500 actions in routes.rb
+    config.exceptions_app = self.routes
+
     # # Setting Better Errors to use Pry
     # BetterErrors.use_pry!
     # AwesomePrint.defaults = { plain: true }

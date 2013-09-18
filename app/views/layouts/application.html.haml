@@ -13,7 +13,8 @@
     = render "layouts/header"
     .container
       - if @suppress_sidenav
-        = yield
+        .content
+          = yield
       - else
         .row-fluid
           .span2
