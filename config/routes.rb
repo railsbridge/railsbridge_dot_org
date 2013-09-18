@@ -25,4 +25,9 @@ RailsbridgeSite2013::Application.routes.draw do
   get '/learn/faq',          to: 'static_pages#learning_faq',       as: 'learning_faq'
   get '/learn/events',       to: 'static_pages#events',             as: 'events'
 
+  get '/sitemap',            to: 'logistics#sitemap',               as: 'sitemap'
+
+  match '/404',              to: 'logistics#error_404',             as: 'error_404'
+  match '/500',              to: 'logistics#error_500',             as: 'error_500'
+
 end
