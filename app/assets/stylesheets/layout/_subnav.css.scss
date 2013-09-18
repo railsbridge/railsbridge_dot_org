@@ -16,13 +16,10 @@
       float: left;
       position: relative;
       right: 50%;
-      line-height: 40px;
+      font: bold 14px/40px Aleo, Arial, sans-serif;
       margin-right: 30px;
       a {
         color: lighten($blue, 40%);
-        font-size: 14px;
-        line-height: 40px;
-        font-weight: bold;
         &:hover {
           color: $white;
         }
@@ -30,6 +27,40 @@
       &.is-selected a {
         color: $white;
         cursor: default;
+      }
+    }
+  }
+}
+
+// Mobile subnav
+
+@media (max-width: 768px) {
+  .subnav {
+    background: none;
+    margin: 10px -20px 0 -20px;
+    padding: 0 20px;
+    ul {
+      text-align: left;
+      left: 0;
+      margin: 0;
+      li {
+        left: 0;
+        background: $grayLight;
+        display: inline-block;
+        line-height: 20px;
+        font-size: 15px;
+        font-weight: normal;
+        padding: 5px;
+        margin: 5px;
+        a {
+          color: $black;
+        }
+        &.is-selected {
+          background: $blue;
+          a {
+            color: $white;
+          }
+        }
       }
     }
   }
