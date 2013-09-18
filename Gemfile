@@ -8,6 +8,10 @@ gem "font-awesome-rails"
 gem "twitter"
 gem "tweetstream"
 
+# Site Tools & Monitoring
+gem "newrelic_rpm"
+gem 'sitemap_generator'
+
 group :production do
   gem "pg"
   gem "google-analytics-rails", "~> 0.0.4"

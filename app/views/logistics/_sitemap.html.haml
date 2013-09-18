@@ -1,0 +1,7 @@
+.row-fluid
+  - nav_links_by_group.each do |nav_group, links|
+    %ul.sitemap
+      %li
+        %h4= nav_group.to_s.titleize
+      - links.each do |link_info|
+        %li= link_to link_info[0], link_info[1]
