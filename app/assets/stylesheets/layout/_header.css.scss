@@ -73,6 +73,7 @@
           display: none;
         }
         &.is-selected a {
+          cursor: default;
           color: $warmGray;
           span {
             border-bottom: 10px solid $grayMediumLight;
