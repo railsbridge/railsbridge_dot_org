@@ -6,8 +6,8 @@
   @include clearfix();
   border: 1px solid $gray;
   border-top-width: 1px;
-  margin-top: 5px;
-  padding: 20px;
+  margin: 5px 0 20px 0;
+  padding: 20px 20px 10px 20px;
   .feature-icon {
     float: left;
     margin: -7px 10px 0 -7px;
@@ -30,10 +30,6 @@
   }
 }
 
-.features-grid {
-  margin-bottom: 10px;
-  margin-right: 20px;
-}
 
 // add back in bulleted lists on help overview
 
@@ -45,98 +41,6 @@
         list-style-type: disc;
         margin-left: 25px;
       }
-    }
-  }
-}
-
-.prep-ideas {
-  .feature {
-    display: inline-block;
-    width: 300px;
-    vertical-align: top;
-    margin: 0 20px 20px 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .prep-ideas {
-    .feature {
-      width: 235px;
-    }
-  }
-}
-
-// feature heights!!
-
-@media (min-width: 768px) {
-  .prep-ideas {
-    .feature {
-      min-height: 305px;
-    }
-  }
-
-  .medium-features {
-    .feature {
-      min-height: 300px;
-    }
-  }
-
-  .team-boxes {
-    .feature {
-      min-height: 275px;
-    }
-  }
-
-  .short-features {
-    .feature {
-      min-height: 230px;
-    }
-  }
-
-  // used on chapters page
-
-  .feature-standalone {
-    float: left;
-    width: 300px;
-  }
-
-  // projects boxes
-
-  .short-project-features {
-    .feature {
-      min-height: 221px;
-    }
-  }
-
-  // organizing boxes
-
-  .organize-boxes {
-    .feature {
-      min-height: 160px;
-    }
-  }
-
-  // help page
-
-  .ways-to-help {
-    .feature {
-      min-height: 190px;
-    }
-  }
-
-  // resources page stylings
-
-  .advice-boxes {
-    .feature {
-      min-height: 204px;
-    }
-  }
-
-  // learn overview stylings
-
-  .get-the-most-out {
-    .feature {
-      min-height: 256px;
     }
   }
 }
