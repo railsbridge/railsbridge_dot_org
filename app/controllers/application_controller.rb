@@ -3,7 +3,24 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   before_filter :assign_nav_group
 
+<<<<<<< HEAD
+=======
+  @suppress_sidenav = false
+
+  unless Rails.application.config.consider_all_requests_local
+    rescue_from Exception, with: lambda { |exception| render_error(500, exception, nil) }
+    rescue_from ActionController::RoutingError, ActionController::UnknownController, ::AbstractController::ActionNotFound, ActiveRecord::RecordNotFound, with: lambda { |exception| render_error(404, exception, 'layouts/application') }
+  end
+
+>>>>>>> master
   private
+
+  def render_error(status, exception, layout)
+    respond_to do |format|
+      format.html { render template: "logistics/error_#{status}", layout: layout, status: status }
+      format.all { render nothing: true, status: status }
+    end
+  end
 
   def assign_nav_group
     group = request.path.split('/')
