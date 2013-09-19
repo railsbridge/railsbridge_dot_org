@@ -1,19 +1,17 @@
 class ApplicationController < ActionController::Base
+  include ApplicationHelper
   protect_from_forgery
-  before_filter :assign_nav_group, :assign_suppress_sidenav
+  before_filter :assign_nav_group
 
   private
 
   def assign_nav_group
-    # TODO More graceful solution for page not being in a group
-    @nav_group = false
-    [:learn, :help, :about].each do |group|
-      @nav_group = group if request.path.match(/^\/#{group}/)
+    group = request.path.split('/')
+    if group[1] && nav_links_by_group.keys.include?(group[1].to_sym)
+      @nav_group = group[1].to_sym
+    else
+     @nav_group = false
     end
-  end
-
-  def assign_suppress_sidenav(suppress = true)
-    @suppress_sidenav = suppress
   end
 
 end

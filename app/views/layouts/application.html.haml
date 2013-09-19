@@ -13,15 +13,7 @@
     = render "layouts/header"
     = render "layouts/subnav"
     .container
-      - if @nav_group && !@suppress_sidenav
-        .row-fluid
-          .span2
-            = render "layouts/side_nav"
-          .span10
-            .content
-              = yield
-      - else
-        .content
-          = yield
+      .content
+        = yield
 
     = render "layouts/footer"
