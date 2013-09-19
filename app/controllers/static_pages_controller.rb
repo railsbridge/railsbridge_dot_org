@@ -1,7 +1,6 @@
 class StaticPagesController < ApplicationController
 
   def home
-    @suppress_sidenav = true
     @events = Event.all
   end
 

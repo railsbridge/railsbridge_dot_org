@@ -3,16 +3,20 @@ require 'spec_helper'
 describe LogisticsController do
 
   describe "GET 'error_404'" do
+    before do
+      Rails.application.config.consider_all_requests_local = false
+      RailsbridgeSite2013::Application.reload_routes!
+    end
+
     it "returns http success" do
+      request.stub(:local?) { true }
       visit '/404'
       response.should be_success
     end
-  end
 
-  describe "GET 'error_500'" do
-    it "returns http success" do
-      visit '/500'
-      response.should be_success
+    after do
+      Rails.application.config.consider_all_requests_local = true
+      RailsbridgeSite2013::Application.reload_routes!
     end
   end
 

@@ -11,16 +11,9 @@
     = csrf_meta_tags
   %body{ class: (params[:controller]), id: (params[:action]) }
     = render "layouts/header"
+    = render "layouts/subnav"
     .container
-      - if @suppress_sidenav
-        .content
-          = yield
-      - else
-        .row-fluid
-          .span2
-            = render "layouts/side_nav"
-          .span10
-            .content
-              = yield
+      .content
+        = yield
 
     = render "layouts/footer"
