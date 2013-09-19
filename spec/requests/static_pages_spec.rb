@@ -3,14 +3,10 @@ require 'spec_helper'
 describe "Static pages" do
 
   describe "Home" do
+
     it "exists" do
       visit '/'
       status_code.should be 200
-    end
-
-    it "does not have a side nav" do
-      visit '/'
-      page.should_not have_selector 'side-nav'
     end
 
   end
