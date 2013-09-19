@@ -1,9 +1,10 @@
 - provide(:title, page_title(['Resources']))
 
 %h1 What next? Write code every day!
-.row-fluid.big-icons.advice-boxes
+
+.row-fluid.js-match-height
   .span4
-    .feature.feature-1
+    .feature
       .feature-icon.icon-4x.icon-bolt
       %h4 Pick something and get started
       %ul
@@ -28,7 +29,9 @@
       %ul
         %li
           %p Come back to another workshop as a student, TA, or teacher. Teaching is a really great way to learn, too. (You'll be ready to TA sooner than you think, so don't be shy!)
+
 %h2 Resources for you
+
 #learning-resources-nav
   %ul.nav.nav-tabs
     %li.ruby.active= link_to "Ruby", "#ruby"

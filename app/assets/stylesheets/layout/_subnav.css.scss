@@ -1,0 +1,68 @@
+.subnav {
+  min-height: 10px;
+  background: $blue;
+  margin: -30px 0 30px 0;
+  .subnav-center {
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+  ul {
+    float: left;
+    position: relative;
+    left: 50%;
+    text-align: center;
+    margin: 0;
+    li {
+      float: left;
+      position: relative;
+      right: 50%;
+      font: bold 14px/40px Aleo, Arial, sans-serif;
+      margin-right: 30px;
+      a {
+        color: lighten($blue, 40%);
+        &:hover {
+          color: $white;
+        }
+      }
+      &.is-selected a {
+        color: $white;
+        cursor: default;
+      }
+    }
+  }
+}
+
+// Mobile subnav
+
+@media (max-width: 768px) {
+  .subnav {
+    background: none;
+    margin: 10px -20px 0 -20px;
+    padding: 0 20px;
+    ul {
+      text-align: left;
+      left: 0;
+      margin: 0;
+      li {
+        left: 0;
+        background: $grayLight;
+        display: inline-block;
+        line-height: 20px;
+        font-size: 15px;
+        font-weight: normal;
+        padding: 5px;
+        margin: 5px;
+        a {
+          color: $black;
+        }
+        &.is-selected {
+          background: $blue;
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
