@@ -1,4 +1,11 @@
 // content
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
 .content {
   h1 {
   margin-bottom: 20px;
