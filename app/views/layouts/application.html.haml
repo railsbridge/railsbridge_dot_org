@@ -14,9 +14,8 @@
     = render "layouts/subnav"
     .container
       .content
-
-        %p.notice= notice
-        %p.alert= alert
+        - flash.each do |name, msg|
+          %div{ class: "alert alert-#{name == :notice ? 'success' : 'error'}" }= msg
 
         = yield
 
