@@ -14,6 +14,10 @@
     = render "layouts/subnav"
     .container
       .content
+
+        %p.notice= notice
+        %p.alert= alert
+
         = yield
 
     = render "layouts/footer"

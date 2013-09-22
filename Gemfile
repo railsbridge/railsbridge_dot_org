@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "rails", "3.2.12"
+gem "devise", "3.0.3"
 gem "thin"
 gem "haml-rails",   "~> 0.4"
 gem "jquery-rails"
