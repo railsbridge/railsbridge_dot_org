@@ -14,6 +14,9 @@
     = render "layouts/subnav"
     .container
       .content
+        - flash.each do |name, msg|
+          %div{ class: "alert alert-#{name == :notice ? 'success' : 'error'}" }= msg
+
         = yield
 
     = render "layouts/footer"
