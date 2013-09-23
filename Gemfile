@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "rails", "3.2.12"
+gem "devise", "3.0.3"
 gem "thin"
 gem "haml-rails",   "~> 0.4"
 gem "jquery-rails"
@@ -31,12 +32,21 @@ group :test, :development do
   # Testing
   gem 'rspec-rails'
   gem 'capybara'
-  gem 'database_cleaner'
-  gem 'factory_girl_rails'
-  gem 'timecop'
-  gem 'simplecov', :require => false
+  gem 'email_spec'
+  gem 'shoulda-matchers'
 
-  # Debugging
+  # Fixture Replacement
+  gem 'factory_girl_rails'
+  gem 'ffaker'
+
+  # Test Tools
+  gem 'rspec-instafail', :require => false
+  gem 'database_cleaner', '< 1.0.0' # https://github.com/bmabey/database_cleaner/issues/224
+  gem 'launchy', :require => false
+  gem 'simplecov', :require => false
+  gem 'timecop'
+
+  # Debugging Tools
   gem "quiet_assets"
   gem "jazz_hands"
 end
