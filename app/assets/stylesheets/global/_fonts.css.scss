@@ -157,3 +157,16 @@
   font-weight: normal;
   font-style: normal;
 }
+
+// From https://github.com/intridea/stately
+
+@font-face {
+  font-family: 'stately-webfont';
+  src: url('stately-webfont.eot');
+  src: url('stately-webfont.eot?#iefix') format('embedded-opentype'),
+    url('stately-webfont.woff') format('woff'),
+    url('stately-webfont.ttf') format('truetype'),
+    url('stately-webfont.svg#testfontRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

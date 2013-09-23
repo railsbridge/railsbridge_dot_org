@@ -66,8 +66,10 @@ module RailsbridgeSite2013
     # BetterErrors.use_pry!
     # AwesomePrint.defaults = { plain: true }
 
-    # Generator configuration for RSpec and Factory Girl
+    # Generator configuration
     config.generators do |g|
+      g.assets = false
+      g.helper = false
       g.test_framework :rspec,
         :fixtures => true,
         :view_specs => false,
