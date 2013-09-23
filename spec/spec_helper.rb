@@ -11,10 +11,6 @@ require 'email_spec'
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
 RSpec.configure do |config|
-  config.include FactoryGirl::Syntax::Methods
-  
-  config.include Devise::TestHelpers, :type => :controller
-
   config.include(EmailSpec::Helpers)
   config.include(EmailSpec::Matchers)
 
@@ -29,18 +25,7 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = "random"
 
-  # Use Database Cleaner for transactions
-  config.use_transactional_fixtures = false
-
-  config.before(:suite) do
-    DatabaseCleaner.strategy = :truncation
-  end
-  config.before(:each) do
-    DatabaseCleaner.start
-  end
-  config.after(:each) do
-    DatabaseCleaner.clean
-  end
+  config.use_transactional_fixtures = true
 
   # Include path helpers
   config.include Rails.application.routes.url_helpers
