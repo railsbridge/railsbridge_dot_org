@@ -1,4 +1,4 @@
-.feature.event
+.feature.feature-no-icon.event
   %h4= event.title
   %ul
     %li
@@ -15,4 +15,6 @@
         = link_to location_url(event.location), class: 'event-venue', target: '_blank' do
           %span.icon-map-marker
           = "Held at #{location_name(event.location)}"
-  = link_to 'RSVP on Bridge Troll', bridgetroll_event_url(event), class: 'event-cta'
+
+  .event-cta
+    = link_to 'RSVP on Bridge Troll', bridgetroll_event_url(event)

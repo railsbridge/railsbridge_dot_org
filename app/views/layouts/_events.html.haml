@@ -1,11 +1,18 @@
+- count = 0
+- span_count = 12 / events_per_row
+- event_modulus = @events.count % span_count
+
 .events
-  - @events.each do |event|
-    = render 'layouts/event', event: event
-  .events.feature.event.event-help
-    %h4 Not Finding a Workshop?
-    %ul
-      %li
-        %p There are communities around the world that hold workshops. If there isn't one in your area, we'd love to help you get one started.
-      %li= link_to 'Check Out Local Chapters', :chapters
-      %li= link_to 'Organize a Workshop', :organize
-      
+  - @events.each_slice(events_per_row) do |event_row|
+    .row-fluid.js-match-height
+      - event_row.each do |event|
+        %div{ class: "span#{span_count}" }
+          = render 'layouts/event', event: event
+        - if event_modulus > 0 && @events.count == (count += 1)
+          %div{ class: "span#{span_count}"}
+            = render 'layouts/event_help'
+
+  - if event_modulus == 0
+    .row-fluid
+      %div{ class: "span#{12 / events_per_row}" }
+        = render 'layouts/event_help'
