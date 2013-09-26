@@ -1,6 +1,6 @@
 - provide(:title, page_title(['Upcoming Workshops']))
 
-.upcoming-events
+.upcoming-events.js-match-heights
   %h1 Upcoming Events
   %p Delivered fresh by #{link_to 'Bridge Troll', "http://www.bridgetroll.org"}, our event management software.
-  = render 'layouts/events'
+  = render 'layouts/events', events_per_row: 3

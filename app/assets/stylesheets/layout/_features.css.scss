@@ -4,6 +4,7 @@
 
 .feature {
   @include clearfix();
+  position: relative;
   border: 1px solid $gray;
   border-top-width: 1px;
   margin: 5px 0 20px 0;
