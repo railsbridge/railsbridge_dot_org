@@ -4,32 +4,7 @@ SitemapGenerator::Sitemap.default_host = "http://www.railsbridge.org/"
 SitemapGenerator::Sitemap.create do
 
   def navigation_map
-    # TODO: Get directly from helper...
-    {
-      learn: [
-        ["Overview", :learn],
-        ["Upcoming Workshops", :events],
-        ["FAQ", :learning_faq],
-        ["Keep Learning", :learning_resources],
-      ],
-      help: [
-        ["Overview", :help],
-        ["Teach or TA", :teach],
-        ["Advice for Teachers", :teacher_advice],
-        ["Organize an Event", :organize],
-        ["Host an Event", :host],
-        ["Donor FAQ", :donor_faq],
-        ["Interest Form", :interest_form]
-      ],
-      about: [
-        ["Overview", :about],
-        ["Team", :team],
-        ["Sponsors ", :sponsors],
-        ["Chapters", :chapters],
-        ["Past Events", :past_events],
-        ["Projects", :projects]
-      ]
-    }
+    ApplicationController.helpers.nav_links_by_group
   end
 
   def get_relative_path(named_route)
