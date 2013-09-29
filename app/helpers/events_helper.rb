@@ -23,6 +23,6 @@ module EventsHelper
     address_2 = location.address_2 ? " #{location.address_2}" : ""
     zip = location.zip ? ", #{location.zip}" : ""
     address = "#{location.address_1}#{address_2}, #{location.city} #{location.state}#{zip}"
-    URI::encode(base_url + address)
+    URI.encode(base_url + address)
   end
 end

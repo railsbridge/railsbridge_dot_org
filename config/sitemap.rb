@@ -4,7 +4,7 @@ SitemapGenerator::Sitemap.default_host = "http://www.railsbridge.org/"
 SitemapGenerator::Sitemap.create do
 
   def navigation_map
-    # TODO Get directly from helper...
+    # TODO: Get directly from helper...
     {
       learn: [
         ["Overview", :learn],
