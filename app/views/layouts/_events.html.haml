@@ -6,11 +6,15 @@
   - @events.each_slice(events_per_row) do |event_row|
     .row-fluid.js-match-height
       - event_row.each do |event|
-        %div{ class: "span#{span_count}" }
-          = render 'layouts/event', event: event
-        - if event_modulus > 0 && @events.count == (count += 1)
-          %div{ class: "span#{span_count}"}
-            = render 'layouts/event_help'
+        - if event.respond_to?(:url)
+          %div{ class: "span#{span_count}" }
+            = render 'layouts/event_past', event: event
+        - else
+          %div{ class: "span#{span_count}" }
+            = render 'layouts/event', event: event
+          - if event_modulus > 0 && @events.count == (count += 1)
+            %div{ class: "span#{span_count}"}
+              = render 'layouts/event_help'
 
   - if event_modulus == 0
     .row-fluid
