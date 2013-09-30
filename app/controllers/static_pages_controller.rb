@@ -1,14 +1,13 @@
 class StaticPagesController < ApplicationController
 
   def home
-    @events = Event.all
+    @events = sorted_upcoming_events
   end
 
   def about
   end
 
   def learn
-    @events = Event.all
   end
 
   def teach
@@ -36,7 +35,7 @@ class StaticPagesController < ApplicationController
   end
 
   def events
-    @events = Event.all
+    @events = sorted_upcoming_events
   end
 
   def past_events
@@ -53,6 +52,12 @@ class StaticPagesController < ApplicationController
   end
 
   def interest_form
+  end
+
+  private
+
+  def sorted_upcoming_events
+    (Event.all + PastEvent.upcoming_events).sort_by { |e| e.sessions.first.starts_at.to_time }
   end
 
 end

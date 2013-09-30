@@ -2,7 +2,7 @@
   %h4= event.title
   %ul
     %li
-      .event-date #{formatted_event_date(event)}
+      .event-date #{event_dates(event.sessions.first.starts_at, event.sessions.last.ends_at)}
       - if event.location
         .event-location #{event.location.city}, #{event.location.state}
       - else
@@ -17,4 +17,4 @@
           = "Held at #{location_name(event.location)}"
 
   .event-cta
-    = link_to 'RSVP on Bridge Troll', bridgetroll_event_url(event)
+    = link_to 'RSVP on Bridge Troll', bridgetroll_event_url(event.id), target: '_blank'
