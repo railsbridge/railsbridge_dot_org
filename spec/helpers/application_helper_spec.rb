@@ -13,7 +13,7 @@ describe ApplicationHelper do
     end
 
     it "returns base title with pipe delimited pages when passed a string array - two elements" do
-      helper.page_title(["Section Name","Page Name"]).should eql("RailsBridge | Section Name | Page Name")
+      helper.page_title(["Section Name", "Page Name"]).should eql("RailsBridge | Section Name | Page Name")
     end
 
   end

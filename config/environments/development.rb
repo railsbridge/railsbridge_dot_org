@@ -36,7 +36,7 @@ RailsbridgeSite2013::Application.configure do
   config.assets.debug = true
 
   # Setup default url options for your specific environment.
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
 
   # Fake secret token
   config.secret_token = ('x' * 30)
