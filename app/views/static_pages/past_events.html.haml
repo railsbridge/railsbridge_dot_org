@@ -25,7 +25,8 @@
         %tr
           %td #{n}
           %td
-            %a{:href => event.respond_to?(:url) ? event.url : bridgetroll_event_url(event)} #{formatted_past_event_date(event)}
+            - event_date = event_dates_short(event.sessions.first.starts_at, event.sessions.last.starts_at)
+            %a{:href => event.respond_to?(:url) ? event.url : bridgetroll_event_url(event.id)} #{event_date}
           - if event.location
             %td #{event.location.city}
             %td #{event.location.name}
