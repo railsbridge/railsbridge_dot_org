@@ -4,8 +4,10 @@ class ApplicationController < ActionController::Base
   before_filter :assign_nav_group
 
   unless Rails.application.config.consider_all_requests_local
-    rescue_from Exception, with: lambda { |exception| render_error(500, exception, nil) }
-    rescue_from ActionController::RoutingError, ActionController::UnknownController, ::AbstractController::ActionNotFound, ActiveRecord::RecordNotFound, with: lambda { |exception| render_error(404, exception, 'layouts/application') }
+    rescue_from Exception, with: ->(exception) { render_error(500, exception, nil) }
+    rescue_from ActionController::RoutingError, ActionController::UnknownController,
+                ::AbstractController::ActionNotFound, ActiveRecord::RecordNotFound,
+                with: ->(exception) { render_error(404, exception, 'layouts/application') }
   end
 
   private
@@ -15,7 +17,7 @@ class ApplicationController < ActionController::Base
     if group[1] && nav_links_by_group.keys.include?(group[1].to_sym)
       @nav_group = group[1].to_sym
     else
-     @nav_group = false
+      @nav_group = false
     end
   end
 
