@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+ruby "1.9.3"
+
 gem "rails", "3.2.12"
 gem "thin"
 gem "haml-rails",   "~> 0.4"
@@ -10,7 +12,7 @@ gem "tweetstream"
 
 # Site Tools & Monitoring
 gem "newrelic_rpm"
-gem 'sitemap_generator'
+gem "sitemap_generator"
 
 group :production do
   gem "pg"
@@ -29,14 +31,14 @@ group :test, :development do
   gem "sqlite3"
 
   # Testing
-  gem 'rspec-rails'
-  gem 'capybara'
-  gem 'email_spec'
-  gem 'shoulda-matchers'
+  gem "rspec-rails"
+  gem "capybara"
+  gem "email_spec"
+  gem "shoulda-matchers"
 
   # Test Tools
-  gem 'simplecov', :require => false
-  gem 'timecop'
+  gem "simplecov", :require => false
+  gem "timecop"
 
   # Debugging Tools
   gem "quiet_assets"
