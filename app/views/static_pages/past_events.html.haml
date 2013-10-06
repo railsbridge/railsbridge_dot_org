@@ -22,15 +22,10 @@
   %tbody
     - if @past_events.present?
       - @past_events.zip(1..@past_events.length).reverse.each do |(event, n)|
-        %tr
-          %td #{n}
-          %td
-            - event_date = event_dates_short(event.sessions.first.starts_at, event.sessions.last.starts_at)
-            %a{:href => event.respond_to?(:url) ? event.url : bridgetroll_event_url(event.id)} #{event_date}
-          - if event.location
-            %td #{event.location.city}
-            %td #{event.location.name}
-          - else
-            %td
-            %td
-          %td #{Array[*event.organizers || ''].length == 1 ? Array[*event.organizers || ''].first : event.organizers.to_sentence}
+        - present(event) do |event_presenter|
+          %tr
+            %td #{n}
+            %td= link_to event_presenter.event_dates_short_form, event_presenter.event_url, target: "_blank"
+            %td= event.location.city
+            %td= event.location.name
+            %td= event_presenter.organizers.to_sentence
