@@ -1,20 +1,18 @@
-.feature.feature-no-icon.event
-  %h4= event.title
-  %ul
-    %li
-      .event-date #{event_dates(event.sessions.first.starts_at, event.sessions.last.ends_at)}
-      - if event.location
-        .event-location #{event.location.city}, #{event.location.state}
-      - else
-        .event-location Location TBD
-    %li
-      %span.icon-user
-      = "Organized by #{event.organizers.first} & friends"
-    - if event.location && valid_location?(event.location)
+- present(event) do |event_presenter|
+  .feature.feature-no-icon.event
+    %h4= event.title
+    %ul
       %li
-        = link_to location_url(event.location), class: 'event-venue', target: '_blank' do
-          %span.icon-map-marker
-          = "Held at #{location_name(event.location)}"
+        .event-date= event_presenter.event_dates
+        .event-location= event_presenter.location_city
+      %li
+        %span.icon-user
+        = "Organized by #{event_presenter.organizers.first} & friends"
+      %li
+        = link_to event_presenter.location_url, class: 'event-venue', target: '_blank' do
+          - if event_presenter.valid_location?
+            %span.icon-map-marker
+          = "Held at #{event.location.name}"
 
-  .event-cta
-    = link_to 'RSVP on Bridge Troll', bridgetroll_event_url(event.id), target: '_blank'
+      .event-cta
+        = link_to event_presenter.signup_link, event_presenter.event_url, target: '_blank'
