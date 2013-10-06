@@ -4,7 +4,7 @@ class Event < ActiveResource::Base
 
   def self.sorted_events(state = nil)
     if state == :upcoming || state == :past
-      end_of_day = (DateTime.now.end_of_day - 840.days)
+      end_of_day = DateTime.now.end_of_day
       events = (state == :upcoming) ? upcoming_events(end_of_day) : past_events(end_of_day)
     else
       events = all
@@ -23,7 +23,7 @@ class Event < ActiveResource::Base
   end
 
   def self.sort_by_starts_at(events)
-    events.sort_by { |e| e.sessions.first.starts_at.to_time }
+    events.sort_by { |event| event.sessions.first.starts_at.to_time }
   end
 
 end
