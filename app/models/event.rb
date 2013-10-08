@@ -5,7 +5,7 @@ class Event < ActiveResource::Base
   def self.sorted_events(state = nil)
     if state == :upcoming || state == :past
       end_of_day = DateTime.now.end_of_day
-      events = (state == :upcoming) ? upcoming_events(end_of_day) : past_events(end_of_day)
+      events = state == :upcoming ? upcoming_events(end_of_day) : past_events(end_of_day)
     else
       events = all
     end

@@ -6,7 +6,7 @@ class EventPresenter < BasePresenter
   end
 
   def organizers
-    organizers = event.organizers.kind_of?(Array) ? event.organizers : arrayify_string(event.organizers || '')
+    event.organizers.kind_of?(Array) ? event.organizers : arrayify_string(event.organizers || '')
   end
 
   def event_url
@@ -73,7 +73,7 @@ class EventPresenter < BasePresenter
   end
 
   def arrayify_string(str)
-    str.split(/, &|&|,/).map{|x| x.strip || x }
+    str.split(/, &|&|,/).map { |x| x.strip || x }
   end
 
 end
