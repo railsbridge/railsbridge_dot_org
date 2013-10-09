@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
-  $('.js-match-height').matchHeight();
+  $(window).bind('load', function() {
+    $('.js-match-height').matchHeight();
+  });
 
   $(window).resize(function() {
     var bodyWidth = $(document).width(),
