@@ -1,11 +1,9 @@
-// events listing
+// Home and Upcoming Events Listing
+
 .events {
   .feature {
     color: $grayDark;
-    .event-date {
-      color: $grayDark
-    }
-    .event-location {
+    .event-date, .event-location {
       color: $grayDark
     }
     a.event-venue {
@@ -18,7 +16,7 @@
       }
     }
     ul {
-      padding-bottom: 70px;
+      padding-bottom: 50px;
     }
     .event-cta {
       position: absolute;
@@ -49,11 +47,5 @@
     ul {
       padding-bottom: 10px;
     }
-  }
-}
-
-.past-events {
-  th.dates {
-    width: 23%;
   }
 }
