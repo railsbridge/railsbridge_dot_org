@@ -5,11 +5,21 @@
   }
 }
 
-// universal
-html      { overflow-y: scroll; }
-section   { overflow: auto; }
-textarea  { resize: vertical; }
-.center   { text-align: center; }
-a         { color: $purple }
-a:hover   { color: lighten($purple, 30%); text-decoration: none; }
-hr        { margin: 0px 0px 20px; border: 0px; height: 1px; background: $grayLight; }
+a {
+  color: $purple;
+  &:hover {
+    color: lighten($purple, 30%);
+    text-decoration: none;
+  }
+}
+
+hr {
+  height: 1px;
+  background: $grayLight;
+  border: none;
+  margin: 0 0 20px 0;
+}
+
+ul, ul li {
+  list-style: none;
+}
