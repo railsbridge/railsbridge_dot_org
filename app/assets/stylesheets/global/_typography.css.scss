@@ -18,6 +18,12 @@ h4                     { @include fontSize(18px); font-family: 'OpenSansBold', A
 h5                     { @include fontSize(16px); }
 h6                     { @include fontSize(14px); }
 
+.gray-underline {
+  border-bottom: 1px solid $gray;
+  padding-bottom: 10px;
+  margin: 20px 0;
+}
+
 a {
   color: $purple;;
   &:hover {
