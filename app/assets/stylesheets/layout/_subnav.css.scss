@@ -17,7 +17,9 @@
       float: left;
       position: relative;
       right: 50%;
-      font: bold 14px/40px Aleo, Arial, sans-serif;
+      @include fontSize(14px);
+      font-weight: bold;
+      line-height: 40px;
       margin-right: 30px;
       a {
         color: lighten($blue, 40%);
@@ -49,7 +51,7 @@
         background: $grayLight;
         display: inline-block;
         line-height: 20px;
-        font-size: 15px;
+        @include fontSize(15px);
         font-weight: normal;
         padding: 5px;
         margin: 5px;

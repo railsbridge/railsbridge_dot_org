@@ -11,7 +11,7 @@
     position: absolute;
     bottom: -40px;
     right: 20px;
-    font-size: 250px;
+    @include fontSize(250px);
     line-height: 1;
     font-family: AleoItalic, Arial, sans-serif;
     font-weight: bold;
