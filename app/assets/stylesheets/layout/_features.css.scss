@@ -1,47 +1,33 @@
-// this is for all those feature boxes all over the site
-
-// feature lists
+// Feature Boxes
 
 .feature {
   @include clearfix();
   position: relative;
   border: 1px solid $gray;
-  border-top-width: 1px;
-  margin: 5px 0 20px 0;
-  padding: 20px 20px 10px 20px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
   .feature-icon {
     float: left;
-    margin: -7px 10px 0 -7px;
+    @include fontSize(48px);
+    margin: 0 10px 0 -7px;
   }
   h4 {
-    color: $black;
     border-bottom: 1px solid $grayLight;
+    margin-bottom: 10px;
     padding-bottom: 5px;
-    margin: 0 0 10px 50px;
   }
-  p {
-    font-size: 1.05em;
+  .feature-icon + h4 {
+    margin-left: calculateRem(58px);
   }
   ul {
     margin: 0;
     li {
       margin-bottom: 5px;
-      list-style: none;
+      p:last-child {
+        margin-bottom: 0;
+      }
     }
-  }
-}
-
-.feature-no-icon {
-  h4 {
-    margin-left: 0px;
-  }
-}
-
-// add back in bulleted lists on help overview
-
-.help {
-  .feature {
-    ul {
+    &.bulleted {
       padding-top: 10px;
       li {
         list-style-type: disc;
@@ -50,4 +36,3 @@
     }
   }
 }
-
