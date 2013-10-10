@@ -1,16 +1,21 @@
-// responsive layouts
+// Responsive Tweaks
+
 @media (min-width: 768px) {
   .container {
     width: 940px;
   }
 }
 
-a {
-  color: $purple;
-  &:hover {
-    color: lighten($purple, 30%);
-    text-decoration: none;
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
   }
+}
+
+// Site Wide
+
+.hide {
+  display: none;
 }
 
 hr {
@@ -24,6 +29,24 @@ ul, ul li {
   list-style: none;
 }
 
-.hide {
-  display: none;
+ul.bulleted {
+  li {
+    list-style-type: square;
+    margin: 0 0 10px 15px;
+  }
+  ul {
+    margin-top: 10px;
+    li {
+      list-style-type: disc;
+    }
+  }
+}
+
+.indented-content {
+  h4 {
+    margin-top: 30px;
+  }
+  p {
+    padding: 10px 20px 0px 20px;
+  }
 }

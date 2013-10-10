@@ -1,4 +1,4 @@
-// typography
+// Typography
 
 body, p, ol, ul, blockquote, pre, code, input, select, textarea {
  font-weight: normal;
@@ -11,7 +11,7 @@ body, p, ol, ul, blockquote, pre, code, input, select, textarea {
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; font-family: 'Aleo',  Arial, sans-serif; line-height: 1.2; }
 h5, h6                 { font-weight: bold; }
-h1                     { @include fontSize(42px); font-family:'AleoLight', Arial, sans-serif; margin-bottom: 30px; }
+h1                     { @include fontSize(42px); font-family:'AleoLight', Arial, sans-serif; margin-bottom: 20px; }
 h2                     { @include fontSize(26px); }
 h3                     { @include fontSize(20px); }
 h4                     { @include fontSize(18px); font-family: 'OpenSansBold', Arial, sans-serif; }
@@ -36,7 +36,7 @@ a {
   h1 {
     @include fontSize(26px);
     line-height: 1;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   h2 {
     @include fontSize(22px);
