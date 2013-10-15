@@ -12,11 +12,15 @@ body, p, ol, ul, blockquote, pre, code, input, select, textarea {
 h1, h2, h3, h4, h5, h6 { font-weight: normal; font-family: 'Aleo',  Arial, sans-serif; line-height: 1.2; }
 h5, h6                 { font-weight: bold; }
 h1                     { @include fontSize(42px); font-family:'AleoLight', Arial, sans-serif; margin-bottom: 20px; }
-h2                     { @include fontSize(26px); }
+h2                     { @include fontSize(26px); margin-bottom: 15px; }
 h3                     { @include fontSize(20px); }
-h4                     { @include fontSize(18px); font-family: 'OpenSansBold', Arial, sans-serif; }
+h4                     { @include fontSize(18px); }
 h5                     { @include fontSize(16px); }
 h6                     { @include fontSize(14px); }
+
+p + h2 {
+  padding-top: 15px;
+}
 
 .gray-underline {
   border-bottom: 1px solid $gray;
