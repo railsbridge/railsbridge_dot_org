@@ -9,12 +9,12 @@
           We organize and teach free workshops on Rails, Ruby, and HTML &amp; CSS in
           cities all over the world, targeted at groups of people that are underrepresented in tech.
         %p 
-          Want to suggest an update to this site? We use GitHub to keep track of our code. You can either make a #{ link_to "pull request", "https://github.com/railsbridge/site_de_railsbridge_2013" } (if you know how) or #{ link_to "create an issue", "https://github.com/railsbridge/site_de_railsbridge_2013/issues/new" } (no technical knowledge required).
-      .span5.contact
-        %ul.footer-icons 
-          %li= link_to "", "https://github.com/railsbridge", class: "font-icon icon-github-sign"
-          %li= link_to "", "https://twitter.com/railsbridge", class: "font-icon icon-twitter-sign"
-          %li= link_to "", "https://www.facebook.com/railsbridge", class: "font-icon icon-facebook-sign"
-        .email
-          %p= mail_to "workshops@railsbridge.org", "workshops@railsbridge.org"
-
+        Want to suggest an update to this site? We use GitHub to keep track of our code. You can either
+        make a #{ link_to "pull request", "https://github.com/railsbridge/site_de_railsbridge_2013" } or
+        #{ link_to "create an issue", "https://github.com/railsbridge/site_de_railsbridge_2013/issues/new" }.
+      .span5
+        %ul.footer-icons
+          %li= link_to "", "https://github.com/railsbridge", class: "icon-github-sign"
+          %li= link_to "", "https://twitter.com/railsbridge", class: "icon-twitter-sign"
+          %li= link_to "", "https://www.facebook.com/railsbridge", class: "icon-facebook-sign"
+        %p.footer-email= mail_to "workshops@railsbridge.org", "workshops@railsbridge.org"

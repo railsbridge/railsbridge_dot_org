@@ -1,42 +1,36 @@
-// footer
+// Footer
+
 .footer {
-  .container {
-    padding: 20px;
-  }
   color: $white;
   background: $grayDark;
-  padding: 20px 0 30px 0;
+  padding: 40px 0;
   margin-top: 30px;
+  h2 {
+    margin: 0 0 20px 0;
+  }
+  p {
+    @include fontSize(17px);
+    line-height: 1.3;
+    color: $white;
+    margin-bottom: 20px;
+    &.footer-email {
+      text-align: right;
+    }
+  }
   a {
     color: lighten($blue, 30%);
     &:hover {
-      color: darken($blue, 30%);
+      color: $white;
     }
   }
-  p {
-    font-size: 17px;
-    line-height: 21px;
-    color: $white;
-    margin-top: 20px;
-  }
-  a.font-icon {
-    font-size: 2.5em;
-  }
-  .email {
-    display: block;
-    float: right;
-  }
-  h2 {
-    margin: 0 0 10px 0;
-  }
   ul.footer-icons {
-    margin-bottom: 10px;
     height: 30px;
-    list-style: none;
+    padding-bottom: 20px;
     li {
       float: right;
       padding-right: 10px;
       a {
+        @include fontSize(40px);
         color: white;
         &:hover {
           color: lighten($blue, 30%);
@@ -48,20 +42,21 @@
 
 @media (max-width: 768px) {
   .footer {
+    padding: 20px 10px;
     margin: 0 -20px;
     p {
-      font-size: 15px;
-      line-height: 17px;
+      @include fontSize(15px);
+      margin-bottom: 10px;
+      &.footer-email {
+        text-align: left;
+      }
     }
     ul.footer-icons {
+      padding: 0;
       margin: 20px 0;
       li {
         float: left;
       }
-    }
-    .email {
-      float: none;
-      margin-top: 20px;
     }
   }
 }

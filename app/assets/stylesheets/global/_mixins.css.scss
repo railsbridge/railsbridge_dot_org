@@ -1,13 +1,49 @@
-@mixin clearfix() {
-  & {
-    *zoom: 1;
+// Font pixel and rem sizing support
+// http://www.stubbornella.org/content/2013/07/01/easy-peasy-rem-conversion-with-sass/
+
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin feature {
+  @include clearfix();
+  position: relative;
+  border: 1px solid $gray;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+  .feature-icon {
+    float: left;
+    @include fontSize(48px);
+    margin: 0 10px 0 -7px;
   }
-  &:before,
-  &:after {
-    content: "";
-    display: table;
+  h4 {
+    border-bottom: 1px solid $grayLight;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
   }
-  &:after {
-    clear: both;
+  .feature-icon + h4 {
+    margin-left: calculateRem(58px);
+  }
+  ul {
+    margin: 0;
+    li {
+      margin-bottom: 5px;
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &.bulleted {
+      padding-top: 10px;
+      li {
+        list-style-type: disc;
+        margin-left: 25px;
+      }
+    }
   }
 }
