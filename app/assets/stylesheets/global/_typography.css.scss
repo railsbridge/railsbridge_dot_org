@@ -1,35 +1,49 @@
-// typography
-p, ol, ul, blockquote, pre, code { font: 15px/1.5 'Aleo',Arial,sans-serif; color: $black; }
-h1, h2, h3, h4, h5, h6           { font-weight: normal; font-family:'Aleo',Arial,sans-serif; }
-h5, h6                           { font-weight:bold; }
-h1                               { font-family:'AleoLight',Arial,sans-serif; }
-h3                               { font-size: 18px; line-height: 1.2; }
-h4                               { font-size: 16px; line-height: 1.2; font-family: OpenSansBold; }
-h5                               { font-size: 14px; line-height: 1.2;  }
-h6                               { font-size: 12px; line-height: 1.2; }
-em                               { font-style: italic; }
-strong                           { font-weight: bold; }
+// Typography
 
-@media (min-width: 769px) {
-  h1 { 
-    font-size: 42px; 
-    line-height: 1.2; 
-  }
-  h2 { 
-    font-size: 26px; 
-    line-height: 1.2; 
-    margin-top: 30px; 
+body, p, ol, ul, blockquote, pre, code, input, select, textarea {
+ font-weight: normal;
+ color: $grayDarkest;
+ @include fontSize(16px);
+ line-height: 1.5;
+ font-family: 'Aleo', Arial, sans-serif;
+ -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-family: 'Aleo',  Arial, sans-serif; line-height: 1.2; }
+h5, h6                 { font-weight: bold; }
+h1                     { @include fontSize(42px); font-family:'AleoLight', Arial, sans-serif; margin-bottom: 20px; }
+h2                     { @include fontSize(26px); margin-bottom: 15px; }
+h3                     { @include fontSize(20px); }
+h4                     { @include fontSize(18px); }
+h5                     { @include fontSize(16px); }
+h6                     { @include fontSize(14px); }
+
+p + h2 {
+  padding-top: 15px;
+}
+
+.gray-underline {
+  border-bottom: 1px solid $gray;
+  padding-bottom: 10px;
+  margin: 20px 0;
+}
+
+a {
+  color: $purple;;
+  &:hover {
+    color: lighten($purple, 30%);
+    text-decoration: none;
   }
 }
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 26px;
-    line-height: 26px;
+    @include fontSize(26px);
+    line-height: 1;
+    margin-bottom: 10px;
   }
   h2 {
-    font-size: 22px;
+    @include fontSize(22px);
     line-height: 1;
-    margin-top: 20px; 
   }
 }

@@ -1,15 +1,52 @@
-// responsive layouts
+// Responsive Tweaks
+
 @media (min-width: 768px) {
   .container {
     width: 940px;
   }
 }
 
-// universal
-html      { overflow-y: scroll; }
-section   { overflow: auto; }
-textarea  { resize: vertical; }
-.center   { text-align: center; }
-a         { color: $purple }
-a:hover   { color: lighten($purple, 30%); text-decoration: none; }
-hr        { margin: 0px 0px 20px; border: 0px; height: 1px; background: $grayLight; }
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+// Site Wide
+
+.hide {
+  display: none;
+}
+
+hr {
+  height: 1px;
+  background: $grayLight;
+  border: none;
+  margin: 0 0 20px 0;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+ul.bulleted {
+  li {
+    list-style-type: square;
+    margin: 0 0 10px 15px;
+  }
+  ul {
+    margin-top: 10px;
+    li {
+      list-style-type: disc;
+    }
+  }
+}
+
+.indented-content {
+  h4 {
+    margin-top: 30px;
+  }
+  p {
+    padding: 10px 20px 0px 20px;
+  }
+}

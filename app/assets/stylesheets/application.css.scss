@@ -1,6 +1,5 @@
 // Dependencies
 @import "bourbon";
-@import "global/reset";
 @import "twitter/bootstrap";
 @import "twitter/bootstrap/responsive";
 @import "font-awesome";
@@ -17,15 +16,11 @@
 // Layout
 @import "layout/header";
 @import "layout/subnav";
-@import "layout/content";
-@import "layout/features";
 @import "layout/footer";
 
 // Modules
-@import "modules/events";
+@import "modules/features";
+@import "modules/past-events";
 @import "modules/sponsors";
-@import "modules/resources";
-@import "modules/about";
 @import "modules/home";
 @import "modules/logistics";
-
