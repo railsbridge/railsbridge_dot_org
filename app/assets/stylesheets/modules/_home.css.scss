@@ -24,13 +24,13 @@
   .big-floaty-box {
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.7);
-    text-align: center;
     padding: 20px;
     width: 700px;
     margin: 90px auto 90px auto;
     h1 {
       font-family: 'OpenSansBold', Arial, sans-serif;
       @include fontSize(36px);
+      text-align: center;
       margin-top: 0;
       padding-top: 0;
     }
