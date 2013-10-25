@@ -24,21 +24,28 @@
   .big-floaty-box {
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.7);
+    text-align: center;
     padding: 20px;
     width: 700px;
     margin: 90px auto 90px auto;
     h1 {
-      font-family: "OpenSansBold", sans-serif;
+      font-family: 'OpenSansBold', Arial, sans-serif;
+      @include fontSize(36px);
       margin-top: 0;
       padding-top: 0;
-      text-align: center;
-      font-size: 2.2em;
     }
     p {
       color: $black;
       margin-bottom: 0;
       padding-bottom: 0;
     }
+  }
+}
+
+// Work around for FireFox font rendering
+@-moz-document url-prefix() {
+  .big-floaty-box h1 {
+    font-family: 'OpenSansSemibold', Arial, sans-serif;
   }
 }
 
