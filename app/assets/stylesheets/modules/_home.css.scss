@@ -24,6 +24,7 @@
   .big-floaty-box {
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.7);
+    text-align: center;
     padding: 20px;
     width: 700px;
     margin: 90px auto 90px auto;
@@ -32,7 +33,6 @@
       @include fontSize(36px);
       margin-top: 0;
       padding-top: 0;
-      text-align: center;
     }
     p {
       color: $black;
