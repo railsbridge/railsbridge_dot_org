@@ -50,6 +50,13 @@
   }
 }
 
+// Work around for FireFox font rendering
+@-moz-document url-prefix() {
+  .event h4 {
+    font-family: 'OpenSansSemibold', Arial, sans-serif;
+  }
+}
+
 // Event Help Feature Box
 
 .event-help {

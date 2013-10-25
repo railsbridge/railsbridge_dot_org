@@ -26,6 +26,13 @@
   }
 }
 
+// Work around for FireFox font rendering
+@-moz-document url-prefix() {
+  .error-code {
+    font-weight: normal;
+  }
+}
+
 #error_500 .content {
   padding: 40px 0;
   .error-code {
