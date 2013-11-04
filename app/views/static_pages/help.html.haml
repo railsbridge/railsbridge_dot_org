@@ -1,18 +1,18 @@
 - provide(:title, page_title(['Help']))
 
 %h1 Helping people learn to program is an amazing experience.
+= image_tag "workshop-shots/programming.jpg", width: "450", class: "float-right", alt: "People discussing programming in a fun conference room."
 
 %p The most visible volunteer positions within RailsBridge are the workshop sponsors, organizers, teachers, and TAs. They make each workshop happen!
 
-.indented-content
-  %h4 Want to teach?
-  %p Yay! Head over to the #{link_to "upcoming workshops page", :events} to see if one is coming up near you. If not, get in touch with your #{link_to "local chapter", :chapters} (or start one if it doesn't exist).
+%h3 Want to teach?
+%p Yay! Head over to the #{link_to "upcoming workshops page", :events} to see if one is coming up near you. If not, get in touch with your #{link_to "local chapter", :chapters} (or start one if it doesn't exist).
 
-  %h4 Want to organize?
-  %p Fantastic. Read through the #{link_to "organizing page", :organize} and #{link_to "fill out our short interest form", :interest_form}!
+%h3 Want to organize?
+%p Fantastic. Read through the #{link_to "organizing page", :organize} and #{link_to "fill out our short interest form", :interest_form}!
 
-  %h4 Want to host or sponsor?
-  %p That's awesome. Check out our #{ link_to "information for hosts", :host } and #{ link_to "Donor FAQ", :donor_faq }.
+%h3 Want to host or sponsor?
+%p That's awesome. Check out our #{ link_to "information for hosts", :host } and #{ link_to "Donor FAQ", :donor_faq }.
 
 %h2 Helpful links for you
 

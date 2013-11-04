@@ -18,6 +18,21 @@
   display: none;
 }
 
+.float-right {
+  float: right;
+  padding-right: 0;
+}
+
+.float-left {
+  float: left;
+  padding-left: 0;
+
+}
+
+img {
+  padding: 0 15px;
+}
+
 hr {
   height: 1px;
   background: $grayLight;
