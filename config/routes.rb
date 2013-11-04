@@ -16,6 +16,7 @@ RailsbridgeSite2013::Application.routes.draw do
   get '/help/host',           to: 'static_pages#host',               as: 'host'
   get '/help/donor-faq',      to: 'static_pages#donor_faq',          as: 'donor_faq'
   get '/help/interest-form',  to: 'static_pages#interest_form',      as: 'interest_form'
+  get '/help/donate',         to: 'static_pages#donate',             as: 'donate'
 
   get '/learn',               to: 'static_pages#learn',              as: 'learn'
   get '/learn/resources',     to: 'static_pages#learning_resources', as: 'learning_resources'

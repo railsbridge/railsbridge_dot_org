@@ -29,6 +29,7 @@ end
 
 group :test, :development do
   gem "sqlite3"
+  gem "sextant"
 
   # Testing
   gem "rspec-rails"

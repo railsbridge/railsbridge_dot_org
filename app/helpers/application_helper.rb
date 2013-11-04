@@ -19,6 +19,7 @@ module ApplicationHelper
         ["Teacher Advice", :teacher_advice],
         ["Organize an Event", :organize],
         ["Host an Event", :host],
+        ["Donate", :donate],
         ["Donor FAQ", :donor_faq],
         ["Interest Form", :interest_form]
       ],

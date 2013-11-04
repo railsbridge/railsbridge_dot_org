@@ -1,0 +1,30 @@
+.span12
+  %h1 Help RailsBridge Change the World
+
+.span7
+  %h3 RailsBridge is run entirely on donations of money, time, and expertise.
+
+  %p
+    If your company or organization can help us make tech more welcoming and more diverse,
+    we'd love your help. We need workshops sponsors (mostly to cover the cost of food), and also
+    program sponsors so that we can help workshops happen in new places that don't yet
+    have companies to help sponsor and host!
+
+  %p
+    RailsBridge works with #{ link_to "School Factory", "http://schoolfactory.org/"}, a 501(c)3 charitable organization, so that we're
+    able to accept tax deductible donations.
+
+  %p
+    Wondering why supporting RailsBridge is a great idea? Head over to our #{ link_to "Donor FAQ", donor_faq_path }
+    for answers.
+
+.span2
+  %h5 Support RailsBridge:
+  %form{action: "https://www.paypal.com/cgi-bin/webscr", method: "post", target: "_top"}
+    %input{name: "cmd", type: "hidden", value: "_s-xclick"}/
+    %input{name: "hosted_button_id", type: "hidden", value: "KSZ73WW554HP2"}/
+    %input{alt: "PayPal - The safer, easier way to pay online!", border: "0", name: "submit", src: "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif", type: "image"}/
+    %img{alt: "", border: "0", height: "1", src: "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", width: "1"}/
+  %h5 (Donations go through our fiscal sponsor, School Factory.)
+
+  %h5 Or, email #{ mail_to "workshops@railsbridge.org" } for more information.
