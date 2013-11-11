@@ -1,46 +1,165 @@
 - provide(:title, page_title(['Advice for Teach and TAs']))
 
-%h1 Advice for Teacher and TAs
-%h2 Teaching Beginners
+#teacher-advice
+  %h1 Advice for Teacher and TAs
+  %p
+    This is taken directly from the slides for the RailsBridge teacher training,
+    so it lacks the rich discussion that happens at an actual training.
+    It's pretty long, but will give you a lot of stuff to think about, so forge on!
 
-%p You'll probably be working with people who may not even be familiar with using their terminal (or had their very first taste of using the terminal at the InstallFest the previous night) and won't understand intuitively why certain commands are worded the way they are.  When you're teaching beginners, the goal is not necessarily to get through the curriculum, but rather to provide a good grounding in what programming is and how it works — and to get them excited about the possibilities programming offers.
-%p Think ahead of time about how you would explain the following:
+  %h2 RailsBridge Fun Facts
+  %ul
+    %li Founded in 2009 as a variety of initiatives, including Rails Mentors, Rails Bug Smashes, and the Open Workshop Project.
+    %li The workshops project was led by Sarah Allen and Sarah Mei.
+    %li Its goal: make the Rails community more diverse and more welcoming to newcomers.
+    %li Workshops are happening all over the world!
+  %h2 How does a workshop work?
+  %p There are a few different RailsBridge curricula:
+  %ul
+    %li Intro to Rails (a.k.a. "Suggestotron")
+    %li Intermediate Rails
+    %li Intro to Ruby
+    %li Front End (HTML, CSS, and a tiny bit of JavaScript).
+  %p First, we get all the necessary technologies onto the students' computers (the installfest). The next day we break into small groups and work through the curriculum.
+  %h2 Typical RailsBridge Schedule
+  %ul
+    %li
+      %p Friday, 6-10pm-ish: Installfest &mdash; installing things over pizza & beer (usually no formal presentations)
+      %p
+        %em N.B.: the Front End workshop doesn't have an installfest.
+    %li
+      %p Saturday's schedule, often:
+      %ul
+        %li 9-9:30am: Check-in, coffee, bagels
+        %li 9:30-10am: Opening presentation
+        %li 10am-12:30pm: Class!
+        %li 12:30-1:30pm: Lunch
+        %li 1:30pm-4:30pm: Class! (with a break sometime mid-afternoon)
+        %li 4:30-5:00pm: Closing presentation & retros
+        %li 5:00pm-late: After-party
 
-.indented-content
-  %ul.bulleted
-    %li What's a program? Operating system?
-    %li
-      What's a framework?
-      %ul
-        %li something that makes it faster to build an application because it contains most of the things you would commonly write
-    %li
-      Workflow - how do you write a program?
-      %ul
-        %li Learn about customer's requirements and translate into "stories"
-        %li Pick a story that seems doable and start writing code that does it
-        %li Show your work to the customer, get feedback
-        %li Based on feedback, adjust stories (customer's "up front" requirements vs. changes once they see something working)
-        %li Once story is finished, go back to "pick a story"... keep going until you're done! (This is an example of looping!)
-    %li
-      Basic programming structures - or, how to do the "start writing code" step
-      %ul
-        %li variables - words that hold information
-        %li types of information - text, numbers, collections
-        %li operators - doing stuff with variables
-        %li loops - doing the same action a bunch of times
-        %li printing - to the screen, or to a file
-    %li
-      Writing a simple program
-      %ul
-        %li opening the editor
-        %li opening the command line
-        %li adding two numbers together, storing in a variable
-        %li printing variable to the screen
-        %li save and run
+  %h2 Helping your students feel socially comfortable
+  %h4 Introductions
+  %ul
+    %li Do not skip this! Intros are really important for setting the tone of the class.
+    %li Include name, profession, why are you here, and something silly.
+    %li Don't rush, even if you have a big class.
+    %li If someone joins the class late, ask them to introduce themselves.
+  %h4 Icebreakers
+  %ul
+    %li Name games! Admit up front that most people are bad at learning new names.
+    %li Get people talking. The more comfortable they are at talking, the more likely they'll speak up when they don't understand something, or to answer someone else's question.
+  %h4 Try to suppress your (understandable) culturally-influenced sexism
+  %ul
+    %li Don't hit on people. No sexual advances. None. Even at the after-party.
+    %li Don't make sexist jokes. Or racist, classist, or ableist jokes. Call people out if they do.
+    %li Don't make gender-based generalizations ("Women are better at X, because ...")
+    %li Don't make references to people's bodies or state your opinion of them.
+    %li Don't use slurs.
+    %li Don't treat women as delicate flowers; do treat them like normal people.
 
-%h2 Teaching Experienced Programmers
+  %h2 Teaching Technical Things
+  %h4 Explain that:
+  %ul
+    %li Even professional developers are constantly learning new technologies, so being confused is normal.
+    %li Initial code is often terrible: don't feel bad, just refactor!
+    %li Mistakes == Learning!
+  %h4 Dealing with technical concepts:
+  %ul
+    %li Define technical terms! Several times!
+    %li Assume anyone you're teaching has zero knowledge but infinite intelligence.
+    %li Remember people's professional and code backgrounds (QA, DBA, C++, Java, JS) and relate where possible.  If they are a cook, try a cooking analogy.
+  %h4 Encourage collaboration and interaction
+  %ul
+    %li Explicitly encourage students to try to answer each other's questions.
+    %li If a question is asked, ask if anyone in the class thinks they can explain.
+    %li Be especially encouraging of the first few questions, to try to get things rolling.
+    %li Good responses to questions: "I'm glad you asked!" or "I actually wondered that, too." or "Great question!"
+  %h4 Be Super Positive, Always and Forever
+  %ul
+    %li Students have diverse backgrounds. Appreciate this fact.
+    %li If they aren't getting a concept, avoid anything that might shame them.
+    %li
+      Lots of people are already internally berating themselves for not understanding,
+      so it's super important not to pile on to that in any way.
+    %li Don't be surprised when someone hasn't heard of something before.
+    %li
+      Don't grab anyone's keyboard. Avoid taking over unless you think it's
+      %em really
+      necessary. Ask before you do. "Mind if I drive for a sec?"
+  %h4 Walk the Middle Path
+  %ul
+    %li Don't go too deep for your class level, but also, don't gloss over things.
+    %li When trying to be accurate, it's easy to go down a rabbit hole of specificity. Avoid.
+    %li Work with the TAs to make sure no one goes down that rabbit hole. Accountability!
+  %h2 Know what's going on
+  %h4 Cover logistics at the beginning of class
+  %ul
+    %li Planned breaks, lunch time
+    %li Remind students that there is a closing presentation at the end
+    %li Make sure they know where the bathroom is
+    %li Encourage them to attend the after-party
+  %h4 Establish a few ground rules
+  %ul
+    %li Questions are always welcome, even if the student thinks it might be dumb.
+    %li Explain that if someone has trouble (e.g., not getting the expected output), the TAs will help troubleshoot.
+    %li If anyone wants to switch classes, tell them they should feel TOTALLY COMFORTABLE switching at any point.
+  %h4 Don't be afraid to:
+  %ul
+    %li Call on people! By name!
+    %li
+      Correct people if they're wrong. Be polite and encouraging. For instance:
+      %ul
+        %li "Well, this might work better and this is why."
+        %li "Can you explain how you came to that conclusion?"
+        %li "Does anyone have a different answer?"
+    %li Ask yourself questions and answer them.
+  %h4 Pace yourself!
+  %ul
+    %li Don't go too fast. You will probably go too fast. Check in occasionally to ensure everyone is still with you.
+    %li You can say the same thing THREE TIMES and it will not be boring yet.
+    %li When you ask a question, wait TEN WHOLE SECONDS before saying anything else. People need time to think.
+    %li Don't let the most advanced students dictate the pacing or answer all the questions.
+  %h2 What's a TA good for? Absolutely everything!
+  %ul
+    %li At RailsBridge, a TA is a volunteer who isn't leading the class.
+    %li If you're volunteering at your first RailsBridge workshop, you should probably be a TA.
+    %li Sometimes they are the technical experts (rather than the teacher), sometimes not.
+    %li Co-teaching is also an option if you feel like you can tag-team. There doesn't have to be a hierarchy.
 
-.indented-content
-  %ul.bulleted
-    %li At the beginning of your class, make sure to find out what your student's technical backgrounds are, and make parallels ("This is like X in Java") when you can.
-    %li Use the curriculum as a jumping off point. If the students want to dig into a particular aspect of Rails or Ruby, go for it!
+  %h4 Things TAs can do:
+  %ul
+    %li TAs often explain specific concepts for the class or teach a couple of sections to give the teacher a break from talking.
+    %li TAs can ask questions to encourage students to speak up.
+    %li Ask your TA to explain a concept; they may be more technically advanced than you!
+    %li TAs can help people who get lost.
+    %li If someone falls behind, the TA can take them out of the room to do some 1-on-1, if there's another TA in the room.
+  %h2 Student Comprehension
+  %ul
+    %li Pay attention to body language.
+    %li People ask questions most often when they are actively processing material. If they aren't, it might be that the material is too easy or hard. Try to figure out which it is!
+  %h4 Calling on people
+  %ul
+    %li Calling on people makes the class more interactive and engaging, and less lecture-y.
+    %li Don't always ask questions to the whole class: call on individuals by name.
+    %li Consider breaking the class into two teams and addressing questions to teams.
+    %li Ask people what they expect a command to produce BEFORE you hit enter.
+    %li Ask "How would you do \#{this}?" or "If I wanted to do \#{that}, what would I do?"
+  %h2 Installfest!
+  %h4 Keep in mind:
+  %ul
+    %li
+      There will be people with
+      %em all
+      kinds of computers.
+    %li Even though Windows is not an ideal Rails development environment, we're here to encourage people and meet them wherever they are right now.
+    %li Do NOT say bad things about Windows, even if it's frustrating.
+    %li If you're not sure about something, grab another volunteer.
+  %h2 Very Important, Very Practical Things
+  %ul
+    %li Where to find the curriculum: #{ link_to "http://docs.railsbridge.org", "http://docs.railsbridge.org" }
+    %ul
+      %li You need to read the curriculum through, beginning to end, before teaching it.
+    %li Where to submit pull requests: #{ link_to "https://github.com/railsbridge/docs", "https://github.com/railsbridge/docs" }
+    %li How to submit pull requests: #{ link_to "http://railsbridge.github.io/bridge_troll/", "http://railsbridge.github.io/bridge_troll/" }
+  %h We need your help! Thank you!!!
