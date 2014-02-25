@@ -12,6 +12,7 @@
   %body{ class: (params[:controller]), id: (params[:action]) }
     = render "layouts/header"
     = render "layouts/subnav"
+    = render "layouts/home_header" if params[:action] == 'home'
     .container
       .content
         - flash.each do |name, msg|

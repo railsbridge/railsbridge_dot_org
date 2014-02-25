@@ -1,43 +1,27 @@
 // Home
-
 @media (min-width: 768px) {
-  #home {
-    &:before {
-        content: "";
-        position: absolute;
-        top: 60px;
-        background: url("landing-page/door.jpg");
-        background-size: cover;
-        z-index: -1;
-        height: 380px; width: 100%;
-        clip: rect(2px,2000px,380px,2px);
-        overflow: hidden;
-
-        filter: blur(2px);
-        -moz-filter: blur(2px);
-        -webkit-filter: blur(2px);
-        filter: url(landing-page/blur.svg#blur);
-        filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
-    }
-  }
-
-  .big-floaty-box {
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    width: 700px;
-    margin: 90px auto 90px auto;
-    h1 {
-      font-family: 'OpenSansBold', Arial, sans-serif;
-      @include fontSize(36px);
-      text-align: center;
-      margin-top: 0;
-      padding-top: 0;
-    }
-    p {
-      color: $black;
-      margin-bottom: 0;
-      padding-bottom: 0;
+  .home-header {
+    height: 360px;
+    margin: -30px 0 30px 0;
+    background: url("landing-page/door.jpg");
+    .big-floaty-box {
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      width: 700px;
+      margin: 90px auto 90px auto;
+      h1 {
+        font-family: 'OpenSansBold', Arial, sans-serif;
+        @include fontSize(36px);
+        text-align: center;
+        margin-top: 0;
+        padding-top: 0;
+      }
+      p {
+        color: $black;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
     }
   }
 }
