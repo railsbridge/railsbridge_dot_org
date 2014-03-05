@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
 
   def home
-    @events = Event.sorted_events(:upcoming)
+    # @events = Event.sorted_events(:upcoming)
   end
 
   def about
@@ -35,11 +35,11 @@ class StaticPagesController < ApplicationController
   end
 
   def events
-    @events = Event.sorted_events(:upcoming)
+    # @events = Event.sorted_events(:upcoming)
   end
 
   def past_events
-    @past_events = Event.sorted_events(:past)
+    # @past_events = Event.sorted_events(:past)
   end
 
   def team
