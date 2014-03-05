@@ -1,6 +1,6 @@
 class Event < ActiveResource::Base
   self.site = BRIDGETROLL_URL
-  self.element_name = "all_events"
+  self.element_name = "events/all_events"
 
   def self.sorted_events(state = nil)
     if state == :upcoming || state == :past
