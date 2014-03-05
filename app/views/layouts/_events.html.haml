@@ -1,20 +1,18 @@
-%p Please visit #{ link_to "Bridge Troll", "http://www.bridgetroll.org/" } for our list of current events.
-- if @event
-  - count = 0
-  - event_count = @events.count
-  - span_count = 12 / events_per_row
-  - event_modulus = event_count % events_per_row
+- count = 0
+- event_count = @events.count
+- span_count = 12 / events_per_row
+- event_modulus = event_count % events_per_row
 
-  - @events.each_slice(events_per_row) do |event_row|
-    .row-fluid.js-match-height
-      - event_row.each do |event|
-        %div{ class: "span#{span_count}" }
-          = render 'layouts/event', event: event
-        - if event_modulus > 0 && event_count == (count += 1)
-          %div{ class: "span#{span_count}"}
-            = render 'layouts/event_help'
-
-  - if event_modulus == 0
-    .row-fluid
+- @events.each_slice(events_per_row) do |event_row|
+  .row-fluid.js-match-height
+    - event_row.each do |event|
       %div{ class: "span#{span_count}" }
-        = render 'layouts/event_help'
+        = render 'layouts/event', event: event
+      - if event_modulus > 0 && event_count == (count += 1)
+        %div{ class: "span#{span_count}"}
+          = render 'layouts/event_help'
+
+- if event_modulus == 0
+  .row-fluid
+    %div{ class: "span#{span_count}" }
+      = render 'layouts/event_help'
