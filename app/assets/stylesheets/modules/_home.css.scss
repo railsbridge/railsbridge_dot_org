@@ -1,15 +1,32 @@
 // Home
 @media (min-width: 768px) {
   .home-header {
-    height: 360px;
     margin: -30px 0 30px 0;
-    background: url("landing-page/door.jpg");
+    position: relative;
+    overflow: hidden;
+    .home-background {
+      position: absolute;
+      z-index: 1;
+      background: url("landing-page/door.jpg");
+      width: 100%;
+      margin-top: -10px;
+      height: 440px;
+      -webkit-filter: blur(2px);
+      -moz-filter: blur(2px);
+      -o-filter: blur(2px);
+      -ms-filter: blur(2px);
+      filter: blur(2px);
+      filter: url('landing-page/blur.svg#blur');
+      filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');
+    }
     .big-floaty-box {
+      z-index: 2;
+      position: relative;
       border-radius: 10px;
       background: rgba(255, 255, 255, 0.7);
       padding: 20px;
       width: 700px;
-      margin: 90px auto 90px auto;
+      margin: 120px auto 120px auto;
       h1 {
         font-family: 'OpenSansBold', Arial, sans-serif;
         @include fontSize(36px);
