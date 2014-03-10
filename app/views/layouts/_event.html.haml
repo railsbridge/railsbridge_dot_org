@@ -12,7 +12,8 @@
         = link_to event_presenter.location_url, class: 'event-venue', target: '_blank' do
           - if event_presenter.valid_location?
             %span.icon-map-marker
-          = "Held at #{event.location.name}"
+          - if event.location.try(:name)
+            = "Held at #{event.location.name}"
 
       .event-cta
         = link_to event_presenter.signup_link, event_presenter.event_url, target: '_blank'
