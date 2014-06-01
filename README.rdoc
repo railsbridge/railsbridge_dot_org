@@ -1,6 +1,6 @@
 == RailsBridge Website
 
-This here's an overhaul of the RailsBridge website, which is currently on a Wordpress blog at http://workshops.railsbridge.org.
+This is the source code for the RailsBridge website at http://railsbridge.org.
 
 == Contributing
 
