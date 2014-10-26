@@ -23,6 +23,7 @@
       margin-right: 30px;
       a {
         color: lighten($blue, 40%);
+        display: block;
         &:hover {
           color: $white;
         }
