@@ -16,6 +16,7 @@ gem "sitemap_generator"
 
 group :production do
   gem "pg"
+  gem "rails_12factor"
   gem "google-analytics-rails", "~> 0.0.4"
 end
 
