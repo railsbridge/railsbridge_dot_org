@@ -25,9 +25,9 @@ RailsbridgeSite2013::Application.routes.draw do
 
   get '/sitemap',             to: 'logistics#sitemap',               as: 'sitemap'
 
-  # Custom 404 page for production only, custom 500 page is set in application_controller
   unless Rails.application.config.consider_all_requests_local
-    match '/404',             to: 'logistics#error_404',             as: 'error_404'
+    all_verbs = [:get, :post, :patch, :put, :delete]
+    match '/404', to: 'logistics#error_404', as: 'error_404', via: all_verbs
+    match '/500', to: 'logistics#error_500', as: 'error_500', via: all_verbs
   end
-
 end

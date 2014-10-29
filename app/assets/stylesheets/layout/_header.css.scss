@@ -13,7 +13,7 @@
 
   .header {
     height: 60px;
-    background: url(navbar_texture.gif);
+    background: asset_url('navbar_texture.gif');
     margin-bottom: 30px;
     h1 {
       float: left;
@@ -117,7 +117,7 @@
     h1 {
       margin: 10px 0 0 14px;
     }
-    background: url(navbar_texture.gif);
+    background: asset_url('navbar_texture.gif');
     a.logo {
       color: white;
     }

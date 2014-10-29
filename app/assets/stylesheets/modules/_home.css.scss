@@ -7,7 +7,7 @@
     .home-background {
       position: absolute;
       z-index: 1;
-      background: url("landing-page/door.jpg");
+      background: asset_url("landing-page/door.jpg");
       width: 100%;
       margin-top: -10px;
       height: 440px;
@@ -16,7 +16,7 @@
       -o-filter: blur(2px);
       -ms-filter: blur(2px);
       filter: blur(2px);
-      filter: url('landing-page/blur.svg#blur');
+      filter: asset_url('landing-page/blur.svg#blur');
       filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');
     }
     .big-floaty-box {

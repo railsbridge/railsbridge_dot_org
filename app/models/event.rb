@@ -1,3 +1,5 @@
+require 'active_resource'
+
 class Event < ActiveResource::Base
   self.site = BRIDGETROLL_URL
   self.element_name = "events/all_events"
