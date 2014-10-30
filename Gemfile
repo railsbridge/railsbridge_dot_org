@@ -32,7 +32,7 @@ group :test, :development do
   gem "sextant"
 
   # Testing
-  gem "rspec-rails", "~> 2.14.0"
+  gem "rspec-rails"
   gem "capybara"
   gem "email_spec"
   gem "shoulda-matchers"

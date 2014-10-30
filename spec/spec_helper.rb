@@ -10,6 +10,8 @@ require 'email_spec'
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
 RSpec.configure do |config|
+  config.infer_spec_type_from_file_location!
+
   config.include(EmailSpec::Helpers)
   config.include(EmailSpec::Matchers)
 
@@ -28,4 +30,16 @@ RSpec.configure do |config|
   config.include Rails.application.routes.url_helpers
 
   config.include Capybara::DSL
+
+  config.expect_with :rspec do |expectations|
+    expectations.syntax = [:should, :expect]
+  end
+
+  config.mock_with :rspec do |mocks|
+    mocks.syntax = [:should, :expect]
+
+    # Prevents you from mocking or stubbing a method that does not exist on
+    # a real object. This is generally recommended.
+    mocks.verify_partial_doubles = true
+  end
 end
