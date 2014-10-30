@@ -10,7 +10,7 @@ class EventPresenter < BasePresenter
   end
 
   def event_url
-    external_event? && event.url ? event.url : "#{BRIDGETROLL_URL}events/#{event.id}"
+    external_event? && event.url ? event.url : "#{BRIDGETROLL_URL}/events/#{event.id}"
   end
 
   def signup_link
