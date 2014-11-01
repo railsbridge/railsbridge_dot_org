@@ -6,11 +6,11 @@ class EventPresenter < BasePresenter
   end
 
   def organizers
-    organizers = event.organizers.kind_of?(Array) ? event.organizers : arrayify_string(event.organizers || '')
+    event.organizers.kind_of?(Array) ? event.organizers : arrayify_string(event.organizers || '')
   end
 
   def event_url
-    external_event? && event.url ? event.url : "#{BRIDGETROLL_URL}/events/#{event.id}"
+    external_event? && event.url ? event.url : URI.join(BRIDGETROLL_URL, "/events/#{event.id}").to_s
   end
 
   def signup_link
