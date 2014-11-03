@@ -1,11 +1,11 @@
 (function($) {
 
   $.fn.matchHeight = function(action) {
-    action = typeof action !== 'undefined' ? action : 'set'
+    action = typeof action !== 'undefined' ? action : 'set';
     return this.each(function() {
       var maxHeight = '', features = $(this).find('.js-match-height-item');
       if (action === 'set') {
-        var maxHeight = Math.max.apply(Math, features.map(function() {
+        maxHeight = Math.max.apply(Math, features.map(function() {
           return $(this).height();
         }));
       }
