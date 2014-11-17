@@ -30,7 +30,11 @@ class Event < ActiveResource::Base
   end
 
   def self.past_events(end_of_day)
-    all_events.select { |event| DateTime.parse(event.sessions.last.starts_at) < end_of_day }
+    all_events.select do |event|
+      DateTime.parse(event.sessions.last.starts_at) < end_of_day
+    end.select do |event|
+      event.workshop
+    end
   end
 
   def self.sort_by_starts_at(events)
