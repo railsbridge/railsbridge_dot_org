@@ -1,7 +1,7 @@
 - provide(:title, page_title(['Help']))
 
 %h1 Helping people learn to program is an amazing experience.
-= image_tag "workshop-shots/programming.jpg", width: "450", class: "float-right", alt: "People discussing programming in a fun conference room."
+= image_tag "workshop-shots/programming.jpg", width: "450", class: "img-responsive float-right", alt: "People discussing programming in a fun conference room."
 
 %p The most visible volunteer positions within RailsBridge are the workshop sponsors, organizers, teachers, and TAs. They make each workshop happen!
 
@@ -16,8 +16,8 @@
 
 %h2 Helpful links for you
 
-.row-fluid.help.js-match-height
-  .span6
+.row.help.js-match-height
+  .col-md-6
     .feature.js-match-height-item
       .feature-icon.fa.fa-asterisk
       %h4 Teach or TA
@@ -25,7 +25,7 @@
         %li= link_to 'Teaching Resources', :teach
         %li= link_to 'RailsBridge Chapter List', :chapters
         %li= link_to 'Upcoming Events', :events
-  .span6
+  .col-md-6
     .feature.js-match-height-item
       .feature-icon.fa.fa-cogs
       %h4 Organize, Sponsor or Host an Event
@@ -40,8 +40,8 @@
   %em tons
   of other things that have to happen to keep RailsBridge thriving. If you can help us with any of these things, fill out our quick #{link_to "volunteer interest form", :interest_form} and we will be in touch.
 
-.row-fluid.help.js-match-height
-  .span6
+.row.help.js-match-height
+  .col-md-6
     .feature.js-match-height-item
       .feature-icon.fa.fa-book
       %h4 Expand, improve, and maintain our curriculum
@@ -49,7 +49,7 @@
         %li Maintain and create new curricula
         %li Keep the constantly-changing Installfest up-to-date
         %li Help our teachers level up by creating more in-depth teacher training
-  .span6
+  .col-md-6
     .feature.js-match-height-item
       .feature-icon.fa.fa-wrench
       %h4 Help build new tools
@@ -57,8 +57,8 @@
         %li Help us improve #{link_to "Bridge Troll", "https://github.com/railsbridge/bridge_troll"}, our open source event management app.
         %li Students always wonder what to do next, and we'd like to build better tools for helping them figure out their next steps.
 
-.row-fluid.help.js-match-height
-  .span6
+.row.help.js-match-height
+  .col-md-6
     .feature.js-match-height-item
       .feature-icon.fa.fa-bullhorn
       %h4 Get the word out
@@ -66,7 +66,7 @@
         %li We need to tell the world what we're doing! PR dabblers welcome!
         %li Blogging. Writers are the best.
         %li Tweeting, Facebooking, LinkedIn-ing: social media is fun.
-  .span6
+  .col-md-6
     .feature.js-match-height-item
       .feature-icon.fa.fa-phone
       %h4 Strategize and fundraise

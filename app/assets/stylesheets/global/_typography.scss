@@ -46,7 +46,7 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $screen-xs-max) {
   h1 {
     @include fontSize(26px);
     line-height: 1;

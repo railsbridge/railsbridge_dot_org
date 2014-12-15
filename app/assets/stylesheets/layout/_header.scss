@@ -1,4 +1,4 @@
-@media (min-width: 769px) {
+@media (min-width: $screen-sm-min) {
   // Flattening page elements
   .header, .navbar, .navbar-static-top  {
     border: none;
@@ -8,7 +8,7 @@
   }
 
   .navbar-static-top .container {
-    width: 940px;
+    width: 970px;
   }
 
   .header {
@@ -47,6 +47,7 @@
           padding: 5px 22px;
           text-shadow: none;
           &:hover, &:active, &:focus {
+            background-color: transparent;
             color: lighten($blue, 20%);
           }
         }
@@ -54,7 +55,7 @@
       ul.dropdown-menu {
         margin: -10px 0 0 20px;
         border-radius: 0;
-        padding: 20px 0 0 0;
+        padding: 10px 0 0 0;
         li a {
           color: $black;
           &:hover, &:active, &:focus {
@@ -112,8 +113,11 @@
 
 // Mobile menu
 
-@media (max-width: 768px) {
+@media (max-width: $screen-xs-max) {
   .header {
+    .container {
+      padding: 0;
+    }
     h1 {
       margin: 10px 0 0 14px;
     }
@@ -123,9 +127,11 @@
     }
   }
   .navbar {
+    margin-bottom: 0;
     .nav {
       margin: 10px 0;
       li {
+        display: inline-block;
         margin: 5px 14px;
         a {
           padding: 0;
@@ -133,6 +139,7 @@
           @include fontSize(20px);
           text-shadow: none;
           &:focus, &:hover {
+            background-color: transparent;
             color: $grayMediumLight;
           }
         }

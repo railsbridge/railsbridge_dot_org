@@ -24,7 +24,7 @@
     }
   }
   ul.footer-icons {
-    height: 30px;
+    height: 50px;
     padding-bottom: 20px;
     li {
       float: right;
@@ -40,10 +40,10 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $screen-xs-max) {
   .footer {
-    padding: 20px 10px;
-    margin: 0 -20px;
+    margin: 10px 0 0 0;
+    padding: 20px 0;
     p {
       @include fontSize(15px);
       margin-bottom: 10px;
@@ -52,6 +52,7 @@
       }
     }
     ul.footer-icons {
+      height: 30px;
       padding: 0;
       margin: 20px 0;
       li {

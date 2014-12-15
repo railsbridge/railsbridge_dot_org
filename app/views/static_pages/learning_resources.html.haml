@@ -2,8 +2,8 @@
 
 %h1 What next? Write code every day!
 
-.row-fluid.js-match-height
-  .span4
+.row.js-match-height
+  .col-md-4
     .feature.js-match-height-item
       .feature-icon.fa.fa-bolt
       %h4 Pick something and get started
@@ -15,14 +15,14 @@
             a tutorial, a class, or building your own app
             \&mdash;
             and get started right away. Momentum is important.
-  .span4
+  .col-md-4
     .feature.js-match-height-item
       .feature-icon.fa.fa-envelope
       %h4 Keep in touch
       %ul
         %li
           %p Reach out to the people you connected with at your workshop. Coding with other people around is really motivating, plus you get to help each other solve trickier stuff.
-  .span4
+  .col-md-4
     .feature.js-match-height-item
       .feature-icon.fa.fa-thumbs-up
       %h4 More RailsBridge
@@ -41,9 +41,9 @@
   .learning-resources
     #ruby
       = render partial: 'static_pages/resources/ruby_resources'
-    #rails.hide
+    #rails{style: 'display: none;'}
       = render partial: 'static_pages/resources/rails_resources'
-    #front-end.hide
+    #front-end{style: 'display: none;'}
       = render partial: 'static_pages/resources/front_end_resources'
-    #other.hide
+    #other{style: 'display: none;'}
       = render partial: 'static_pages/resources/general_web_dev_resources'

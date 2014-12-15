@@ -2,7 +2,7 @@
   .container
     = link_to :root, class: "logo" do
       %h1 RailsBridge
-    %ul.header-nav.nav
+    %ul.header-nav.nav.navbar-nav
       %li#learn.nav-link{ class: ("is-selected" if @nav_group == :learn) }
         = link_to "Learn", :learn
         %span

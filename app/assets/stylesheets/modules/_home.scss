@@ -1,5 +1,5 @@
 // Home
-@media (min-width: 768px) {
+@media (min-width: $screen-sm-min) {
   .home-header {
     margin: -30px 0 30px 0;
     position: relative;

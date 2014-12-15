@@ -6,7 +6,7 @@
       var maxHeight = '', features = $(this).find('.js-match-height-item');
       if (action === 'set') {
         maxHeight = Math.max.apply(Math, features.map(function() {
-          return $(this).height();
+          return $(this).outerHeight();
         }));
       }
       features.css({ 'height': maxHeight });

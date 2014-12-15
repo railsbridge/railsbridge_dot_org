@@ -13,7 +13,7 @@ gem "activeresource"
 
 gem "sass-rails"
 gem "coffee-rails"
-gem "bootstrap-sass-rails", "~> 2.3.2.0"
+gem "bootstrap-sass"
 gem "uglifier",     ">= 1.0.3"
 gem "bourbon"
 

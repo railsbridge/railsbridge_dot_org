@@ -1,12 +1,12 @@
 // Responsive Tweaks
 
-@media (min-width: 768px) {
+@media (min-width: $screen-sm-min) {
   .container {
-    width: 940px;
+    width: 970px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $screen-xs-max) {
   .hide-on-mobile {
     display: none;
   }
@@ -14,8 +14,18 @@
 
 // Site Wide
 
-.hide {
-  display: none;
+html {
+  font-size: 16px;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+
+.nav {
+  margin-left: 0;
+  margin-bottom: 20px;
 }
 
 .float-right {
@@ -26,11 +36,27 @@
 .float-left {
   float: left;
   padding-left: 0;
-
 }
 
 img {
   padding: 0 15px;
+}
+
+.jumbotron {
+  background-color: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.jumbotron p {
+  font-size: inherit;
+}
+
+@media (max-width: $screen-xs-max) {
+  .img-responsive {
+    padding: 10px 0;
+  }
 }
 
 hr {
