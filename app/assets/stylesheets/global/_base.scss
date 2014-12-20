@@ -53,6 +53,10 @@ img {
   font-size: inherit;
 }
 
+.img-responsive {
+  display: inline-block;
+}
+
 @media (max-width: $screen-xs-max) {
   .img-responsive {
     padding: 10px 0;
