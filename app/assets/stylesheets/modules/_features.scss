@@ -45,6 +45,7 @@
       margin: 0 auto;
       &:hover {
         background-color: lighten($blue, 10%);
+        text-decoration: none;
       }
     }
   }

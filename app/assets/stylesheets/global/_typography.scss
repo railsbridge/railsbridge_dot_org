@@ -54,14 +54,6 @@ p + h2 {
   margin: 20px 0;
 }
 
-a {
-  color: $purple;
-  &:hover {
-    color: lighten($purple, 30%);
-    text-decoration: none;
-  }
-}
-
 @media (max-width: $screen-xs-max) {
   h1 {
     @include fontSize(26px);
