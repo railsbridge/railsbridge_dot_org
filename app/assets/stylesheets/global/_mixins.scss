@@ -18,6 +18,7 @@
   margin-bottom: 25px;
   padding: 10px 20px;
   .feature-icon {
+    padding-top: 5px;
     float: left;
     @include fontSize(48px);
     margin: 0 10px 0 -7px;
