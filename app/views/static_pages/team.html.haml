@@ -80,4 +80,5 @@
         %li #{ link_to "Mary Jenn", "https://github.com/mfjenn" }
 
 %p
-  %em Are we missing someone? Is someone miscategorized? Let us know! You can either make a #{ link_to "pull request", "https://github.com/railsbridge/site_de_railsbridge_2013" } (if you know how) or #{ link_to "create an issue", "https://github.com/railsbridge/site_de_railsbridge_2013/issues/new" } (no technical knowledge required).
+  %em Are we missing someone? Is someone miscategorized? Let us know!
+  %em=render 'shared/github_links', cautious: true

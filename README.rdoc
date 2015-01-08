@@ -10,12 +10,12 @@ Fork the repository to your own GitHub account.
 
 Download the project:
 
-  $ git clone git@github.com:MyGitHubAcoount/site_de_railsbridge_2013.git
-  $ cd site_de_railsbridge_2013
+  $ git clone git@github.com:MyGitHubAcoount/railsbridge_dot_org_2013.git
+  $ cd railsbridge_dot_org
 
 If you use RVM, make a gemset:
 
-  $ rvm use ruby-2.0.0@site_de_railsbridge_2013 --create
+  $ rvm use ruby-2.0.0@railsbridge_dot_org --create
 
 Install gems:
 
