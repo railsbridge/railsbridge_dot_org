@@ -1,5 +1,4 @@
 .subnav
   .container
-    .subnav-center
-      %ul
-        = render "layouts/nav_links", nav_group: @nav_group unless @nav_group.blank?
+    %ul
+      = render "layouts/nav_links", nav_group: @nav_group unless @nav_group.blank?

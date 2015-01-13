@@ -2,25 +2,18 @@
   min-height: 10px;
   background: $blue;
   margin: -30px 0 30px 0;
-  .subnav-center {
-    float: left;
-    width: 100%;
-    position: relative;
-  }
   ul {
-    float: left;
-    position: relative;
-    left: 50%;
     text-align: center;
     margin: 0;
     li {
-      float: left;
-      position: relative;
-      right: 50%;
+      display: inline-block;
       @include fontSize(14px);
       font-family: 'AleoBold', Arial, sans-serif;
       line-height: 40px;
       margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
       a {
         color: lighten($blue, 40%);
         display: block;
