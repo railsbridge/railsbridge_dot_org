@@ -4,7 +4,7 @@ ruby "2.0.0"
 
 gem "rails", "4.2.0"
 gem "thin"
-gem "haml-rails", '~> 0.5.3'
+gem "haml-rails"
 gem "jquery-rails"
 gem "font-awesome-rails"
 gem "twitter"
@@ -18,10 +18,10 @@ gem "uglifier",     ">= 1.0.3"
 gem "bourbon"
 
 # Site Tools & Monitoring
-gem "newrelic_rpm"
 gem "sitemap_generator"
 
 group :production do
+  gem "newrelic_rpm"
   gem "pg"
   gem "rails_12factor"
   gem "google-analytics-rails", "~> 0.0.4"
@@ -29,7 +29,6 @@ end
 
 group :test, :development do
   gem "sqlite3"
-  gem "sextant"
 
   # Testing
   gem "rspec-rails"
