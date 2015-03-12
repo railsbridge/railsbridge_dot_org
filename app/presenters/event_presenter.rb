@@ -38,18 +38,17 @@ class EventPresenter < BasePresenter
     end
   end
 
-  def event_dates
-    "#{start_date.strftime('%B %e')} - #{end_date.strftime('%B %e, %Y')}"
-  end
-
-  def event_dates_short_form
+  def event_dates(options = {})
+    month_format = options[:short] ? '%b' : '%B'
     dates = []
     if start_date.to_date == end_date.to_date
-      dates << start_date.strftime('%b %e, %Y')
+      dates << start_date.strftime("#{month_format} %e, %Y")
     elsif start_date.month == end_date.month
-      dates << start_date.strftime('%b %e') << end_date.strftime('%e, %Y')
+      dates << start_date.strftime("#{month_format} %e")
+      dates << end_date.strftime("%e, %Y")
     else
-      dates << start_date.strftime('%b %e') << end_date.strftime('%b %e, %Y')
+      dates << start_date.strftime("#{month_format} %e")
+      dates << end_date.strftime("#{month_format} %e, %Y")
     end
     dates.join(' - ')
   end

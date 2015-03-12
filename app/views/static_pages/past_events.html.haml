@@ -25,7 +25,7 @@
         - present(event) do |event_presenter|
           %tr
             %td #{n}
-            %td= link_to event_presenter.event_dates_short_form, event_presenter.event_url, target: "_blank"
+            %td= link_to event_presenter.event_dates(short: true), event_presenter.event_url, target: "_blank"
             %td= event.location.city
             %td= event.location.name
             %td= event_presenter.organizers.to_sentence
