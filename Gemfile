@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.0.0"
+ruby "2.2.2"
 
 gem "rails", "4.2.1"
 gem "thin"
@@ -42,7 +42,8 @@ group :test, :development do
 
   # Debugging Tools
   gem "quiet_assets"
-  gem "jazz_hands"
+  gem "awesome_print"
+  gem "pry-byebug"
 end
 
 group :development do
