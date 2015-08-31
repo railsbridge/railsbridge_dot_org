@@ -3,6 +3,7 @@ require 'active_resource'
 class Event < ActiveResource::Base
   self.site = BRIDGETROLL_URL
   self.element_name = "events/all_events"
+  self.timeout = 10
 
   def self.sorted_events(state = nil)
     if state == :upcoming || state == :past
