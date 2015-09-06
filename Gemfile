@@ -22,14 +22,11 @@ gem "sitemap_generator"
 
 group :production do
   gem "newrelic_rpm"
-  gem "pg"
   gem "rails_12factor"
   gem "google-analytics-rails", "~> 0.0.4"
 end
 
 group :test, :development do
-  gem "sqlite3"
-
   # Testing
   gem "rspec-rails"
   gem "capybara"
