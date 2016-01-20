@@ -12,7 +12,7 @@
         = link_to event_presenter.location_url, class: 'event-venue', target: '_blank' do
           - if event_presenter.valid_location?
             %span.fa.fa-map-marker
-          - if event.location.try(:name)
+          - if event.location.try(:name).present?
             = "Held at #{event.location.name}"
 
       .event-cta

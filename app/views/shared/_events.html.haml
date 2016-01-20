@@ -8,14 +8,14 @@
     .row.js-match-height
       - event_row.each do |event|
         %div{ class: "col-md-#{span_count}" }
-          = render 'layouts/event', event: event
+          = render 'shared/event', event: event
         - if event_modulus > 0 && event_count == (count += 1)
           %div{ class: "col-md-#{span_count}"}
-            = render 'layouts/event_help'
+            = render 'shared/event_help'
 
   - if event_modulus == 0
     .row
       %div{ class: "col-md-#{span_count}" }
-        = render 'layouts/event_help'
+        = render 'shared/event_help'
 - else
   %p Please visit #{ link_to "Bridge Troll", "http://www.bridgetroll.org/" } for our list of current events.
