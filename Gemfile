@@ -10,6 +10,7 @@ gem "font-awesome-rails"
 gem "twitter"
 gem "tweetstream"
 gem "activeresource"
+gem "sprockets-rails", "~> 2.3.3"
 
 gem "sass-rails"
 gem "coffee-rails"
