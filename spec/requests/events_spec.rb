@@ -20,13 +20,14 @@ describe "rendering events list" do
       organizers: [
         'Alpha Beta',
         'Gamma Zeta'
-      ]
+      ],
+      organization: 'RailsBridge'
     }
   end
 
   before do
     ActiveResource::HttpMock.respond_to do |mock|
-      mock.get "/events.json?type=past", {}, [
+      mock.get "/events.json?organization_id=1&type=past", {}, [
         default_event_attributes(2.years.ago).merge(
           id: 1,
           title: 'OlderBridge',

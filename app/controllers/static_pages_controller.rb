@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
+  before_action :assign_upcoming_events, only: [:home, :events]
 
   def home
-    @events = Event.sorted_events(:upcoming)
   end
 
   def about
@@ -35,11 +35,10 @@ class StaticPagesController < ApplicationController
   end
 
   def events
-    @events = Event.sorted_events(:upcoming)
   end
 
   def past_events
-    @past_events = Event.sorted_events(:past)
+    @past_events = Event.sorted_events(:past, organization_id: Event::RAILSBRIDGE_ORGANIZATION_ID)
   end
 
   def team
@@ -54,4 +53,12 @@ class StaticPagesController < ApplicationController
   def interest_form
   end
 
+  private
+
+  def assign_upcoming_events
+    all_events = Event.sorted_events(:upcoming)
+    @railsbridge_events, @other_events = all_events.partition do |e|
+      e.try(:organization) == 'RailsBridge'
+    end
+  end
 end

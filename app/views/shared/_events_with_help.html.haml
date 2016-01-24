@@ -1,0 +1,21 @@
+- if events.present?
+  - count = 0
+  - event_count = events.count
+  - span_count = 12 / events_per_row
+  - event_modulus = event_count % events_per_row
+
+  - events.each_slice(events_per_row) do |event_row|
+    .row.js-match-height
+      - event_row.each do |event|
+        %div{ class: "col-md-#{span_count}" }
+          = render 'shared/event', event: event
+        - if event_modulus > 0 && event_count == (count += 1)
+          %div{ class: "col-md-#{span_count}"}
+            = render 'shared/event_help'
+
+  - if event_modulus == 0
+    .row
+      %div{ class: "col-md-#{span_count}" }
+        = render 'shared/event_help'
+- else
+  %p Please visit #{ link_to "Bridge Troll", "http://www.bridgetroll.org/" } for our list of current events.
