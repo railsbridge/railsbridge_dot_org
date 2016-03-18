@@ -34,10 +34,10 @@
 
 #learning-resources-nav
   %ul.nav.nav-tabs
-    %li.ruby.active= link_to "Ruby", "#ruby"
-    %li.rails= link_to "Rails", "#rails"
-    %li.front-end= link_to "HTML, CSS, & JavaScript", "#front-end"
-    %li.other= link_to "Other Web Development Fun", "#other"
+    %li.ruby.active= link_to "Ruby", "#ruby", class: 'inline-link'
+    %li.rails= link_to "Rails", "#rails", class: 'inline-link'
+    %li.front-end= link_to "HTML, CSS, & JavaScript", "#front-end", class: 'inline-link'
+    %li.other= link_to "Other Web Development Fun", "#other", class: 'inline-link'
   .learning-resources
     #ruby
       = render partial: 'static_pages/resources/ruby_resources'

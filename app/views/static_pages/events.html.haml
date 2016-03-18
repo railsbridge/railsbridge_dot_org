@@ -2,7 +2,7 @@
 
 .upcoming-events.js-match-heights
   %h1 Upcoming Events
-  %p Delivered fresh by #{link_to 'Bridge Troll', "http://www.bridgetroll.org"}, our event management software.
+  %p Delivered fresh by #{link_to 'Bridge Troll', "http://www.bridgetroll.org", class: 'inline-link'}, our event management software.
   = render 'shared/events_with_help', events_per_row: 3, events: @railsbridge_events
 
   - if @other_events.present?

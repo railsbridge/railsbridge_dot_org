@@ -99,3 +99,9 @@ ul.bulleted {
     padding: 10px 20px 0px 20px;
   }
 }
+
+.inline-link {
+  color: $tallPoppy;
+
+  &:active, &:hover { color: $merlot; }
+}

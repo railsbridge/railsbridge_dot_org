@@ -12,9 +12,25 @@
   }
 
   .header {
+    background-color: $burntSienna;
     height: 60px;
-    background: asset_url('navbar_texture.gif');
     margin-bottom: 30px;
+
+    .logo {
+      background: transparent image-url('landing-page/railsbridge_logo.png') center center no-repeat;
+      background-image: -webkit-linear-gradient(transparent, transparent), image-url('landing-page/railsbridge_logo.svg');
+      background-image: linear-gradient(transparent, transparent), image-url('landing-page/railsbridge_logo.svg');
+      display: inline-block;
+      height: 44px;
+      margin-top: 10px;
+      outline: none;
+      width: 200px;
+    }
+
+    img {
+      padding: 0;
+    }
+
     h1 {
       float: left;
       @include fontSize(28px);
@@ -48,7 +64,6 @@
           text-shadow: none;
           &:hover, &:active, &:focus {
             background-color: transparent;
-            color: lighten($blue, 20%);
           }
         }
       }
@@ -99,7 +114,7 @@
       border-bottom: 10px solid transparent;
     }
     .is-selected span {
-      border-bottom: 10px solid $blue;
+      border-bottom: 10px solid darken($burntSienna, 10%);
     }
   }
 }
@@ -121,7 +136,7 @@
     h1 {
       margin: 10px 0 0 14px;
     }
-    background: asset_url('navbar_texture.gif');
+    background-color: $burntSienna;
     a.logo {
       color: white;
     }
@@ -140,7 +155,7 @@
           text-shadow: none;
           &:focus, &:hover {
             background-color: transparent;
-            color: $grayMediumLight;
+            color: $merlot;
           }
         }
       }

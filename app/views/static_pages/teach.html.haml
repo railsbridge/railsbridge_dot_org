@@ -13,17 +13,18 @@
       %p
         Most everything you need to teach can be found at
         = succeed "." do
-          %a{:href => "http://docs.railsbridge.org"} docs.railsbridge.org
+          %a.inline-link{:href => "http://docs.railsbridge.org"} docs.railsbridge.org
         All the curricula and the installfest instructions are there.
       %p
-        See something that could be better? Submit a pull request. The whole shebang is in RailsBridge's #{link_to "Docs repo on GitHub", "https://github.com/railsbridge/docs"}.
+        See something that could be better? Submit a pull request. The whole shebang is in RailsBridge's
+        #{link_to "Docs repo on GitHub", "https://github.com/railsbridge/docs", class: 'inline-link'}.
   .col-md-4
     .feature.js-match-height-item
       .feature-icon.fa.fa-star
       %h4 Teacher Training
       %p
         You should go to a teacher training! They are often held within a few weeks of a workshop. You can run through the
-        %a{:href => "http://docs.railsbridge.org/workshop/more_teacher_training"} teacher training slide deck
+        %a.inline-link{:href => "http://docs.railsbridge.org/workshop/more_teacher_training"} teacher training slide deck
         to give you some things to think about.
   .col-md-4
     = render 'mailing_list'
@@ -47,7 +48,7 @@
   %p Yep! Our goal isn't just to teach underrespresented folks tech skills. We also want to help our volunteers challenge their own preconceptions of what a programmer is! So, everyone wins! We are always trying to recruit students into teaching roles, so please help by encouraging your students to come back and volunteer.
 
   %h4 I think this part of the curriculum is weird.
-  %p Good question? But really, please #{ link_to "fork the curriculum", "https://github.com/railsbridge/docs" } and make a pull request with what you think would be better. This whole thing is open source and a 100% volunteer effort, so your contributions are very, very valued.
+  %p Good question? But really, please #{ link_to "fork the curriculum", "https://github.com/railsbridge/docs", class: 'inline-link' } and make a pull request with what you think would be better. This whole thing is open source and a 100% volunteer effort, so your contributions are very, very valued.
 
   %h4 Do I need to come both days?
   %p No, you can RSVP for either or both. Just remember to come!

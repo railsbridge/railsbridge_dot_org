@@ -1,7 +1,6 @@
 .header.navbar.navbar-static-top
   .container
-    = link_to :root, class: "logo" do
-      %h1 RailsBridge
+    = link_to '', :root, class: "logo"
     %ul.header-nav.nav.navbar-nav
       %li#learn.nav-link{ class: ("is-selected" if @nav_group == :learn) }
         = link_to "Learn", :learn

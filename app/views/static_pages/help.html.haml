@@ -6,13 +6,13 @@
 %p The most visible volunteer positions within RailsBridge are the workshop sponsors, organizers, teachers, and TAs. They make each workshop happen!
 
 %h3 Want to teach?
-%p Yay! Head over to the #{link_to "upcoming workshops page", :events} to see if one is coming up near you. If not, get in touch with your #{link_to "local chapter", :chapters} (or start one if it doesn't exist).
+%p Yay! Head over to the #{link_to "upcoming workshops page", :events, class: 'inline-link'} to see if one is coming up near you. If not, get in touch with your #{link_to "local chapter", :chapters, class: 'inline-link'} (or start one if it doesn't exist).
 
 %h3 Want to organize?
-%p Fantastic. Read through the #{link_to "organizing page", :organize} and #{link_to "fill out our short interest form", :interest_form}!
+%p Fantastic. Read through the #{link_to "organizing page", :organize, class: 'inline-link'} and #{link_to "fill out our short interest form", :interest_form, class: 'inline-link'}!
 
 %h3 Want to host or sponsor?
-%p That's awesome. Check out our #{ link_to "information for hosts", :host } and #{ link_to "Donor FAQ", :donor_faq }.
+%p That's awesome. Check out our #{ link_to "information for hosts", :host, class: 'inline-link' } and #{ link_to "Donor FAQ", :donor_faq, class: 'inline-link' }.
 
 %h2 Helpful links for you
 
@@ -22,23 +22,23 @@
       .feature-icon.fa.fa-asterisk
       %h4 Teach or TA
       %ul.bulleted
-        %li= link_to 'Teaching Resources', :teach
-        %li= link_to 'RailsBridge Chapter List', :chapters
-        %li= link_to 'Upcoming Events', :events
+        %li= link_to 'Teaching Resources', :teach, class: 'inline-link'
+        %li= link_to 'RailsBridge Chapter List', :chapters, class: 'inline-link'
+        %li= link_to 'Upcoming Events', :events, class: 'inline-link'
   .col-md-6
     .feature.js-match-height-item
       .feature-icon.fa.fa-cogs
       %h4 Organize, Sponsor or Host an Event
       %ul.bulleted
-        %li= link_to 'Organize an Event', :organize
-        %li= link_to 'Hosting Resources', :host
-        %li= link_to 'Donor FAQ', :donor_faq
+        %li= link_to 'Organize an Event', :organize, class: 'inline-link'
+        %li= link_to 'Hosting Resources', :host, class: 'inline-link'
+        %li= link_to 'Donor FAQ', :donor_faq, class: 'inline-link'
 
 %h2 So many other ways to help, too!
 %p
   There are
   %em tons
-  of other things that have to happen to keep RailsBridge thriving. If you can help us with any of these things, fill out our quick #{link_to "volunteer interest form", :interest_form} and we will be in touch.
+  of other things that have to happen to keep RailsBridge thriving. If you can help us with any of these things, fill out our quick #{link_to "volunteer interest form", :interest_form, class: 'inline-link'} and we will be in touch.
 
 .row.help.js-match-height
   .col-md-6
@@ -54,7 +54,7 @@
       .feature-icon.fa.fa-wrench
       %h4 Help build new tools
       %ul.bulleted
-        %li Help us improve #{link_to "Bridge Troll", "https://github.com/railsbridge/bridge_troll"}, our open source event management app.
+        %li Help us improve #{link_to "Bridge Troll", "https://github.com/railsbridge/bridge_troll", class: 'inline-link'}, our open source event management app.
         %li Students always wonder what to do next, and we'd like to build better tools for helping them figure out their next steps.
 
 .row.help.js-match-height

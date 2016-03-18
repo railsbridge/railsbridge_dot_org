@@ -29,8 +29,9 @@
       width: 700px;
       margin: 120px auto 120px auto;
       h1 {
-        font-family: 'OpenSansBold', Arial, sans-serif;
         @include fontSize(30px);
+        color: $tallPoppy;
+        font-family: 'OpenSansBold', Arial, sans-serif;
         text-align: center;
         margin-top: 0;
         padding-top: 0;
@@ -53,6 +54,13 @@
 
 .home-twitter {
   h3 {
+    color: $tallPoppy;
+    font-weight: bold;
     margin-bottom: 15px;
   }
+}
+
+.home-events h3 {
+  color: $tallPoppy;
+  font-weight: bold;
 }

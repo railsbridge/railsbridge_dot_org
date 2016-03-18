@@ -2,7 +2,9 @@
 
 %h1 So many workshops!
 
-%p RailsBridge workshops happen all over the world. Our #{link_to "Chapters page", :chapters} can help you find a workshop in your area. And if there isn't one planned, we can #{link_to "help you set one up", :organize}!
+%p
+  RailsBridge workshops happen all over the world. Our #{link_to "Chapters page", :chapters, class: 'inline-link'} can help you
+  find a workshop in your area. And if there isn't one planned, we can #{link_to "help you set one up", :organize, class: 'inline-link'}!
 
 %h2 Past Workshops
 
@@ -25,7 +27,7 @@
         - present(event) do |event_presenter|
           %tr
             %td #{n}
-            %td= link_to event_presenter.event_dates(short: true), event_presenter.event_url, target: "_blank"
+            %td= link_to event_presenter.event_dates(short: true), event_presenter.event_url, target: "_blank", class: 'inline-link'
             %td= event.location.city
             %td= event.location.name
             %td= event_presenter.organizers.to_sentence

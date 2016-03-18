@@ -11,11 +11,11 @@
     have companies to help sponsor and host!
 
   %p
-    RailsBridge works with #{ link_to "School Factory", "http://schoolfactory.org/"}, a 501(c)3 charitable organization, so that we're
+    RailsBridge works with #{ link_to "School Factory", "http://schoolfactory.org/", class: 'inline-link' }, a 501(c)3 charitable organization, so that we're
     able to accept tax deductible donations.
 
   %p
-    Wondering why supporting RailsBridge is a great idea? Head over to our #{ link_to "Donor FAQ", donor_faq_path }
+    Wondering why supporting RailsBridge is a great idea? Head over to our #{ link_to "Donor FAQ", donor_faq_path, class: 'inline-link' }
     for answers.
 
 .col-md-3
@@ -27,4 +27,4 @@
     %img{alt: "", border: "0", height: "1", src: "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", width: "1"}/
   %h6 Donations go through our fiscal sponsor, School Factory.
 
-  %h6 Email #{ mail_to "hello@railsbridge.org" } for more information.
+  %h6 Email #{ mail_to("hello@railsbridge.org", nil, class: 'inline-link') } for more information.

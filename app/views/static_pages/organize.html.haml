@@ -8,13 +8,19 @@
     .feature.js-match-height-item
       .feature-icon.fa.fa-flask
       %h4 The Workshop Cookbook
-      %p We've got tons of information in our #{ link_to "Workshop Cookbook", "https://github.com/railsbridge/docs/wiki/Cookbook"}, which lives in the RailsBridge GitHub wiki.
+      %p
+        We've got tons of information in our
+        #{ link_to "Workshop Cookbook", "https://github.com/railsbridge/docs/wiki/Cookbook", class: 'inline-link' },
+        which lives in the RailsBridge GitHub wiki.
       %p Read it, use it, and update it! (You just have to be logged into GitHub to make updates.)
   .col-md-6
     .feature.js-match-height-item
       .feature-icon.fa.fa-cogs
       %h4 Create an issue on the Organizing repo
-      %p We use GitHub to keep track of workshops in the works! If you're ready to start planning a RailsBridge workshop, #{ link_to "add an issue", "https://github.com/railsbridge/organizing/issues" } and we can help you as much as you need.
+      %p
+        We use GitHub to keep track of workshops in the works! If you're ready to start planning
+        a RailsBridge workshop, #{ link_to "add an issue", "https://github.com/railsbridge/organizing/issues", class: 'inline-link' }
+        and we can help you as much as you need.
 
 .indented-content
   %h4 Organizing: totally doable.
@@ -31,19 +37,34 @@
     %li Having attended a prior workshop as a student, teacher, volunteer, or observer.
 
   %h4 Time commitment
-  %p The time commitment varies wildly based on where you're organizing and the number of workshops that have already happened in your area. Since there are workshops every month in San Francisco, the meta-organizing team there has a stable of companies that are happy to host. If you're forging new, exciting ground, finding a venue, sponsors, students, and volunteers will take longer. The organizing cookbook #{link_to "has suggestions", "https://github.com/railsbridge/docs/wiki/Finding-space%2C-sponsors%2C-volunteers%2C-and-students"} for where to look for those things.
+  %p
+    The time commitment varies wildly based on where you're organizing and the number of workshops
+    that have already happened in your area. Since there are workshops every month in San Francisco,
+    the meta-organizing team there has a stable of companies that are happy to host.
+    If you're forging new, exciting ground, finding a venue, sponsors, students, and volunteers
+    will take longer. The organizing cookbook
+    #{link_to "has suggestions", "https://github.com/railsbridge/docs/wiki/Finding-space%2C-sponsors%2C-volunteers%2C-and-students", class: 'inline-link'}
+    for where to look for those things.
   %p The amount of time you'll need to budget will also depend on how you and your co-organizer divide the responsibilities. Everyone organizing should plan on devoting their Friday night and most of Saturday to the workshop, and at least a few hours a week during the month before the workshop to visiting the space, ordering food, and communicating with students and volunteers.
 
   %h4 Mentorship & support available
   %p Although it is a lot of little details to deal with, if it's your first time organizing we'll hook you up with a mentor to answer questions and help guide you.  That can be remote mentoring, if an experienced local organizer/mentor isn't available.
-  %p If you are interested in organizing a workshop, or even just vaguely curious, contact #{ mail_to "hello@railsbridge.org" } and our volunteers will be very happy to talk to you about it. You can also create an issue on the #{ link_to "RailsBridge Organizing GitHub repo", "https://github.com/railsbridge/organizing/issues" } and we will gladly help you out!
+  %p
+    If you are interested in organizing a workshop, or even just vaguely curious, contact #{ mail_to("hello@railsbridge.org", nil, class: 'inline-link') }
+    and our volunteerswill be very happy to talk to you about it. You can also create an issue on the
+    #{ link_to "RailsBridge Organizing GitHub repo", "https://github.com/railsbridge/organizing/issues", class: 'inline-link' }
+    and we will gladly help you out!
 
   %h4 Already planning?
   %p If you're raring to go, and have already got your workshop planning underway, go you! That's amazing. Here are a couple of suggestions and requests:
   %ul.bulleted
-    %li Use #{link_to "Bridge Troll", "http://www.bridgetroll.org"}, our event management software. It'll make RSVPs and dividing up the class much, much easier.
+    %li Use #{link_to "Bridge Troll", "http://www.bridgetroll.org", class: 'inline-link'}, our event management software. It'll make RSVPs and dividing up the class much, much easier.
     %li Side benefit of Bridge Troll: your event will automatically be displayed on the RailsBridge.org website.
-    %li If you haven't already, join the #{link_to "mailing list", "https://groups.google.com/forum/#!forum/railsbridge-workshops"} and let the community know that your workshop is in the works. We like to help spread the word (and also keep a tally of the workshops happening in the world).
+    %li
+      If you haven't already, join the
+      #{link_to "mailing list", "https://groups.google.com/forum/#!forum/railsbridge-workshops", class: 'inline-link'}
+      and let the community know that your workshop is in the works. We like to help spread the word
+      (and also keep a tally of the workshops happening in the world).
 
   %h4 Workshop Requirements
   %p A RailsBridge workshop has a few special things about it:

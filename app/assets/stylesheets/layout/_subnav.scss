@@ -1,6 +1,6 @@
 .subnav {
   min-height: 10px;
-  background: $blue;
+  background: darken($burntSienna, 10%);
   margin: -30px 0 30px 0;
   ul {
     text-align: center;
@@ -15,15 +15,15 @@
         margin-right: 0;
       }
       a {
-        color: lighten($blue, 40%);
+        color: $white;
         display: block;
         &:hover {
-          color: $white;
+          color: $merlot;
           text-decoration: none;
         }
       }
       &.is-selected a {
-        color: $white;
+        color: $merlot;
         cursor: default;
       }
     }
@@ -59,9 +59,11 @@
         margin: 5px;
         a {
           color: $black;
+
+          &:hover { color: $burntSienna; }
         }
         &.is-selected {
-          background: $blue;
+          background: $burntSienna;
           a {
             color: $white;
           }
