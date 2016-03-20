@@ -5,8 +5,8 @@
     %meta{ name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1" }
     %meta{ content: content_for?(:description) ? yield(:description) : "RailsBridge", name: "description" }
     %meta{ charset: "UTF-8" }
-    = javascript_include_tag "application"
     = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag "application"
     = analytics_init if Rails.env.production?
     = csrf_meta_tags
   %body{ class: (params[:controller]), id: (params[:action]) }
