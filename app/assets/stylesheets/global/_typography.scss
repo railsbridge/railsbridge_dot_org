@@ -1,6 +1,6 @@
 // Typography
 
-body, p, ol, blockquote, pre, code, input, select, textarea {
+body, p, ol, ul, blockquote, pre, code, input, select, textarea {
   color: $grayDarkest;
   @include fontSize(16px);
   line-height: 1.5;
