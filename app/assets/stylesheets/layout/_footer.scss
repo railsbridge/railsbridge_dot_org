@@ -6,10 +6,12 @@
   padding: 40px 0;
   margin-top: 30px;
   h2 {
+    font-family: 'TisaSansWebPro', serif;
     margin: 0 0 20px 0;
   }
   p {
-    @include fontSize(17px);
+    @include fontSize(16px);
+    font-family: 'TisaSansWebPro', serif;
     line-height: 1.3;
     color: $white;
     margin-bottom: 20px;
@@ -20,7 +22,7 @@
   a {
     color: $white;
     &:hover {
-      color: $white;
+      color: $merlot;
     }
   }
 
@@ -38,7 +40,8 @@
         @include fontSize(40px);
         color: white;
         &:hover {
-          color: lighten($blue, 30%);
+          color: $merlot;
+          text-decoration: none;
         }
       }
     }

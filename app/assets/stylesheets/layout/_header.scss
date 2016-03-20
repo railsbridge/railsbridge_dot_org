@@ -57,24 +57,27 @@
         }
         a {
           display: block;
-          @include fontSize(14px);
+          @include fontSize(16px);
           color: $white;
-          text-transform: uppercase;
+          font-family: 'TisaSansWebPro-Bold', serif;
           padding: 5px 22px;
           text-shadow: none;
           &:hover, &:active, &:focus {
+            color: $merlot;
             background-color: transparent;
           }
         }
       }
       ul.dropdown-menu {
+        @include fontSize(16px);
         margin: -10px 0 0 20px;
         border-radius: 0;
         padding: 10px 0 0 0;
         li a {
           color: $black;
+          font-family: 'TisaSansWebPro', serif;
           &:hover, &:active, &:focus {
-            color: $blue;
+            color: $merlot;
             background: none;
           }
         }
@@ -130,6 +133,7 @@
 
 @media (max-width: $screen-xs-max) {
   .header {
+    font-family: 'TisaSansWebPro', serif;
     .container {
       padding: 0;
     }

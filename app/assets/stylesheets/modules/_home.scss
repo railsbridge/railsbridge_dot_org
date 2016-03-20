@@ -54,13 +54,15 @@
 
 .home-twitter {
   h3 {
+    @include fontSize(20px);
     color: $tallPoppy;
-    font-weight: bold;
+    font-family: 'TisaSansWebPro-Bold', serif;
     margin-bottom: 15px;
   }
 }
 
 .home-events h3 {
+  @include fontSize(20px);
   color: $tallPoppy;
-  font-weight: bold;
+  font-family: 'TisaSansWebPro-Bold', serif;
 }

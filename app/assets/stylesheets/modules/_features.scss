@@ -19,8 +19,10 @@
   }
   a.event-venue {
     color: $burntSienna;
+    font-family: 'TisaSansWebPro', serif;
+
     &:hover {
-      color: darken($blue, 10%);
+      color: $merlot;
     }
     span {
       padding-right: 5px;
@@ -39,12 +41,13 @@
       display: block;
       width: 200px;
       line-height: 30px;
+      font-family: 'TisaSansWebPro', serif;
       text-align: center;
       color: white;
       background-color: $burntSienna;
       margin: 0 auto;
       &:hover {
-        background-color: lighten($blue, 10%);
+        background-color: darken($burntSienna, 10%);
         text-decoration: none;
       }
     }
@@ -69,5 +72,8 @@
   }
   ul {
     padding-bottom: 10px;
+  }
+  a {
+    font-family: 'TisaSansWebPro', serif;
   }
 }
