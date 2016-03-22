@@ -1,3 +1,18 @@
+.header {
+  background-color: $burntSienna;
+
+  .logo {
+    background: transparent image-url('landing-page/railsbridge_logo.png') center center no-repeat;
+    background-image: -webkit-linear-gradient(transparent, transparent), image-url('landing-page/railsbridge_logo.svg');
+    background-image: linear-gradient(transparent, transparent), image-url('landing-page/railsbridge_logo.svg');
+    display: inline-block;
+    height: 44px;
+    margin-top: 10px;
+    outline: none;
+    width: 200px;
+  }
+}
+
 @media (min-width: $screen-sm-min) {
   // Flattening page elements
   .header, .navbar, .navbar-static-top  {
@@ -12,32 +27,10 @@
   }
 
   .header {
-    background-color: $burntSienna;
+    font-size: 0;
     height: 60px;
     margin-bottom: 30px;
 
-    .logo {
-      background: transparent image-url('landing-page/railsbridge_logo.png') center center no-repeat;
-      background-image: -webkit-linear-gradient(transparent, transparent), image-url('landing-page/railsbridge_logo.svg');
-      background-image: linear-gradient(transparent, transparent), image-url('landing-page/railsbridge_logo.svg');
-      display: inline-block;
-      height: 44px;
-      margin-top: 10px;
-      outline: none;
-      width: 200px;
-    }
-
-    img {
-      padding: 0;
-    }
-
-    h1 {
-      float: left;
-      @include fontSize(28px);
-      font-family: 'AleoBold', Arial, sans-serif;
-      color: $white;
-      margin: 18px 0 0 0;
-    }
     ul.nav {
       float: right;
       margin: 20px 0 0 0;
@@ -122,13 +115,6 @@
   }
 }
 
-// Work around for FireFox font rendering
-@-moz-document url-prefix() {
-  .header h1 {
-    font-family: 'Aleo', Arial, sans-serif;
-  }
-}
-
 // Mobile menu
 
 @media (max-width: $screen-xs-max) {
@@ -137,18 +123,14 @@
     .container {
       padding: 0;
     }
-    h1 {
-      margin: 10px 0 0 14px;
-    }
-    background-color: $burntSienna;
-    a.logo {
-      color: white;
+    .logo {
+      margin-left: 15px;
     }
   }
   .navbar {
     margin-bottom: 0;
     .nav {
-      margin: 10px 0;
+      margin: 0 0 10px 0;
       li {
         display: inline-block;
         margin: 5px 14px;

@@ -2,7 +2,7 @@
 
 @media (min-width: $screen-sm-min) {
   .container {
-    width: 970px;
+    max-width: 970px;
   }
 }
 
@@ -55,6 +55,10 @@ img {
 
 .img-responsive {
   display: inline-block;
+}
+
+img {
+  max-width: 100%;
 }
 
 @media (max-width: $screen-xs-max) {
