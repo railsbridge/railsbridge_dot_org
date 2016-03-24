@@ -9,7 +9,7 @@
     = javascript_include_tag "application"
     = analytics_init if Rails.env.production?
     = csrf_meta_tags
-    = favicon_link_tag 'icons/favicon_orange.ico'
+    = favicon_link_tag 'icons/favicon.ico'
   %body{ class: (params[:controller]), id: (params[:action]) }
     = render "layouts/header"
     = render "layouts/subnav"
