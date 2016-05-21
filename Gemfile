@@ -10,12 +10,12 @@ gem "font-awesome-rails"
 gem "twitter"
 gem "tweetstream"
 gem "activeresource"
-gem "sprockets-rails", "~> 2.3.3"
+gem "sprockets-rails"
 
 gem "sass-rails"
 gem "coffee-rails"
 gem "bootstrap-sass"
-gem "uglifier",     ">= 1.0.3"
+gem "uglifier"
 gem "bourbon"
 
 # Site Tools & Monitoring
@@ -24,7 +24,7 @@ gem "sitemap_generator"
 group :production do
   gem "newrelic_rpm"
   gem "rails_12factor"
-  gem "google-analytics-rails", "~> 0.0.4"
+  gem "google-analytics-rails"
 end
 
 group :test, :development do
