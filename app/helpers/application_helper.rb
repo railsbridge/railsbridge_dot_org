@@ -29,7 +29,8 @@ module ApplicationHelper
         ["Sponsors ", :sponsors],
         ["Chapters", :chapters],
         ["Past Events", :past_events],
-        ["Projects", :projects]
+        ["Projects", :projects],
+        ["Brand", :brand]
       ]
     }
   end

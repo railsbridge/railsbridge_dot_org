@@ -1,0 +1,69 @@
+- provide(:title, page_title(['Brand']))
+
+.row
+  %h1 Brand Guidelines
+
+  %p
+    The RailsBridge board commissioned a new logo and brand identity for RailsBridge in the spring of 2016.
+    You can learn more about how it came to be in
+    #{ link_to "this very fun blog post", "https://blog.railsbridge.org/2016/03/21/railsbridge-has-a-new-logo/", target: "_blank" }!
+
+  %h2 The Logo
+
+  %p
+    Here's our main logo as a .png in color and black and white:
+
+  %p.mt30= image_tag "railsbridge-logos/railsbridge_horizontal_orange.png", width: 500
+
+  %p.mt30.mb20= image_tag "railsbridge-logos/railsbridge_horizontal_black.png", width: 500
+
+  %p
+    You can also download all the permutations of the RailsBridge logo in
+    #{ link_to "one zip file", "https://www.dropbox.com/s/8zw5jg2nfg404zm/railsbridge_logos.zip?dl=0", target: "_blank" } from a Dropbox folder. It's about 18MB.
+
+  %p The #{ link_to "full logo folder", "https://www.dropbox.com/s/8zw5jg2nfg404zm/railsbridge_logos.zip?dl=0", target: "_blank" } includes:
+
+  %ul.bulleted
+    %li The above logo in orange, black, and white (for use on dark backgrounds)
+    %li
+      The following file formats: <span class="bold">.jpg, .png, .svg, .ai,</span> and <span class="bold">.eps</span>
+    %li A stacked version of the logo, with the RailsBridge ruby centered above the word RailsBridge, for use where a vertical logo fits better.
+
+  %h3 Chapter Logos
+
+  %p
+    Please email #{ mail_to "hello@railsbridge.org" } if you'd like us to make a chapter-specific version of the logo for you! Here are some examples:
+
+  %p= image_tag "railsbridge-logos/chapter_logo_examples.jpg", width: 300
+
+  %p
+    (Please do get in touch, rather than trying to make a chapter logo yourself!
+    We've bought licenses for the fonts and are very excited to put them to use.)
+
+  .col-md-6
+    %h2 Colors and Fonts
+
+    %p Our fonts are Tisa Sans Pro Regular and Bold.
+
+    %p The RailsBridge colors are mostly oranges and reds:
+
+    %table.color-table
+      %tr
+        %td.main-orange
+          \#EB6852
+        %td.accent-deep-red
+          \#B3282D
+        %td.accent-red
+          \#831A27
+
+  .col-md-6
+    %h2 Avoiding Common Mistakes
+
+    %h3 Good:
+    %ul.bulleted
+      %li RailsBridge as a single word
+      %li RailsBridge with the "R" and the "B" capitalized
+    %h3 Bad:
+    %ul.bulleted
+      %li Rails Bridge with a space in the middle
+      %li Railsbridge or railsbridge, without the "R" and the "B" capitalized

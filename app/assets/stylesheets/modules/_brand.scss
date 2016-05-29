@@ -1,0 +1,20 @@
+.color-table {
+  td {
+    height: 100px;
+    min-width: 80px;
+
+    color: $white;
+    vertical-align: bottom;
+    padding-left: 3px;
+  }
+  .main-orange {
+    min-width: 200px;
+    background-color: $burntSienna;
+  }
+  .accent-deep-red {
+    background-color: $tallPoppy;
+  }
+  .accent-red {
+    background-color: $merlot;
+  }
+}

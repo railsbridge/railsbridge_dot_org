@@ -8,6 +8,7 @@ RailsbridgeSite2013::Application.routes.draw do
   get '/about/chapters',      to: 'static_pages#chapters',           as: 'chapters'
   get '/about/past-events',   to: 'static_pages#past_events',        as: 'past_events'
   get '/about/projects',      to: 'static_pages#projects',           as: 'projects'
+  get '/about/brand',         to: 'static_pages#brand',              as: 'brand'
 
   get '/help',                to: 'static_pages#help',               as: 'help'
   get '/help/teach',          to: 'static_pages#teach',              as: 'teach'
