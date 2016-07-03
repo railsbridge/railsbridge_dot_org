@@ -9,7 +9,6 @@ gem "jquery-rails"
 gem "font-awesome-rails"
 gem "twitter"
 gem "tweetstream"
-gem "activeresource"
 gem "sprockets-rails"
 
 gem "sass-rails"
@@ -33,6 +32,7 @@ group :test, :development do
   gem "capybara"
   gem "email_spec"
   gem "shoulda-matchers"
+  gem "webmock"
 
   # Test Tools
   gem "simplecov", :require => false

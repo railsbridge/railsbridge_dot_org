@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'active_resource'
 
 describe "rendering events list" do
   def default_event_attributes(date)
@@ -26,25 +25,29 @@ describe "rendering events list" do
   end
 
   before do
-    ActiveResource::HttpMock.respond_to do |mock|
-      mock.get "/events.json?organization_id=1&type=past", {}, [
-        default_event_attributes(2.years.ago).merge(
-          id: 1,
-          title: 'OlderBridge',
-        ),
-        default_event_attributes(1.year.ago).merge(
-          id: 2,
-          title: 'BygoneBridge',
-        )
-      ].to_json
+    upcoming_events_body = [
+      default_event_attributes(1.year.from_now).merge(
+        id: 3,
+        title: 'CourtBridge',
+      )
+    ].to_json
 
-      mock.get "/events.json?type=upcoming", {}, [
-        default_event_attributes(1.year.from_now).merge(
-          id: 3,
-          title: 'CourtBridge',
-        )
-      ].to_json
-    end
+    stub_request(:get, "#{BRIDGETROLL_URL}/events.json?type=upcoming").
+      to_return(status: 200, body: upcoming_events_body)
+
+    organization_events_body = [
+      default_event_attributes(2.years.ago).merge(
+        id: 1,
+        title: 'OlderBridge',
+      ),
+      default_event_attributes(1.year.ago).merge(
+        id: 2,
+        title: 'BygoneBridge',
+      )
+    ].to_json
+
+    stub_request(:get, "#{BRIDGETROLL_URL}/events.json?organization_id=1&type=past").
+      to_return(status: 200, body: organization_events_body)
   end
 
   describe "the home page" do

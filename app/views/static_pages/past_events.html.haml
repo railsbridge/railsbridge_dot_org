@@ -24,10 +24,9 @@
   %tbody
     - if @past_events.present?
       - @past_events.zip(1..@past_events.length).reverse.each do |(event, n)|
-        - present(event) do |event_presenter|
-          %tr
-            %td #{n}
-            %td= link_to event_presenter.event_dates(short: true), event_presenter.event_url, target: "_blank", class: 'inline-link'
-            %td= event.location.city
-            %td= event.location.name
-            %td= event_presenter.organizers.to_sentence
+        %tr
+          %td #{n}
+          %td= link_to event.event_dates(short: true), event.event_url, target: "_blank", class: 'inline-link'
+          %td= event.location['city']
+          %td= event.location['name']
+          %td= event.organizers.to_sentence

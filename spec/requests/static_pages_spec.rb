@@ -7,6 +7,11 @@ def find_routes
 end
 
 describe "Static pages" do
+  before do
+    stub_request(:get, /#{BRIDGETROLL_URL}\/events.json.*/).
+      to_return(status: 200, body: "[]")
+  end
+
   it 'can render a bunch of static pages' do
     # sanity check that find_routes isn't returning nothing
     find_routes.length.should be > 10

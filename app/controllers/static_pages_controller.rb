@@ -41,7 +41,9 @@ class StaticPagesController < ApplicationController
   end
 
   def past_events
-    @past_events = Event.sorted_events(:past, organization_id: Event::RAILSBRIDGE_ORGANIZATION_ID)
+    @past_events = Event.sorted_events(:past, organization_id: Event::RAILSBRIDGE_ORGANIZATION_ID).map do |event|
+      EventPresenter.new(event)
+    end
   end
 
   def team
@@ -59,9 +61,11 @@ class StaticPagesController < ApplicationController
   private
 
   def assign_upcoming_events
-    all_events = Event.sorted_events(:upcoming)
+    all_events = Event.sorted_events(:upcoming).map do |event|
+      EventPresenter.new(event)
+    end
     @railsbridge_events, @other_events = all_events.partition do |e|
-      e.try(:organization) == 'RailsBridge'
+      e.organization == 'RailsBridge'
     end
   end
 end

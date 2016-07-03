@@ -1,29 +1,53 @@
-class EventPresenter < BasePresenter
-  presents :event
+class EventPresenter
+  attr_reader :event
 
+  def initialize(event)
+    @event = event
+  end
+
+  def title
+    event['title']
+  end
+  
+  def url
+    event['url']
+  end
+
+  def organization
+    event['organization']
+  end
+  
   def external_event?
-    event.respond_to?(:url)
+    url.present?
   end
 
   def organizers
-    event.organizers.kind_of?(Array) ? event.organizers : arrayify_string(event.organizers || '')
+    event['organizers'].kind_of?(Array) ? event['organizers'] : arrayify_string(event['organizers'] || '')
   end
 
   def event_url
-    external_event? && event.url ? event.url : URI.join(BRIDGETROLL_URL, "/events/#{event.id}").to_s
+    (external_event? && url) ? url : URI.join(BRIDGETROLL_URL, "/events/#{event['id']}").to_s
   end
 
   def signup_link
     case
     when !external_event? then "RSVP on Bridge Troll"
-    when event.url =~ /meetup.com/ then "RSVP on Meetup"
-    when event.url =~ /eventbrite.com/ then "RSVP on Eventbrite"
+    when url =~ /meetup.com/ then "RSVP on Meetup"
+    when url =~ /eventbrite.com/ then "RSVP on Eventbrite"
     else "Event Signup"
     end
   end
 
   def valid_location?
-    !event.external_event? && event.location.respond_to?(:address_1) && event.location.respond_to?(:city)
+    !external_event? && location.try(:[], 'address_1').present? && location.try(:[], 'city').present?
+  end
+
+  def location
+    event['location']
+  end
+
+  def location_name
+    location.try(:[], 'name')
   end
 
   def location_url
@@ -31,8 +55,8 @@ class EventPresenter < BasePresenter
   end
 
   def location_city
-    if event.location
-      external_event? ? event.location.city : "#{event.location.city}, #{event.location.state}"
+    if location.present?
+      external_event? ? location['city'] : "#{location['city']}, #{location['state']}"
     else
       "Location TBD"
     end
@@ -57,18 +81,18 @@ class EventPresenter < BasePresenter
 
   def google_map_link
     base_url = "https://maps.google.com/?q="
-    address_2 = event.location.address_2 ? " #{event.location.address_2}" : ""
-    zip = event.location.zip ? ", #{event.location.zip}" : ""
-    address = "#{event.location.address_1}#{address_2}, #{event.location.city} #{event.location.state}#{zip}"
+    address_2 = location['address_2'] ? " #{location['address_2']}" : ""
+    zip = location['zip'].present? ? ", #{location['zip']}" : ""
+    address = "#{location['address_1']}#{address_2}, #{location['city']} #{location['state']}#{zip}"
     URI.encode(base_url + address)
   end
 
   def start_date
-    DateTime.parse(event.sessions.first.starts_at)
+    DateTime.parse(event['sessions'].first['starts_at'])
   end
 
   def end_date
-    DateTime.parse(event.sessions.last.starts_at)
+    DateTime.parse(event['sessions'].last['starts_at'])
   end
 
   def arrayify_string(str)

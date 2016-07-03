@@ -1,19 +1,18 @@
-- present(event) do |event_presenter|
-  .event.js-match-height-item
-    %h4= event.title
-    %ul
-      %li
-        .event-date= event_presenter.event_dates
-        .event-location= event_presenter.location_city
-      %li
-        %span.fa.fa-user
-        = "Organized by #{event_presenter.organizers.first} & friends"
-      %li
-        = link_to event_presenter.location_url, class: 'event-venue', target: '_blank' do
-          - if event_presenter.valid_location?
-            %span.fa.fa-map-marker
-          - if event.location.try(:name).present?
-            = "Held at #{event.location.name}"
+.event.js-match-height-item
+  %h4= event.title
+  %ul
+    %li
+      .event-date= event.event_dates
+      .event-location= event.location_city
+    %li
+      %span.fa.fa-user
+      = "Organized by #{event.organizers.first} & friends"
+    %li
+      = link_to event.location_url, class: 'event-venue', target: '_blank' do
+        - if event.valid_location?
+          %span.fa.fa-map-marker
+        - if event.location_name.present?
+          = "Held at #{event.location_name}"
 
-      .event-cta
-        = link_to event_presenter.signup_link, event_presenter.event_url, target: '_blank'
+    .event-cta
+      = link_to event.signup_link, event.event_url, target: '_blank'
