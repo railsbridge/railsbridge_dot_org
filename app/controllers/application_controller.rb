@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   include ApplicationHelper
   protect_from_forgery
-  before_filter :assign_nav_group
+  before_action :assign_nav_group
 
   private
 

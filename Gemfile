@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby "2.3.1"
 
-gem "rails", "4.2.6"
+gem "rails", "5.0.0"
 gem "thin"
 gem "haml-rails"
 gem "jquery-rails"
@@ -39,7 +39,6 @@ group :test, :development do
   gem "timecop"
 
   # Debugging Tools
-  gem "quiet_assets"
   gem "awesome_print"
   gem "pry-byebug"
 end
