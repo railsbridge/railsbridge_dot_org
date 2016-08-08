@@ -30,12 +30,11 @@ class EventPresenter
   end
 
   def signup_link
-    case
-    when !external_event? then "RSVP on Bridge Troll"
-    when url =~ /meetup.com/ then "RSVP on Meetup"
-    when url =~ /eventbrite.com/ then "RSVP on Eventbrite"
-    else "Event Signup"
-    end
+    return "RSVP on Bridge Troll" unless external_event?
+    return "RSVP on Meetup" if url =~ /meetup.com/
+    return "RSVP on Eventbrite" if url =~ /eventbrite.com/
+
+    "Event Signup"
   end
 
   def valid_location?
