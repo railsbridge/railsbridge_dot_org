@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby "2.5.1"
 
-gem "rails", "5.0.2"
+gem "rails", "5.0.7.2"
 gem "thin"
 gem "haml-rails"
 gem "jquery-rails"
