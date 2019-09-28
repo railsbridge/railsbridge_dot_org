@@ -20,7 +20,7 @@ Download the project:
 If you use RVM, make a gemset:
 
 ```
-  $ rvm use ruby-2.2.2@railsbridge_dot_org --create
+  $ rvm use ruby-2.5.6@railsbridge_dot_org --create
 ```
 
 Install gems:
