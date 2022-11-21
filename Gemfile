@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.5.6"
+ruby "2.7.6"
 
 gem "rails", "5.0.7.2"
 gem "thin"
